@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>geoJSONClusterTest</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="bower_components/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css">
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- CSS for the mapping components -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
+
+
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/esri-leaflet/dist/esri-leaflet.js"></script>
+    <script src="bower_components/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+    <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/combined.js -->
+    <!--<script src="scripts/stnSitesGeo.js" defer></script>-->
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/core.js"></script>
+    <script src="scripts/example8.js"></script>
+
+    <!-- endbuild -->
+
+</head>
+<body>
+
+<div id="navbar" class="navbar navbar-static navbar-default navbar-fixed-top navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://usgs.gov">
+                <img alt="USGS logo" src="images/usgs-logo.png">
+                <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;geoJSONClusterTest</span>
+            </a>
+        </div>
+
+        <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
+            <span class="glyphicon glyphicon-search"></span>
+            <span id="geosearchButtonText"> Geosearch</span>
+        </button>
+
+        <!-- legend buttton for navbar. to be removed if we like the in-map legend toggle -->
+        <!--<button id="legendButtonNavBar" type="button" class="btn btn-primary navbar-btn pull-right" style="margin-right: 1em;"><span class="glyphicon glyphicon-list"></span> Legend</button>-->
+        <!-- toggle for a right sidebar (currently not in use) -->
+        <!--<button type="button" class="navbar-toggle toggle-right" data-toggle="sidebar" data-target=".sidebar-right">-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+    </div>
+</div>
+
+
+<div class="modal fade overflow-y-hidden" id="geosearchModal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                <h4 class="modal-title">Geosearch</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div id="geosearch"><div id="sapi_searchTextBoxDiv"></div></div>
+                </div>
+                <form id="geosearch-form" class="form-inline">
+                    <div class="checkbox">
+                        <label>
+                            <input id="chkExtent" type="checkbox"> Search in Map Only
+                        </label>
+                    </div>
+                    <button id="btnGeosearch" type="button" class="btn btn-success btn-fixed" data-dismiss="modal"> Go </button>
+                    <button id="btnDismiss" type="submit" class="btn btn-default btn-fixed" data-dismiss="modal">Dismiss</button>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<!-- Begin page content -->
+<div class="container-fluid keepit100">
+    <div class="row keepit100">
+
+
+        <div id="mapDiv">
+
+            <!--<div id="legendElement" class="panel panel-default legendClass">-->
+                <!--<div id="legendHeading" class=" legendHeading" role="tab">-->
+                    <!--<h4 class="panel-title">-->
+                        <!--<a data-toggle="collapse" style="text-decoration: none"  href="#legendCollapse" aria-expanded="true" aria-controls="collapseOne">-->
+                            <!--<span class="glyphicon glyphicon-list"></span>-->
+                            <!--Legend-->
+                        <!--</a>-->
+                    <!--</h4>-->
+                <!--</div>-->
+                <!--<div id="legendCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">-->
+                    <!--<div id="legendDiv" class="panel-body"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
