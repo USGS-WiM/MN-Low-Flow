@@ -1,0 +1,5498 @@
+{
+	"items": [{
+			"LONGDD": "-89.61619843",
+			"LATDD": "48.01210765",
+			"site_no": "04010500",
+			"station_nm": "PIGEON RIVER AT MIDDLE FALLS NR GRAND PORTAGE MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-89.86259477",
+			"LATDD": "47.87711281",
+			"site_no": "04010530",
+			"station_nm": "RESERVATION RIVER NEAR HOVLAND MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-90.31037497",
+			"LATDD": "47.9323891",
+			"site_no": "04010850",
+			"station_nm": "BRULE RIVER NEAR GRAND MARAIS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-90.26093458",
+			"LATDD": "47.76989111",
+			"site_no": "04011500",
+			"station_nm": "DEVIL TRACK RIVER NR. GRAND MARAIS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-90.52262074",
+			"LATDD": "47.70711561",
+			"site_no": "04012000",
+			"station_nm": "CASCADE RIVER AT MOUTH NEAR GRAND MARAIS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-90.70874982",
+			"LATDD": "47.63961985",
+			"site_no": "04012500",
+			"station_nm": "POPLAR RIVER AT LUTSEN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-90.84540773",
+			"LATDD": "47.80100562",
+			"site_no": "04012600",
+			"station_nm": "TEMPERANCE RIVER NEAR TOFTE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-90.90292903",
+			"LATDD": "47.54434727",
+			"site_no": "04013000",
+			"station_nm": "CROSS RIVER AT SCHROEDER, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.03071444",
+			"LATDD": "47.46407438",
+			"site_no": "04013200",
+			"station_nm": "CARIBOU RIVER NEAR LITTLE MARAIS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.06877103",
+			"LATDD": "47.44435385",
+			"site_no": "04013300",
+			"station_nm": "MANITOU RIVER NEAR LITTLE MARAIS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.20071894",
+			"LATDD": "47.33741728",
+			"site_no": "04014500",
+			"station_nm": "BAPTISM RIVER NEAR BEAVER BAY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.3793341",
+			"LATDD": "47.2538119",
+			"site_no": "04014900",
+			"station_nm": "BEAVER RIVER AT CO. RD. 3 NEAR BEAVER BAY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.29599902",
+			"LATDD": "47.26020015",
+			"site_no": "04015000",
+			"station_nm": "BEAVER RIVER AT BEAVER BAY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.46822902",
+			"LATDD": "47.14353839",
+			"site_no": "04015140",
+			"station_nm": "GOOSEBERRY RIVER NEAR TWO HARBORS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.6051762",
+			"LATDD": "47.0643757",
+			"site_no": "04015260",
+			"station_nm": "SILVER CREEK NEAR TWO HARBORS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.667676",
+			"LATDD": "47.06437619",
+			"site_no": "04015300",
+			"station_nm": "LITTLE STEWART RIVER NEAR TWO HARBORS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.6304542",
+			"LATDD": "47.0479876",
+			"site_no": "04015310",
+			"station_nm": "STEWART RIVER AT U.S. HWY. 61 NEAR TWO HARBORS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.79240133",
+			"LATDD": "46.94688005",
+			"site_no": "04015330",
+			"station_nm": "KNIFE RIVER NEAR TWO HARBORS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.85073699",
+			"LATDD": "46.92410268",
+			"site_no": "04015340",
+			"station_nm": "SUCKER RIVER AT COUNTY HIGHWAY 61 IN PALMERS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.89240547",
+			"LATDD": "46.89965868",
+			"site_no": "04015350",
+			"station_nm": "FRENCH RIVER NEAR DULUTH, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.94185128",
+			"LATDD": "46.89688103",
+			"site_no": "04015368",
+			"station_nm": "TALMADGE RIVER AT COUNTY ROAD 281 NEAR DULUTH, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.01018741",
+			"LATDD": "46.84410436",
+			"site_no": "04015387",
+			"station_nm": "AMITY CREEK AT DULUTH, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.00602086",
+			"LATDD": "46.83660445",
+			"site_no": "04015390",
+			"station_nm": "LESTER RIVER AT DULUTH, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.04017219",
+			"LATDD": "47.48270171",
+			"site_no": "04015438",
+			"station_nm": "ST. LOUIS RIVER NEAR SKIBO, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-91.93488765",
+			"LATDD": "47.56742022",
+			"site_no": "04015455",
+			"station_nm": "SOUTH BRANCH PARTRIDGE RIVER NEAR BABBITT, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.1226729",
+			"LATDD": "47.52714617",
+			"site_no": "04015475",
+			"station_nm": "PARTRIDGE RIVER ABV COLBY LAKE AT HOYT LAKES, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.19323089",
+			"LATDD": "47.52353593",
+			"site_no": "04015500",
+			"station_nm": "SECOND CREEK NEAR AURORA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.19017556",
+			"LATDD": "47.5171471",
+			"site_no": "04016000",
+			"station_nm": "PARTRIDGE RIVER NEAR AURORA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.23906705",
+			"LATDD": "47.49159248",
+			"site_no": "04016500",
+			"station_nm": "ST. LOUIS RIVER NEAR AURORA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.19766892",
+			"LATDD": "47.65658967",
+			"site_no": "04017000",
+			"station_nm": "EMBARRASS RIVER AT EMBARRASS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.38351549",
+			"LATDD": "47.4527051",
+			"site_no": "04018000",
+			"station_nm": "EMBARRASS RIVER NEAR MCKINLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.47351948",
+			"LATDD": "47.3579859",
+			"site_no": "04018710",
+			"station_nm": "MUD HEN CREEK NEAR FORBES, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.59907556",
+			"LATDD": "47.36326463",
+			"site_no": "04018750",
+			"station_nm": "ST. LOUIS RIVER AT FORBES, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.60990774",
+			"LATDD": "47.40104142",
+			"site_no": "04018770",
+			"station_nm": "ELBOW CREEK NEAR IRON JUNCTION, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-92.66462986",
+			"LATDD": "47.40104192",
+			"site_no": "04018900",
+			"station_nm": "EAST TWO RIVER NEAR IRON JUNCTION, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.70296311",
+			"LATDD": "47.40132004",
+			"site_no": "04019000",
+			"station_nm": "WEST TWO RIVER NEAR IRON JUNCTION, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.68324319",
+			"LATDD": "47.33909945",
+			"site_no": "04019010",
+			"station_nm": "WEST TWO RIVER NEAR FORBES, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.04186318",
+			"LATDD": "47.29326938",
+			"site_no": "04019300",
+			"station_nm": "WEST SWAN RIVER NEAR SILICA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.83491434",
+			"LATDD": "47.2818798",
+			"site_no": "04019500",
+			"station_nm": "EAST SWAN RIVER NEAR TOIVOLA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.81019284",
+			"LATDD": "47.25049169",
+			"site_no": "04020000",
+			"station_nm": "SWAN RIVER NEAR TOIVOLA, MINN.",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.48824477",
+			"LATDD": "47.21021221",
+			"site_no": "04020800",
+			"station_nm": "PALEFACE RIVER NEAR COTTON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.74325055",
+			"LATDD": "47.03910687",
+			"site_no": "04021000",
+			"station_nm": "WHITEFACE RIVER BELOW MEADOWLANDS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.91214808",
+			"LATDD": "46.92133188",
+			"site_no": "04021250",
+			"station_nm": "EAST SAVANNA RIVER AT FLOODWOOD, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.60491499",
+			"LATDD": "46.86160931",
+			"site_no": "04021530",
+			"station_nm": "STONEY BROOK AT BROOKSTON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.86739864",
+			"LATDD": "47.25659312",
+			"site_no": "04021700",
+			"station_nm": "CLOQUET RIVER NEAR BRIMSON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.02462642",
+			"LATDD": "47.11576541",
+			"site_no": "04021960",
+			"station_nm": "CLOQUET RIVER NEAR ISLAND LAKE MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.33379998",
+			"LATDD": "46.9818828",
+			"site_no": "04022970",
+			"station_nm": "US-KAB-WAN-KA RIVER NEAR TWIG, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.46185699",
+			"LATDD": "46.95521762",
+			"site_no": "04023000",
+			"station_nm": "CLOQUET RIVER AT INDEPENDENCE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.50519033",
+			"LATDD": "46.89994113",
+			"site_no": "04023100",
+			"station_nm": "CLOQUET RIVER AT BURNETT, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.44963411",
+			"LATDD": "46.79772026",
+			"site_no": "04023400",
+			"station_nm": "PINE RIVER NEAR CLOQUET, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.41880179",
+			"LATDD": "46.70327651",
+			"site_no": "04024000",
+			"station_nm": "ST. LOUIS RIVER AT SCANLON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.38574694",
+			"LATDD": "46.68216514",
+			"site_no": "04024010",
+			"station_nm": "MIDWAY RIVER AT THOMSON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.46463792",
+			"LATDD": "46.52716628",
+			"site_no": "04024092",
+			"station_nm": "BLACKHOOF RIVER NEAR HOLYOKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.38963851",
+			"LATDD": "46.51772087",
+			"site_no": "04024095",
+			"station_nm": "NEMADJI RIVER NEAR HOLYOKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.38908284",
+			"LATDD": "46.52494308",
+			"site_no": "04024098",
+			"station_nm": "DEER CREEK NEAR HOLYOKE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.37019388",
+			"LATDD": "46.53605394",
+			"site_no": "04024100",
+			"station_nm": "ROCK CREEK NEAR BLACKHOOF, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.41019429",
+			"LATDD": "46.49383227",
+			"site_no": "04024200",
+			"station_nm": "SOUTH FORK NEMADJI RIVER NEAR HOLYOKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.63781718",
+			"LATDD": "46.88023711",
+			"site_no": "05029501",
+			"station_nm": "OTTER TAIL RIVER NEAR ROCHERT, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.69948667",
+			"LATDD": "46.83662566",
+			"site_no": "05030000",
+			"station_nm": "OTTER TAIL RIVER NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.66587693",
+			"LATDD": "46.67218148",
+			"site_no": "05030140",
+			"station_nm": "OTTER TAIL RIVER NORTHWEST OF LUCE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.54004026",
+			"LATDD": "46.6266265",
+			"site_no": "05030181",
+			"station_nm": "OTTER TAIL R AT LITTLE PINE LAKE OTL NR PERHAM, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.52448384",
+			"LATDD": "46.66523756",
+			"site_no": "05030255",
+			"station_nm": "TOAD RIVER NEAR PERHAM, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.51976162",
+			"LATDD": "46.65134873",
+			"site_no": "05030260",
+			"station_nm": "TOAD RIVER ABOVE BIG PINE LAKE, NEAR PERHAM, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.51809636",
+			"LATDD": "46.51329355",
+			"site_no": "05030300",
+			"station_nm": "OTTER TAIL RIVER NEAR RICHVILLE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.73365862",
+			"LATDD": "46.35940466",
+			"site_no": "05030401",
+			"station_nm": "OTTER TAIL R AT OTTER TAIL LK OUTLET NR AMOR, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.86615812",
+			"LATDD": "46.89134778",
+			"site_no": "05033800",
+			"station_nm": "CAMPBELL CREEK NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.84004627",
+			"LATDD": "46.87829219",
+			"site_no": "05033810",
+			"station_nm": "FLOYD LAKE OUTLET NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.80060216",
+			"LATDD": "46.7810698",
+			"site_no": "05033940",
+			"station_nm": "PELICAN RIVER TRIBUTARY NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.80671361",
+			"LATDD": "46.77356979",
+			"site_no": "05033960",
+			"station_nm": "SUCKER CREEK NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.89199401",
+			"LATDD": "46.78745865",
+			"site_no": "05036000",
+			"station_nm": "MONSON LAKE OUTLET NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.91060595",
+			"LATDD": "46.77329193",
+			"site_no": "05036900",
+			"station_nm": "FOX LAKE OUTLET NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.91588434",
+			"LATDD": "46.72384751",
+			"site_no": "05040000",
+			"station_nm": "PELICAN RIVER NEAR DETROIT LAKES, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.11978134",
+			"LATDD": "46.33607068",
+			"site_no": "05040500",
+			"station_nm": "PELICAN RIVER NEAR FERGUS FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.18506145",
+			"LATDD": "46.20968199",
+			"site_no": "05046000",
+			"station_nm": "OTTER TAIL RIVER BL ORWELL D NR FERGUS FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.30700963",
+			"LATDD": "46.21329304",
+			"site_no": "05046250",
+			"station_nm": "OTTER TAIL RIVER NEAR FOXHOME, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-96.04005607",
+			"LATDD": "45.90523797",
+			"site_no": "05046900",
+			"station_nm": "MUSTINKA RIVER NEAR ELBOW LAKE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.25895012",
+			"LATDD": "45.80357217",
+			"site_no": "05047490",
+			"station_nm": "FIVEMILE CREEK NEAR WHEATON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.35867502",
+			"LATDD": "45.89023826",
+			"site_no": "05047500",
+			"station_nm": "MUSTINKA R ABV TWELVEMILE CK NEAR CHARLESVILLE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.31617241",
+			"LATDD": "45.69246184",
+			"site_no": "05047850",
+			"station_nm": "TWELVEMILE CREEK NEAR DUMONT, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.37700796",
+			"LATDD": "45.77329443",
+			"site_no": "05047950",
+			"station_nm": "TWELVEMILE CREEK NEAR WHEATON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.3825636",
+			"LATDD": "45.7732944",
+			"site_no": "05047980",
+			"station_nm": "WEST BRANCH TWELVEMILE CREEK NEAR WHEATON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.36506405",
+			"LATDD": "45.88912714",
+			"site_no": "05048000",
+			"station_nm": "MUSTINKA RIVER BLW TWELVEMILE CK NEAR CHARLESVILLE",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.36284179",
+			"LATDD": "45.89023825",
+			"site_no": "05048500",
+			"station_nm": "MUSTINKA R, OLD CHANNEL, AT TWELVEMILE CK MOUTH,MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.49062185",
+			"LATDD": "45.82079402",
+			"site_no": "05049000",
+			"station_nm": "MUSTINKA RIVER ABOVE WHEATON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.57395808",
+			"LATDD": "45.86246018",
+			"site_no": "05050000",
+			"station_nm": "BOIS DE SIOUX RIVER NEAR WHITE ROCK, SD",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.38895517",
+			"LATDD": "46.08468195",
+			"site_no": "05050800",
+			"station_nm": "WILKIN COUNTY DITCH NEAR CAMPBELL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.38395483",
+			"LATDD": "46.06495976",
+			"site_no": "05050900",
+			"station_nm": "SOUTH FORK RABBIT RIVER NEAR CAMPBELL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.41145589",
+			"LATDD": "46.09440412",
+			"site_no": "05051000",
+			"station_nm": "RABBIT RIVER AT CAMPBELL, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.59868479",
+			"LATDD": "46.26607004",
+			"site_no": "05051500",
+			"station_nm": "RED RIVER OF THE NORTH AT WAHPETON, ND",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.65924218",
+			"LATDD": "46.41134897",
+			"site_no": "05051520",
+			"station_nm": "WHISKEY CREEK NEAR KENT, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.73730262",
+			"LATDD": "46.66635131",
+			"site_no": "05051525",
+			"station_nm": "WOLVERTON CREEK AT COMSTOCK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.7836924",
+			"LATDD": "46.86107501",
+			"site_no": "05054000",
+			"station_nm": "RED RIVER OF THE NORTH AT FARGO, ND",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.03588546",
+			"LATDD": "46.99190396",
+			"site_no": "05060820",
+			"station_nm": "BUFFALO RIVER NEAR OGEMA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.32950932",
+			"LATDD": "46.84995979",
+			"site_no": "05061000",
+			"station_nm": "BUFFALO RIVER NEAR HAWLEY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.51673754",
+			"LATDD": "46.55857156",
+			"site_no": "05061040",
+			"station_nm": "SOUTH BRANCH BUFFALO RIVER NEAR LAWNDALE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.48840325",
+			"LATDD": "46.57912698",
+			"site_no": "05061080",
+			"station_nm": "DEERHORN CREEK NEAR LAWNDALE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.58285163",
+			"LATDD": "46.65968337",
+			"site_no": "05061100",
+			"station_nm": "SOUTH BRANCH BUFFALO RIVER NR BARNESVILLE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.39867847",
+			"LATDD": "46.65968197",
+			"site_no": "05061200",
+			"station_nm": "WHISKEY CREEK AT BARNESVILLE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.61063076",
+			"LATDD": "46.6910726",
+			"site_no": "05061250",
+			"station_nm": "WHISKEY CREEK NEAR BAKER, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.60757541",
+			"LATDD": "46.74662834",
+			"site_no": "05061490",
+			"station_nm": "STONY CREEK NEAR SABIN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.62813179",
+			"LATDD": "46.77218416",
+			"site_no": "05061500",
+			"station_nm": "SOUTH BRANCH BUFFALO RIVER AT SABIN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.66146502",
+			"LATDD": "46.9610736",
+			"site_no": "05062000",
+			"station_nm": "BUFFALO RIVER NEAR DILWORTH, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.79757924",
+			"LATDD": "47.07857783",
+			"site_no": "05062100",
+			"station_nm": "BUFFALO RIVER NEAR MOUTH AT GEORGETOWN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.63669353",
+			"LATDD": "47.38718111",
+			"site_no": "05062335",
+			"station_nm": "WILD RICE RIVER NEAR ROY LAKE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.95226445",
+			"LATDD": "47.3110721",
+			"site_no": "05062440",
+			"station_nm": "WILD RICE RIVER AT MAHNOMEN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.05560259",
+			"LATDD": "47.32523951",
+			"site_no": "05062465",
+			"station_nm": "MARSH CREEK NEAR MAHNOMEN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.24478026",
+			"LATDD": "47.26662928",
+			"site_no": "05062500",
+			"station_nm": "WILD RICE RIVER AT TWIN VALLEY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.27672575",
+			"LATDD": "47.28468542",
+			"site_no": "05062650",
+			"station_nm": "MASHAUG CREEK AT HEIBERG, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.43617656",
+			"LATDD": "47.29135448",
+			"site_no": "05062900",
+			"station_nm": "WILD RICE RIVER ABOVE ADA, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.50034612",
+			"LATDD": "47.26385531",
+			"site_no": "05063000",
+			"station_nm": "WILD RICE RIVER NEAR ADA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.00560485",
+			"LATDD": "47.07912657",
+			"site_no": "05063220",
+			"station_nm": "SOUTH BRANCH WILD RICE RIVER NEAR OGEMA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.40728821",
+			"LATDD": "47.12301867",
+			"site_no": "05063400",
+			"station_nm": "SOUTH BRANCH WILD RICE RIVER NEAR FELTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.57812718",
+			"LATDD": "47.19441076",
+			"site_no": "05063500",
+			"station_nm": "SOUTH BRANCH WILD RICE RIVER NEAR BORUP, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.5000707",
+			"LATDD": "47.03329575",
+			"site_no": "05063800",
+			"station_nm": "STATE DITCH #45 NEAR FELTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-96.79757834",
+			"LATDD": "47.26802728",
+			"site_no": "05064000",
+			"station_nm": "WILD RICE RIVER AT HENDRUM, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.84369099",
+			"LATDD": "47.35191801",
+			"site_no": "05064500",
+			"station_nm": "RED RIVER OF THE NORTH AT HALSTAD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.76424407",
+			"LATDD": "47.41247148",
+			"site_no": "05067500",
+			"station_nm": "MARSH RIVER NEAR SHELLY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.25894275",
+			"LATDD": "47.54302073",
+			"site_no": "05067900",
+			"station_nm": "SAND HILL RIVER AT FERTILE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.53367752",
+			"LATDD": "47.54719068",
+			"site_no": "05068000",
+			"station_nm": "SAND HILL RIVER AT BELTRAMI, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.8147998",
+			"LATDD": "47.61191807",
+			"site_no": "05069000",
+			"station_nm": "SAND HILL RIVER AT CLIMAX, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.51273246",
+			"LATDD": "48.17524078",
+			"site_no": "05073530",
+			"station_nm": "TAMARACK RIVER AT WASKISH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.58496276",
+			"LATDD": "48.07718361",
+			"site_no": "05073560",
+			"station_nm": "SHOTLEY BROOK NEAR SHOTLEY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.53190708",
+			"LATDD": "47.93995843",
+			"site_no": "05073630",
+			"station_nm": "SOUTH BRANCH BATTLE RIVER NEAR KELLIHER, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.72136618",
+			"LATDD": "47.87662378",
+			"site_no": "05073770",
+			"station_nm": "BLACKDUCK RIVER AT QUIRING, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.54774224",
+			"LATDD": "47.90523549",
+			"site_no": "05073790",
+			"station_nm": "NORTH CORMORANT RIVER NEAR SHOOKS, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.22611488",
+			"LATDD": "47.84551199",
+			"site_no": "05073980",
+			"station_nm": "SANDY RIVER NEAR RED LAKE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.2766714",
+			"LATDD": "47.9574572",
+			"site_no": "05074500",
+			"station_nm": "RED LAKE RIVER NEAR RED LAKE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.80807422",
+			"LATDD": "48.04273934",
+			"site_no": "05075000",
+			"station_nm": "RED LAKE RIVER AT HIGH LANDING NR GOODRIDGE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.15809043",
+			"LATDD": "48.11719041",
+			"site_no": "05075300",
+			"station_nm": "RED LAKE RIVER ABV THIEF R. AT THIEF R. FALLS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.74333665",
+			"LATDD": "48.32524351",
+			"site_no": "05075700",
+			"station_nm": "MUD RIVER NEAR GRYGLA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.17003355",
+			"LATDD": "48.18552492",
+			"site_no": "05076000",
+			"station_nm": "THIEF RIVER NEAR THIEF RIVER FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.1808698",
+			"LATDD": "48.11107957",
+			"site_no": "05076500",
+			"station_nm": "RED LAKE RIVER AT THIEF RIVER FALLS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.20750391",
+			"LATDD": "47.73467793",
+			"site_no": "05077500",
+			"station_nm": "CLEARWATER RIVER NEAR LEONARD, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-95.41278802",
+			"LATDD": "47.74717846",
+			"site_no": "05077700",
+			"station_nm": "RUFFY BROOK NEAR GONVICK, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.04642263",
+			"LATDD": "47.92329743",
+			"site_no": "05078000",
+			"station_nm": "CLEARWATER RIVER AT PLUMMER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.85863689",
+			"LATDD": "47.84301627",
+			"site_no": "05078230",
+			"station_nm": "LOST RIVER AT OKLEE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.00031113",
+			"LATDD": "47.82274045",
+			"site_no": "05078340",
+			"station_nm": "HILL RIVER AT BROOKS, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.058333",
+			"LATDD": "47.803611",
+			"site_no": "05078380",
+			"station_nm": "POPLAR RIVER NEAR BROOKS, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.23171287",
+			"LATDD": "47.84663362",
+			"site_no": "05078490",
+			"station_nm": "BADGER CREEK NEAR RED LAKE FALLS, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.2739364",
+			"LATDD": "47.88746783",
+			"site_no": "05078500",
+			"station_nm": "CLEARWATER RIVER AT RED LAKE FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.6095101",
+			"LATDD": "47.77552716",
+			"site_no": "05079000",
+			"station_nm": "RED LAKE RIVER AT CROOKSTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.66173587",
+			"LATDD": "47.73136085",
+			"site_no": "05079900",
+			"station_nm": "BURNHAM CREEK AT GIRARD, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.8089627",
+			"LATDD": "47.80025192",
+			"site_no": "05080000",
+			"station_nm": "RED LAKE RIVER AT FISHER, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-97.0292435",
+			"LATDD": "47.9269234",
+			"site_no": "05082500",
+			"station_nm": "RED RIVER OF THE NORTH AT GRAND FORKS, ND",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-97.02062962",
+			"LATDD": "48.01914645",
+			"site_no": "05082610",
+			"station_nm": "GRAND MARAIS CREEK NEAR EAST GRAND FORKS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.77950694",
+			"LATDD": "48.19719776",
+			"site_no": "05085500",
+			"station_nm": "SNAKE RIVER AT WARREN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-97.06701362",
+			"LATDD": "48.35831603",
+			"site_no": "05086500",
+			"station_nm": "SNAKE RIVER ABOVE MIDDLE RIVER NR BIG WOODS, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-96.5650506",
+			"LATDD": "48.36691958",
+			"site_no": "05087000",
+			"station_nm": "MIDDLE RIVER NEAR STRANDQUIST, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.81811688",
+			"LATDD": "48.34108857",
+			"site_no": "05087500",
+			"station_nm": "MIDDLE RIVER AT ARGYLE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.62810729",
+			"LATDD": "48.42497595",
+			"site_no": "05090500",
+			"station_nm": "TAMARAC RIVER NEAR STRANDQUIST, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.88978454",
+			"LATDD": "48.44942385",
+			"site_no": "05091000",
+			"station_nm": "TAMARAC RIVER AT STEPHEN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.95589757",
+			"LATDD": "48.49164724",
+			"site_no": "05091500",
+			"station_nm": "TAMARAC RIVER NEAR STEPHEN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-97.1475697",
+			"LATDD": "48.57220641",
+			"site_no": "05092000",
+			"station_nm": "RED RIVER OF THE NORTH AT DRAYTON, ND",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.88699986",
+			"LATDD": "48.76553664",
+			"site_no": "05092500",
+			"station_nm": "MIDDLE BRANCH TWO RIVERS NEAR HALLOCK, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.38780751",
+			"LATDD": "48.64580985",
+			"site_no": "05093000",
+			"station_nm": "SOUTH BRANCH TWO RIVERS AT PELAN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.6675444",
+			"LATDD": "48.73247861",
+			"site_no": "05094000",
+			"station_nm": "SOUTH BRANCH TWO RIVERS AT LAKE BRONSON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.93144621",
+			"LATDD": "48.77498173",
+			"site_no": "05095000",
+			"station_nm": "TWO RIVERS AT HALLOCK, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-97.04061796",
+			"LATDD": "48.78053881",
+			"site_no": "05095500",
+			"station_nm": "TWO RIVERS BELOW HALLOCK, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.66726169",
+			"LATDD": "48.88914746",
+			"site_no": "05096000",
+			"station_nm": "NORTH BRANCH TWO RIVERS NEAR LANCASTER, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.66726237",
+			"LATDD": "48.86720269",
+			"site_no": "05096500",
+			"station_nm": "STATE DITCH #85 NEAR LANCASTER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-97.2114507",
+			"LATDD": "49.00832097",
+			"site_no": "05102500",
+			"station_nm": "RED RIVER OF THE NORTH AT EMERSON, MANITOBA",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.59664839",
+			"LATDD": "48.64164263",
+			"site_no": "05102900",
+			"station_nm": "ROSEAU RIVER NEAR SKIME, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.7016528",
+			"LATDD": "48.76247906",
+			"site_no": "05103000",
+			"station_nm": "ROSEAU RIVER NEAR MALUNG, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.73804406",
+			"LATDD": "48.78331271",
+			"site_no": "05104000",
+			"station_nm": "SOUTH FORK ROSEAU RIVER NEAR MALUNG, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.74471102",
+			"LATDD": "48.79164627",
+			"site_no": "05104500",
+			"station_nm": "ROSEAU RIVER BELOW SOUTH FORK NEAR MALUNG, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.76054325",
+			"LATDD": "48.86470441",
+			"site_no": "05105000",
+			"station_nm": "ROSEAU RIVER AT ROSEAU, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-95.59441958",
+			"LATDD": "48.86081776",
+			"site_no": "05105200",
+			"station_nm": "HAY CREEK NEAR SALOL, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.73081819",
+			"LATDD": "48.89109465",
+			"site_no": "05105300",
+			"station_nm": "ROSEAU RIVER BELOW ROSEAU, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.66219924",
+			"LATDD": "48.99248859",
+			"site_no": "05106000",
+			"station_nm": "SPRAGUE CREEK NEAR SPRAGUE, MANITOBA, CANADA",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.91804913",
+			"LATDD": "48.99304062",
+			"site_no": "05107000",
+			"station_nm": "PINE CREEK NEAR PINE CREEK, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.92194018",
+			"LATDD": "48.91026032",
+			"site_no": "05107500",
+			"station_nm": "ROSEAU RIVER AT ROSS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.02917071",
+			"LATDD": "48.80414569",
+			"site_no": "05109000",
+			"station_nm": "BADGER CREEK NEAR BADGER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.38252104",
+			"LATDD": "48.94803676",
+			"site_no": "05110500",
+			"station_nm": "ROSEAU RIVER AT HD OF ST DITCH 51, NR OAK PT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.40557717",
+			"LATDD": "48.97998172",
+			"site_no": "05111000",
+			"station_nm": "ROSEAU RIVER AT OAK POINT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.46308044",
+			"LATDD": "48.98164829",
+			"site_no": "05112000",
+			"station_nm": "ROSEAU RIVER BELOW STATE DITCH 51 NR CARIBOU, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.53512606",
+			"LATDD": "47.92267492",
+			"site_no": "05124480",
+			"station_nm": "KAWISHIWI RIVER NEAR ELY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.5056965",
+			"LATDD": "47.73990557",
+			"site_no": "05124497",
+			"station_nm": "LITTLE ISABELLA RIVER NEAR ISABELLA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.52096962",
+			"LATDD": "47.79990305",
+			"site_no": "05124500",
+			"station_nm": "ISABELLA RIVER NEAR ISABELLA, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-91.69541879",
+			"LATDD": "47.83990347",
+			"site_no": "05125000",
+			"station_nm": "SOUTH KAWISHIWI RIVER NEAR ELY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.63903888",
+			"LATDD": "47.68602127",
+			"site_no": "05125500",
+			"station_nm": "STONY RIVER NEAR ISABELLA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.86821205",
+			"LATDD": "47.69852609",
+			"site_no": "05126000",
+			"station_nm": "DUNKA RIVER NEAR BABBITT, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.83903597",
+			"LATDD": "47.83046311",
+			"site_no": "05126500",
+			"station_nm": "BEAR ISLAND RIVER NEAR ELY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.76402622",
+			"LATDD": "47.93462074",
+			"site_no": "05127000",
+			"station_nm": "KAWISHIWI RIVER NEAR WINTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.87319842",
+			"LATDD": "47.90657052",
+			"site_no": "05127219",
+			"station_nm": "SHAGAWA LAKE TRIBUTARY AT ELY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.86125228",
+			"LATDD": "47.92545784",
+			"site_no": "05127220",
+			"station_nm": "BURGO CREEK NEAR ELY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.6529015",
+			"LATDD": "48.08183819",
+			"site_no": "05127500",
+			"station_nm": "BASSWOOD RIVER NEAR WINTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.31517241",
+			"LATDD": "47.65992368",
+			"site_no": "05128500",
+			"station_nm": "PIKE RIVER NEAR EMBARRASS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.47599327",
+			"LATDD": "47.96130138",
+			"site_no": "05129000",
+			"station_nm": "VERMILION RIVER BLW VERMILION LK NEAR TOWER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.76127813",
+			"LATDD": "48.13574482",
+			"site_no": "05129105",
+			"station_nm": "PELICAN RIVER NEAR ORR, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.56599361",
+			"LATDD": "48.26462833",
+			"site_no": "05129115",
+			"station_nm": "VERMILION RIVER NR CRANE LAKE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.2070856",
+			"LATDD": "48.14268133",
+			"site_no": "05129150",
+			"station_nm": "LITTLE INDIAN SIOUX RIVER NEAR BUYCK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.91599212",
+			"LATDD": "48.33519139",
+			"site_no": "05129280",
+			"station_nm": "ASH RIVER NEAR RAY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.36543207",
+			"LATDD": "48.40965694",
+			"site_no": "05129380",
+			"station_nm": "RAT ROOT RIVER NEAR LITTLEFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.19959543",
+			"LATDD": "48.44214843",
+			"site_no": "05129390",
+			"station_nm": "EAST BRANCH RAT ROOT RIVER NEAR RAY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.69878533",
+			"LATDD": "47.85408472",
+			"site_no": "05129650",
+			"station_nm": "LITTLE FORK RIVER AT COOK, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.64490076",
+			"LATDD": "47.70825566",
+			"site_no": "05129690",
+			"station_nm": "RICE RIVER NEAR ANGORA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.67434231",
+			"LATDD": "47.80908604",
+			"site_no": "05129900",
+			"station_nm": "RICE RIVER NEAR COOK, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.90434274",
+			"LATDD": "47.86270001",
+			"site_no": "05129920",
+			"station_nm": "LITTLE FORK RIVER NEAR GHEEN, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.86629368",
+			"LATDD": "47.6038164",
+			"site_no": "05130300",
+			"station_nm": "BORIIN CREEK NEAR CHISHOLM, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.90018194",
+			"LATDD": "47.67353764",
+			"site_no": "05130500",
+			"station_nm": "STURGEON RIVER NEAR CHISHOLM, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.82101431",
+			"LATDD": "47.69075787",
+			"site_no": "05131000",
+			"station_nm": "DARK RIVER NEAR CHISHOLM, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.0512896",
+			"LATDD": "47.82214904",
+			"site_no": "05131310",
+			"station_nm": "BEAR RIVER NEAR TOGO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.03545433",
+			"LATDD": "47.86548116",
+			"site_no": "05131320",
+			"station_nm": "STURGEON RIVER NEAR TOGO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.18933922",
+			"LATDD": "47.95770582",
+			"site_no": "05131325",
+			"station_nm": "VALLEY RIVER NEAR RAUCH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.44460655",
+			"LATDD": "48.21660435",
+			"site_no": "05131470",
+			"station_nm": "NETT LAKE RIVER NEAR LITTLEFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.54932656",
+			"LATDD": "48.39577636",
+			"site_no": "05131500",
+			"station_nm": "LITTLE FORK RIVER AT LITTLEFORK, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.51599135",
+			"LATDD": "48.40327507",
+			"site_no": "05131510",
+			"station_nm": "BEAVER BROOK NEAR LITTLEFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.79604211",
+			"LATDD": "47.53661364",
+			"site_no": "05131600",
+			"station_nm": "BOWSTRING RIVER NEAR TALMOON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.05021578",
+			"LATDD": "47.73939574",
+			"site_no": "05131730",
+			"station_nm": "BIG FORK RIVER AT DORA LAKE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.77547941",
+			"LATDD": "47.74883434",
+			"site_no": "05131750",
+			"station_nm": "BIG FORK RIVER NEAR BIGFORK, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.65492039",
+			"LATDD": "47.67438714",
+			"site_no": "05131760",
+			"station_nm": "RICE RIVER NEAR BIGFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.65741887",
+			"LATDD": "47.72272027",
+			"site_no": "05131770",
+			"station_nm": "GALE BROOK NEAR BIGFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.75463437",
+			"LATDD": "47.95355734",
+			"site_no": "05131870",
+			"station_nm": "BIG FORK RIVER NEAR EFFIE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.76463539",
+			"LATDD": "47.94550202",
+			"site_no": "05131880",
+			"station_nm": "BOWERMAN BROOK AT CALDWELL ROAD NEAR EFFIE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.88186427",
+			"LATDD": "47.95411656",
+			"site_no": "05131900",
+			"station_nm": "CALDWELL BROOK AT CALDWELL ROAD NEAR EFFIE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.80712455",
+			"LATDD": "48.19578491",
+			"site_no": "05132000",
+			"station_nm": "BIG FORK RIVER AT BIG FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.93185343",
+			"LATDD": "48.21578744",
+			"site_no": "05132200",
+			"station_nm": "STURGEON RIVER NEAR BIG FALLS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.6893334",
+			"LATDD": "48.40355972",
+			"site_no": "05132400",
+			"station_nm": "BEAR RIVER NEAR LITTLEFORK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.8273951",
+			"LATDD": "48.4552304",
+			"site_no": "05132900",
+			"station_nm": "BLACK RIVER NEAR LOMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.83183783",
+			"LATDD": "48.52689743",
+			"site_no": "05133200",
+			"station_nm": "WEST FORK BLACK RIVER NEAR LOMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.91322807",
+			"LATDD": "48.63440095",
+			"site_no": "05133500",
+			"station_nm": "RAINY RIVER AT MANITOU RAPIDS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.64744359",
+			"LATDD": "48.5321937",
+			"site_no": "05134100",
+			"station_nm": "NORTH BRANCH RAPID RIVER NEAR BAUDETTE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.56271607",
+			"LATDD": "48.53608068",
+			"site_no": "05134200",
+			"station_nm": "RAPID RIVER NEAR BAUDETTE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.40936695",
+			"LATDD": "48.66663522",
+			"site_no": "05135000",
+			"station_nm": "EAST FORK RAPID RIVER NEAR CLEMENTSON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.62326784",
+			"LATDD": "48.65691767",
+			"site_no": "05136000",
+			"station_nm": "BAUDETTE RIVER NEAR BAUDETTE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.69743462",
+			"LATDD": "48.71414261",
+			"site_no": "05137000",
+			"station_nm": "WINTER ROAD RIVER NEAR BAUDETTE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.95911139",
+			"LATDD": "48.84387399",
+			"site_no": "05138000",
+			"station_nm": "LAKE OF THE WOODS CNTY DITCH #1 NR WILLIAMS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.35579465",
+			"LATDD": "48.86665309",
+			"site_no": "05139500",
+			"station_nm": "WARROAD RIVER NEAR WARROAD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.33912725",
+			"LATDD": "48.85831949",
+			"site_no": "05140000",
+			"station_nm": "BULLDOG RUN NEAR WARROAD, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.31134821",
+			"LATDD": "48.85831957",
+			"site_no": "05140500",
+			"station_nm": "EAST BRANCH WARROAD RIVER NEAR WARROAD, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.2108522",
+			"LATDD": "47.24301301",
+			"site_no": "05200010",
+			"station_nm": "MISSISSIPPI RIVER AT LAKE ITASCA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.90666814",
+			"LATDD": "47.45106367",
+			"site_no": "05200445",
+			"station_nm": "MISSISSIPPI RIVER AT BEMIDJI, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.91305876",
+			"LATDD": "47.41328644",
+			"site_no": "05200450",
+			"station_nm": "SCHOOLCRAFT RIVER NEAR BEMIDJI, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.59803186",
+			"LATDD": "47.54273065",
+			"site_no": "05200850",
+			"station_nm": "TURTLE RIVER NEAR PENNINGTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.56747409",
+			"LATDD": "47.54134182",
+			"site_no": "05200920",
+			"station_nm": "NORTH TURTLE RIVER NEAR PENNINGTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.20941921",
+			"LATDD": "46.98328878",
+			"site_no": "05204400",
+			"station_nm": "BOY RIVER AT LONGVILLE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.09857536",
+			"LATDD": "47.08078831",
+			"site_no": "05205200",
+			"station_nm": "BOY RIVER NEAR REMER, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.80022116",
+			"LATDD": "47.25272769",
+			"site_no": "05210000",
+			"station_nm": "MISSISSIPPI R. AT DAYS HIGH LANDING NR DEER RIVER",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.53021438",
+			"LATDD": "47.23216599",
+			"site_no": "05211000",
+			"station_nm": "MISSISSIPPI RIVER AT GRAND RAPIDS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.32075093",
+			"LATDD": "47.49354739",
+			"site_no": "05212200",
+			"station_nm": "PRAIRIE RIVER NEAR NASHWAUK, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.38075706",
+			"LATDD": "47.38882774",
+			"site_no": "05212700",
+			"station_nm": "PRAIRIE RIVER NEAR TACONITE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.49798837",
+			"LATDD": "47.28521985",
+			"site_no": "05213000",
+			"station_nm": "PRAIRIE RIVER NEAR GRAND RAPIDS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.13575102",
+			"LATDD": "47.3829909",
+			"site_no": "05216700",
+			"station_nm": "O'BRIEN CREEK NEAR NASHWAUK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.15742086",
+			"LATDD": "47.31549233",
+			"site_no": "05216800",
+			"station_nm": "O'BRIEN CREEK NEAR PENGILLY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.09519743",
+			"LATDD": "47.30493634",
+			"site_no": "05216830",
+			"station_nm": "HAY CREEK NEAR PENGILLY, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-93.23186826",
+			"LATDD": "47.28882685",
+			"site_no": "05216860",
+			"station_nm": "SWAN RIVER NEAR CALUMET, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.264099",
+			"LATDD": "47.11105214",
+			"site_no": "05217000",
+			"station_nm": "SWAN RIVER NEAR WARBA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.31967009",
+			"LATDD": "46.78883702",
+			"site_no": "05219000",
+			"station_nm": "SANDY RIVER AT SANDY LAKE DAM, AT LIBBY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.32883709",
+			"LATDD": "46.78967058",
+			"site_no": "05220500",
+			"station_nm": "MISSISSIPPI RIVER BELOW SANDY RIVER NR LIBBY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.4846798",
+			"LATDD": "46.70939726",
+			"site_no": "05220600",
+			"station_nm": "MISSISSIPPI RIVER AT PALISADE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.61412168",
+			"LATDD": "46.89995302",
+			"site_no": "05220670",
+			"station_nm": "WILLOW RIVER NEAR HILL CITY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.59301016",
+			"LATDD": "46.88856404",
+			"site_no": "05220673",
+			"station_nm": "MOOSE RIVER NEAR HILL CITY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.52773674",
+			"LATDD": "46.71828707",
+			"site_no": "05221000",
+			"station_nm": "WILLOW RIVER NEAR PALISADE, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-93.55607147",
+			"LATDD": "46.70995424",
+			"site_no": "05221020",
+			"station_nm": "WILLOW RIVER BELOW PALISADE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.61329946",
+			"LATDD": "46.5991219",
+			"site_no": "05222200",
+			"station_nm": "RICE RIVER AT HASSMAN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.70747149",
+			"LATDD": "46.52967952",
+			"site_no": "05227480",
+			"station_nm": "RIPPLE RIVER AT AITKIN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.70747118",
+			"LATDD": "46.54051284",
+			"site_no": "05227500",
+			"station_nm": "MISSISSIPPI RIVER AT AITKIN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.30415822",
+			"LATDD": "46.69357266",
+			"site_no": "05229500",
+			"station_nm": "PINE RIVER NEAR JENKINS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.98470131",
+			"LATDD": "46.62996175",
+			"site_no": "05235500",
+			"station_nm": "LITTLE PINE RIVER NEAR CROSS LAKE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.95998275",
+			"LATDD": "46.51524035",
+			"site_no": "05241500",
+			"station_nm": "RABBIT RIVER NEAR CROSBY, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-94.18332789",
+			"LATDD": "46.37774402",
+			"site_no": "05242300",
+			"station_nm": "MISSISSIPPI RIVER AT BRAINERD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.80751079",
+			"LATDD": "46.95079182",
+			"site_no": "05242502",
+			"station_nm": "CROW WING RIVER BELOW AKELEY, MINN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.91695964",
+			"LATDD": "46.98329195",
+			"site_no": "05242700",
+			"station_nm": "LITTLE SAND LAKE OUTLET NEAR DORSET, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.87501466",
+			"LATDD": "46.84662534",
+			"site_no": "05242960",
+			"station_nm": "CROW WING RIVER NEAR HUBBARD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.83834657",
+			"LATDD": "46.82968089",
+			"site_no": "05242985",
+			"station_nm": "BENDER CREEK NEAR HUNTERSVILLE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.87195919",
+			"LATDD": "46.82301425",
+			"site_no": "05242990",
+			"station_nm": "CROW WING RIVER NEAR HUNTERVILLE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.41419745",
+			"LATDD": "46.96996028",
+			"site_no": "05242998",
+			"station_nm": "FISH CREEK NEAR PONSFORD, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.41086444",
+			"LATDD": "46.94718243",
+			"site_no": "05243002",
+			"station_nm": "SHELL RIVER NEAR PONSFORD, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.19197034",
+			"LATDD": "46.86245971",
+			"site_no": "05243100",
+			"station_nm": "SHELL RIVER NEAR PARK RAPIDS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.10057976",
+			"LATDD": "46.75857019",
+			"site_no": "05243250",
+			"station_nm": "BLUEBERRY CREEK AT MENAHGA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.03418748",
+			"LATDD": "46.87829226",
+			"site_no": "05243712",
+			"station_nm": "FISHHOOK RIVER NEAR PARK RAPIDS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.25252699",
+			"LATDD": "46.92051579",
+			"site_no": "05243720",
+			"station_nm": "STRAIGHT RIVER AT OSAGE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.06585516",
+			"LATDD": "46.87495909",
+			"site_no": "05243725",
+			"station_nm": "STRAIGHT RIVER NEAR PARK RAPIDS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.02529846",
+			"LATDD": "46.8632922",
+			"site_no": "05243730",
+			"station_nm": "FISHHOOK RIVER NEAR HUBBARD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.0125205",
+			"LATDD": "46.84106991",
+			"site_no": "05243740",
+			"station_nm": "LONG LAKE OUTLET AT HUBBARD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.03168789",
+			"LATDD": "46.82968111",
+			"site_no": "05243750",
+			"station_nm": "SHELL RIVER NEAR HUBBARD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.01752118",
+			"LATDD": "46.78773659",
+			"site_no": "05243805",
+			"station_nm": "SHELL RIVER NEAR SEBEKA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.8894601",
+			"LATDD": "46.80718093",
+			"site_no": "05243830",
+			"station_nm": "SHELL RIVER NEAR NIMROD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.80779112",
+			"LATDD": "46.7102371",
+			"site_no": "05243891",
+			"station_nm": "BIG SWAMP CREEK NEAR MENAHGA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.85446033",
+			"LATDD": "46.66857092",
+			"site_no": "05243990",
+			"station_nm": "BIG SWAMP CREEK NEAR NIMROD, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.8791839",
+			"LATDD": "46.64023789",
+			"site_no": "05244000",
+			"station_nm": "CROW WING RIVER AT NIMROD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.07974633",
+			"LATDD": "46.67579296",
+			"site_no": "05244100",
+			"station_nm": "KITTEN CREEK NEAR SEBEKA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.93113039",
+			"LATDD": "46.63023788",
+			"site_no": "05244200",
+			"station_nm": "CAT RIVER NEAR NIMROD, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.8847398",
+			"LATDD": "46.62940467",
+			"site_no": "05244205",
+			"station_nm": "CAT RIVER AT NIMROD, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.79307197",
+			"LATDD": "46.50746217",
+			"site_no": "05244295",
+			"station_nm": "FARNHAM CREEK NEAR ALDRICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.44281608",
+			"LATDD": "46.38384978",
+			"site_no": "05244335",
+			"station_nm": "WILLOW CREEK NEAR HENNING, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.2705873",
+			"LATDD": "46.44912779",
+			"site_no": "05244340",
+			"station_nm": "LEAF RIVER NEAR BLUFFTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.21836368",
+			"LATDD": "46.39635046",
+			"site_no": "05244343",
+			"station_nm": "SOUTH BLUFF CREEK NEAR DEER CREEK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.20558506",
+			"LATDD": "46.46468338",
+			"site_no": "05244349",
+			"station_nm": "OAK CREEK NEAR WADENA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.17613967",
+			"LATDD": "46.46912784",
+			"site_no": "05244350",
+			"station_nm": "LEAF RIVER NEAR WADENA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.094444",
+			"LATDD": "46.470278",
+			"site_no": "05244355",
+			"station_nm": "UNION CREEK NEAR WADENA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.00974539",
+			"LATDD": "46.49107238",
+			"site_no": "05244360",
+			"station_nm": "LEAF RIVER NEAR VERNDALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.09336032",
+			"LATDD": "46.35440657",
+			"site_no": "05244370",
+			"station_nm": "WING RIVER NEAR HEWITT, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.06252575",
+			"LATDD": "46.39051748",
+			"site_no": "05244380",
+			"station_nm": "WING RIVER NEAR VERNDALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.03002462",
+			"LATDD": "46.40801742",
+			"site_no": "05244390",
+			"station_nm": "WING RIVER AT VERNDALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.00085673",
+			"LATDD": "46.44107278",
+			"site_no": "05244400",
+			"station_nm": "WING RIVER BELOW VERNDALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.9414113",
+			"LATDD": "46.37524018",
+			"site_no": "05244460",
+			"station_nm": "PARTRIDGE RIVER AT ALDRICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.84140796",
+			"LATDD": "46.41718475",
+			"site_no": "05244470",
+			"station_nm": "PARTRIDGE RIVER NEAR ALDRICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.76029474",
+			"LATDD": "46.40218517",
+			"site_no": "05244491",
+			"station_nm": "SWAN CREEK NEAR ALDRICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.73084982",
+			"LATDD": "46.36829676",
+			"site_no": "05244495",
+			"station_nm": "CROW WING RIVER NEAR STAPLES, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.64195818",
+			"LATDD": "46.34163146",
+			"site_no": "05244500",
+			"station_nm": "CROW WING RIVER AT MOTLEY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.6386247",
+			"LATDD": "46.34413149",
+			"site_no": "05244540",
+			"station_nm": "MOSQUITO CREEK AT MOTLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.22919991",
+			"LATDD": "46.00190768",
+			"site_no": "05244830",
+			"station_nm": "LONG PRAIRIE RIVER NEAR CARLOS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.22281053",
+			"LATDD": "46.048852",
+			"site_no": "05244900",
+			"station_nm": "SPRUCE CREEK NEAR MILTONA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.86585523",
+			"LATDD": "45.97496449",
+			"site_no": "05245100",
+			"station_nm": "LONG PRAIRIE RIVER AT LONG PRAIRIE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.81252041",
+			"LATDD": "46.2557969",
+			"site_no": "05245300",
+			"station_nm": "MORAN CREEK NEAR PHILBROOK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.64751422",
+			"LATDD": "46.31940926",
+			"site_no": "05245500",
+			"station_nm": "LONG PRAIRIE RIVER NEAR MOTLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.35361296",
+			"LATDD": "46.41107813",
+			"site_no": "05247000",
+			"station_nm": "GULL RIVER AT GULL LAKE DAM NEAR BRAINERD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.37750357",
+			"LATDD": "46.30496701",
+			"site_no": "05247500",
+			"station_nm": "CROW WING RIVER NEAR PILLAGER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.11249203",
+			"LATDD": "46.26246485",
+			"site_no": "05261351",
+			"station_nm": "NOKASIPPI RIVER NEAR BRAINERD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.12110347",
+			"LATDD": "46.2282983",
+			"site_no": "05261440",
+			"station_nm": "DAGGETT BROOK NEAR CROW WING, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.31777887",
+			"LATDD": "46.20052233",
+			"site_no": "05261520",
+			"station_nm": "NOKASIPPI RIVER BELOW FORT RIPLEY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.32777918",
+			"LATDD": "46.06274383",
+			"site_no": "05262500",
+			"station_nm": "FLETCHER CREEK AT CAMP RIPLEY JUNCTION, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.37750334",
+			"LATDD": "46.02024354",
+			"site_no": "05263000",
+			"station_nm": "ELK RIVER NEAR LITTLE FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.58278837",
+			"LATDD": "45.93413196",
+			"site_no": "05265500",
+			"station_nm": "SWAN RIVER NEAR FLENSBURG, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.40972596",
+			"LATDD": "45.93329885",
+			"site_no": "05265700",
+			"station_nm": "SWAN RIVER NEAR LITTLE FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.35861206",
+			"LATDD": "45.86107657",
+			"site_no": "05267000",
+			"station_nm": "MISSISSIPPI RIVER NEAR ROYALTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.4519486",
+			"LATDD": "45.84024316",
+			"site_no": "05267170",
+			"station_nm": "LITTLE TWO RIVER NEAR ELMDALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.36083404",
+			"LATDD": "45.83218764",
+			"site_no": "05267200",
+			"station_nm": "NORTH BRANCH TWO RIVERS NEAR BOWLUS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.36277843",
+			"LATDD": "45.82190984",
+			"site_no": "05267400",
+			"station_nm": "TWO RIVERS NEAR BOWLUS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.31527629",
+			"LATDD": "45.78440979",
+			"site_no": "05267580",
+			"station_nm": "SPUNK CREEK NEAR ROYALTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.10304629",
+			"LATDD": "46.09079824",
+			"site_no": "05267700",
+			"station_nm": "PLATTE RIVER NEAR HARDING, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.16693817",
+			"LATDD": "46.00607651",
+			"site_no": "05267810",
+			"station_nm": "BIG MINK CREEK NEAR PIERZ, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.18777253",
+			"LATDD": "45.98663218",
+			"site_no": "05267830",
+			"station_nm": "LITTLE MINK CREEK NEAR PIERZ, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.01943021",
+			"LATDD": "46.01718673",
+			"site_no": "05267880",
+			"station_nm": "SKUNK RIVER NEAR LASTRUP, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.07276622",
+			"LATDD": "45.97413171",
+			"site_no": "05267900",
+			"station_nm": "HILLMAN CREEK NEAR PIERZ, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.09471174",
+			"LATDD": "45.94496529",
+			"site_no": "05267920",
+			"station_nm": "SKUNK CREEK NEAR GENOLA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.17832718",
+			"LATDD": "45.93218776",
+			"site_no": "05267930",
+			"station_nm": "SKUNK RIVER NEAR BUCKMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.19971703",
+			"LATDD": "45.91163225",
+			"site_no": "05267950",
+			"station_nm": "BUCKMAN CREEK NEAR BUCKMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.23749718",
+			"LATDD": "45.95579903",
+			"site_no": "05267970",
+			"station_nm": "RICE CREEK NEAR LITTLE FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.25999793",
+			"LATDD": "45.92524344",
+			"site_no": "05267980",
+			"station_nm": "PLATTE RIVER NEAR LITTLE FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.29472063",
+			"LATDD": "45.84524325",
+			"site_no": "05268000",
+			"station_nm": "PLATTE RIVER AT ROYALTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.20082756",
+			"LATDD": "45.83052115",
+			"site_no": "05268500",
+			"station_nm": "LITTLE ROCK CREEK NEAR ROYALTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.2044383",
+			"LATDD": "45.76329892",
+			"site_no": "05268700",
+			"station_nm": "LITTLE ROCK CREEK AT RICE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.22749287",
+			"LATDD": "45.61913177",
+			"site_no": "05269800",
+			"station_nm": "WATAB RIVER NEAR SARTELL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.91335526",
+			"LATDD": "45.84635362",
+			"site_no": "05270110",
+			"station_nm": "SAUK RIVER NEAR LITTLE SAUK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.18086286",
+			"LATDD": "45.71940802",
+			"site_no": "05270130",
+			"station_nm": "ASHLEY CREEK AT WESTPORT, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.98141216",
+			"LATDD": "45.77940928",
+			"site_no": "05270150",
+			"station_nm": "ASHLEY CREEK NEAR SAUK CENTRE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.93835412",
+			"LATDD": "45.72274281",
+			"site_no": "05270180",
+			"station_nm": "SAUK RIVER AT SAUK CENTRE, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-94.84029441",
+			"LATDD": "45.68746507",
+			"site_no": "05270190",
+			"station_nm": "SAUK RIVER AT CO. RD. 65 NEAR MELROSE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.77056976",
+			"LATDD": "45.68329842",
+			"site_no": "05270210",
+			"station_nm": "ADLEY CREEK NEAR MELROSE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.76112326",
+			"LATDD": "45.62552049",
+			"site_no": "05270230",
+			"station_nm": "SAUK RIVER AT NEW MUNICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.76778937",
+			"LATDD": "45.59940932",
+			"site_no": "05270250",
+			"station_nm": "STEARNS COUNTY DITCH #44 NEAR NEW MUNICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.76556639",
+			"LATDD": "45.57663148",
+			"site_no": "05270280",
+			"station_nm": "GRETCHELL CREEK NEAR NEW MUNICH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.80056465",
+			"LATDD": "45.46802016",
+			"site_no": "05270304",
+			"station_nm": "SAUK RIVER TRIBUTARY AT HWY. 4 NEAR LAKE HENRY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.62917038",
+			"LATDD": "45.49885315",
+			"site_no": "05270350",
+			"station_nm": "SAUK RIVER NEAR FARMING, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.42277362",
+			"LATDD": "45.45607516",
+			"site_no": "05270440",
+			"station_nm": "SAUK RIVER AT COLD SPRINGS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.33943829",
+			"LATDD": "45.4721866",
+			"site_no": "05270455",
+			"station_nm": "MILL CREEK AT ROCKVILLE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.23360334",
+			"LATDD": "45.55968715",
+			"site_no": "05270500",
+			"station_nm": "SAUK RIVER NEAR ST. CLOUD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.16860117",
+			"LATDD": "45.58663198",
+			"site_no": "05270600",
+			"station_nm": "MISSISSIPPI RIVER AT SAUK RAPIDS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.14582203",
+			"LATDD": "45.54718751",
+			"site_no": "05270700",
+			"station_nm": "MISSISSIPPI RIVER AT ST. CLOUD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.15554329",
+			"LATDD": "45.46357617",
+			"site_no": "05272300",
+			"station_nm": "JOHNSON CREEK NEAR ST. AUGUSTA, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.07998438",
+			"LATDD": "45.42635422",
+			"site_no": "05272600",
+			"station_nm": "PLUM CREEK NEAR CLEARWATER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.26082071",
+			"LATDD": "45.29829774",
+			"site_no": "05273000",
+			"station_nm": "CLEARWATER RIVER NEAR KIMBALL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.16609686",
+			"LATDD": "45.35274267",
+			"site_no": "05273100",
+			"station_nm": "THREEMILE CREEK NEAR FAIRHAVEN, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.06165015",
+			"LATDD": "45.4110765",
+			"site_no": "05273498",
+			"station_nm": "CLEARWATER RIVER ABOVE CLEARWATER, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-93.94220058",
+			"LATDD": "45.37691",
+			"site_no": "05273600",
+			"station_nm": "SILVER CREEK NEAR HASTY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.04331844",
+			"LATDD": "45.58718814",
+			"site_no": "05273990",
+			"station_nm": "MAYHEW CREEK NEAR ST. CLOUD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.04026276",
+			"LATDD": "45.58691038",
+			"site_no": "05274000",
+			"station_nm": "ELK RIVER NEAR ST. CLOUD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.97470386",
+			"LATDD": "45.49913249",
+			"site_no": "05274300",
+			"station_nm": "RICE CREEK NEAR CLEAR LAKE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.90219964",
+			"LATDD": "45.43635472",
+			"site_no": "05274380",
+			"station_nm": "ELK RIVER NEAR BECKER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.7746934",
+			"LATDD": "45.3882988",
+			"site_no": "05274480",
+			"station_nm": "SNAKE RIVER NEAR BIG LAKE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.81414064",
+			"LATDD": "45.54163352",
+			"site_no": "05274700",
+			"station_nm": "ST. FRANCIS RIVER AT SANTIAGO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.63246453",
+			"LATDD": "45.47746577",
+			"site_no": "05274800",
+			"station_nm": "BATTLE BROOK NEAR ZIMMERMAN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.73413591",
+			"LATDD": "45.38524316",
+			"site_no": "05274900",
+			"station_nm": "ST. FRANCIS RIVER NEAR BIG LAKE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.66690984",
+			"LATDD": "45.33385373",
+			"site_no": "05275000",
+			"station_nm": "ELK RIVER NEAR BIG LAKE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.92723641",
+			"LATDD": "45.48496502",
+			"site_no": "05275970",
+			"station_nm": "NORTH FORK CROW RIVER NEAR GEORGEVILLE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.79472906",
+			"LATDD": "45.37913093",
+			"site_no": "05276000",
+			"station_nm": "NORTH FORK CROW RIVER NEAR REGAL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.71167059",
+			"LATDD": "45.38579738",
+			"site_no": "05276200",
+			"station_nm": "NORTH FORK CROW RIVER AT PAYNESVILLE, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-94.60749652",
+			"LATDD": "45.23968547",
+			"site_no": "05277050",
+			"station_nm": "GROVE CREEK NEAR MANANNAH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.80306003",
+			"LATDD": "45.26246386",
+			"site_no": "05278000",
+			"station_nm": "MIDDLE FORK CROW RIVER NEAR SPICER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.64555372",
+			"LATDD": "45.25024116",
+			"site_no": "05278040",
+			"station_nm": "MIDDLE FORK CROW RIVER NEAR MANANNAH, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.52832534",
+			"LATDD": "45.13718481",
+			"site_no": "05278080",
+			"station_nm": "JEWITTS CREEK AT U.S. HWY. 12 IN LITCHFIELD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.46693547",
+			"LATDD": "45.20718525",
+			"site_no": "05278100",
+			"station_nm": "NORTH FORK CROW RIVER AT FOREST CITY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.38804431",
+			"LATDD": "45.20357452",
+			"site_no": "05278120",
+			"station_nm": "NORTH FORK CROW RIVER NEAR KINGSTON, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.31220801",
+			"LATDD": "45.1630191",
+			"site_no": "05278150",
+			"station_nm": "WASHINGTON CREEK NEAR KINGSTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.17192568",
+			"LATDD": "45.15301958",
+			"site_no": "05278200",
+			"station_nm": "NORTH FORK CROW RIVER AT ST. HWY. 35 NEAR KNAPP,MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.17609056",
+			"LATDD": "45.07496333",
+			"site_no": "05278210",
+			"station_nm": "SUCKER CREEK AT U.S. HIGHWAY 12 IN COKATO, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.86885861",
+			"LATDD": "45.08940789",
+			"site_no": "05278340",
+			"station_nm": "NORTH FORK CROW RIVER NEAR DELANO, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.78857851",
+			"LATDD": "45.09551872",
+			"site_no": "05278400",
+			"station_nm": "NORTH FORK CROW RIVER NEAR ROCKFORD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.67527133",
+			"LATDD": "44.93551759",
+			"site_no": "05278500",
+			"station_nm": "SOUTH FORK CROW RIVER AT COSMOS, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.28803611",
+			"LATDD": "44.83635137",
+			"site_no": "05278590",
+			"station_nm": "SOUTH FORK CROW RIVER AT BISCAY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.54693197",
+			"LATDD": "44.76801746",
+			"site_no": "05278830",
+			"station_nm": "BUFFALO CREEK NEAR BUFFALO LAKE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.54887647",
+			"LATDD": "44.76801746",
+			"site_no": "05278835",
+			"station_nm": "RENVILLE CTY JUD. DITCH #15 NR BUFFALO LAKE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.3508149",
+			"LATDD": "44.73579571",
+			"site_no": "05278860",
+			"station_nm": "BUFFALO CREEK AT BROWNTON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.13191955",
+			"LATDD": "44.7649622",
+			"site_no": "05278900",
+			"station_nm": "BUFFALO CREEK AT GLENCOE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.09080709",
+			"LATDD": "44.76329543",
+			"site_no": "05278930",
+			"station_nm": "BUFFALO CREEK NEAR GLENCOE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.04024991",
+			"LATDD": "44.80079547",
+			"site_no": "05278950",
+			"station_nm": "BUFFALO CREEK NEAR PLATO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.88496754",
+			"LATDD": "44.90551812",
+			"site_no": "05279000",
+			"station_nm": "SOUTH FORK CROW RIVER NEAR MAYER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.78968865",
+			"LATDD": "45.04190735",
+			"site_no": "05279400",
+			"station_nm": "SOUTH FORK CROW RIVER AT DELANO, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.77635526",
+			"LATDD": "45.05940739",
+			"site_no": "05279500",
+			"station_nm": "SOUTH FORK CROW RIVER BELOW DELANO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.73413207",
+			"LATDD": "45.08662971",
+			"site_no": "05280000",
+			"station_nm": "CROW RIVER AT ROCKFORD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.76691738",
+			"LATDD": "46.15995953",
+			"site_no": "05284001",
+			"station_nm": "RUM RIVER AT VINELAND, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.6621896",
+			"LATDD": "46.06107064",
+			"site_no": "05284500",
+			"station_nm": "RUM RIVER AT ONAMIA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.65829728",
+			"LATDD": "45.77885421",
+			"site_no": "05284660",
+			"station_nm": "RUM RIVER NEAR MILACA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.57996095",
+			"LATDD": "45.57329833",
+			"site_no": "05284710",
+			"station_nm": "WEST BRANCH RUM RIVER AT PRINCETON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.43939956",
+			"LATDD": "45.52913085",
+			"site_no": "05284750",
+			"station_nm": "RUM RIVER AT SPENCER BROOK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.38911979",
+			"LATDD": "45.56357477",
+			"site_no": "05284810",
+			"station_nm": "GREEN LAKE BROOK AT WEST POINT, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.30189405",
+			"LATDD": "45.61607407",
+			"site_no": "05284950",
+			"station_nm": "STANCHFIELD CREEK AT SPRINGVALE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.22966904",
+			"LATDD": "45.6305181",
+			"site_no": "05284970",
+			"station_nm": "LOWER STANCHFIELD CREEK NEAR GRANDY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.22494728",
+			"LATDD": "45.5927406",
+			"site_no": "05284985",
+			"station_nm": "BEKINS CREEK NEAR CAMBRIDGE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.23355911",
+			"LATDD": "45.57218528",
+			"site_no": "05285000",
+			"station_nm": "RUM RIVER AT CAMBRIDGE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.26578369",
+			"LATDD": "45.49301936",
+			"site_no": "05285250",
+			"station_nm": "RUM RIVER AT CO. RD. 5 NEAR ISANTI, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.32078544",
+			"LATDD": "45.44190871",
+			"site_no": "05285300",
+			"station_nm": "LONG LAKE OUTLET NEAR ISANTI, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.37245368",
+			"LATDD": "45.36607585",
+			"site_no": "05285800",
+			"station_nm": "SEELYE BROOK NEAR ST. FRANCIS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.37245373",
+			"LATDD": "45.32774267",
+			"site_no": "05286000",
+			"station_nm": "RUM RIVER NEAR ST. FRANCIS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.2552285",
+			"LATDD": "45.31996473",
+			"site_no": "05286295",
+			"station_nm": "CROOKED BROOK NEAR CEDAR, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.36662029",
+			"LATDD": "45.29913166",
+			"site_no": "05286300",
+			"station_nm": "CEDAR CREEK NEAR ANOKA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.3885653",
+			"LATDD": "45.29163172",
+			"site_no": "05286500",
+			"station_nm": "RUM RIVER NEAR ANOKA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.41912163",
+			"LATDD": "45.28774288",
+			"site_no": "05286800",
+			"station_nm": "TROTT BROOK ON STATE HWY 47 IN RAMSEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.4366212",
+			"LATDD": "45.1632981",
+			"site_no": "05287890",
+			"station_nm": "ELM CREEK NR CHAMPLIN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.40189831",
+			"LATDD": "45.1844094",
+			"site_no": "05287900",
+			"station_nm": "ELM CREEK AT CHAMPLIN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.29689509",
+			"LATDD": "45.15135405",
+			"site_no": "05288490",
+			"station_nm": "COON CREEK AT COON RAPIDS BLVD. IN COON RAPIDS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.29689475",
+			"LATDD": "45.12663183",
+			"site_no": "05288500",
+			"station_nm": "MISSISSIPPI RIVER NEAR ANOKA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.19411316",
+			"LATDD": "45.09357676",
+			"site_no": "05288580",
+			"station_nm": "RICE CREEK AT OLD HWY. 8 IN MOUNDS VIEW, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.24467052",
+			"LATDD": "45.09357656",
+			"site_no": "05288598",
+			"station_nm": "RICE CREEK AT CENTRAL AVE. IN FRIDLEY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.26328218",
+			"LATDD": "45.09163202",
+			"site_no": "05288600",
+			"station_nm": "RICE CREEK AT UNIVERSITY AVE. IN FRIDLEY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.31550575",
+			"LATDD": "45.07913172",
+			"site_no": "05288700",
+			"station_nm": "SHINGLE CREEK AT BROOKLYN CENTER, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.31022743",
+			"LATDD": "45.04996508",
+			"site_no": "05288705",
+			"station_nm": "SHINGLE CREEK AT QUEEN AVE IN MINNEAPOLIS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.3549504",
+			"LATDD": "44.99940909",
+			"site_no": "05288800",
+			"station_nm": "BASSETT CK AT DULUTH ST. IN GOLDEN VALLEY, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.31355993",
+			"LATDD": "44.97913163",
+			"site_no": "05288900",
+			"station_nm": "BASSETT CREEK AT FRUEN MILL, IN MINNEAPOLIS, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-96.87201985",
+			"LATDD": "45.60134958",
+			"site_no": "05290000",
+			"station_nm": "LITTLE MINNESOTA RIVER NEAR PEEVER, SD",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.48755697",
+			"LATDD": "45.29163162",
+			"site_no": "05291000",
+			"station_nm": "WHETSTONE RIVER NEAR BIG STONE CITY, SD",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.44422314",
+			"LATDD": "45.29552046",
+			"site_no": "05292000",
+			"station_nm": "MINNESOTA RIVER AT ORTONVILLE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.34366579",
+			"LATDD": "45.26913164",
+			"site_no": "05292400",
+			"station_nm": "STONY RUN AT ODESSA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.33922105",
+			"LATDD": "45.25607615",
+			"site_no": "05292500",
+			"station_nm": "MINNESOTA RIVER NEAR ODESSA, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-96.35421948",
+			"LATDD": "45.17524248",
+			"site_no": "05292900",
+			"station_nm": "SOUTH FORK YELLOW BANK RIVER NEAR BELLINGHAM, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.35366506",
+			"LATDD": "45.22690941",
+			"site_no": "05293000",
+			"station_nm": "YELLOW BANK RIVER NEAR ODESSA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.23949533",
+			"LATDD": "45.18913112",
+			"site_no": "05293003",
+			"station_nm": "LAC QUI PARLE COUNTY DITCH #13 NR BELLINGHAM, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-96.11588216",
+			"LATDD": "45.22246297",
+			"site_no": "05293006",
+			"station_nm": "FIVEMILE CREEK NEAR CORRELL, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.89394054",
+			"LATDD": "45.9849602",
+			"site_no": "05293370",
+			"station_nm": "POMME DE TERRE RIVER NEAR ELBOW LAKE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.88560712",
+			"LATDD": "45.96301573",
+			"site_no": "05293371",
+			"station_nm": "POMME DE TERRE (SITE 210) NEAR ELBOW LAKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.91255109",
+			"LATDD": "45.54051688",
+			"site_no": "05293600",
+			"station_nm": "MUD CREEK NEAR MORRIS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.02254547",
+			"LATDD": "45.2027393",
+			"site_no": "05294000",
+			"station_nm": "POMME DE TERRE RIVER AT APPLETON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-96.00087253",
+			"LATDD": "45.09384926",
+			"site_no": "05294500",
+			"station_nm": "EMILY CREEK NEAR LOUISBURG, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.15142891",
+			"LATDD": "44.7902399",
+			"site_no": "05298500",
+			"station_nm": "LAC QUI PARLE RIVER NEAR CANBY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.19559761",
+			"LATDD": "44.82107378",
+			"site_no": "05299600",
+			"station_nm": "LAZARUS CREEK NEAR CANBY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.05225833",
+			"LATDD": "44.88523842",
+			"site_no": "05299650",
+			"station_nm": "LAC QUI PARLE RIVER NEAR PROVIDENCE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.4197725",
+			"LATDD": "44.73607444",
+			"site_no": "05299750",
+			"station_nm": "FLORIDA CREEK NEAR BURR, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.05281407",
+			"LATDD": "44.92912722",
+			"site_no": "05299800",
+			"station_nm": "WEST BRANCH LAC QUI PARLE RIVER AT DAWSON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.91947637",
+			"LATDD": "44.99495869",
+			"site_no": "05300000",
+			"station_nm": "LAC QUI PARLE RIVER NEAR LAC QUI PARLE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.86836484",
+			"LATDD": "45.02134721",
+			"site_no": "05301000",
+			"station_nm": "MINNESOTA RIVER NEAR LAC QUI PARLE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.7606039",
+			"LATDD": "45.93357129",
+			"site_no": "05301802",
+			"station_nm": "CHIPPEWA RIVER NEAR EVANSVILLE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.73810277",
+			"LATDD": "45.63162682",
+			"site_no": "05301950",
+			"station_nm": "CHIPPEWA RIVER NEAR CYRUS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.62032099",
+			"LATDD": "45.61440491",
+			"site_no": "05302500",
+			"station_nm": "LITTLE CHIPPEWA RIVER NR STARBUCK MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.67587802",
+			"LATDD": "45.59607161",
+			"site_no": "05302700",
+			"station_nm": "LITTLE CHIPPEWA RIVER NEAR CYRUS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.69615521",
+			"LATDD": "45.51551659",
+			"site_no": "05302980",
+			"station_nm": "LAKE EMILY OUTLET NEAR HANCOCK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.41447456",
+			"LATDD": "45.37635007",
+			"site_no": "05303350",
+			"station_nm": "EAST BRANCH CHIPPEWA RIVER NEAR SWIFT FALLS, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.37641731",
+			"LATDD": "45.36496139",
+			"site_no": "05303400",
+			"station_nm": "MUD CREEK NEAR SWIFT FALLS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.59392458",
+			"LATDD": "45.34801607",
+			"site_no": "05303470",
+			"station_nm": "EAST BRANCH CHIPPEWA RIVER NEAR BENSON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.62531349",
+			"LATDD": "45.3110715",
+			"site_no": "05303500",
+			"station_nm": "CHIPPEWA RIVER AT BENSON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.63642174",
+			"LATDD": "45.21384863",
+			"site_no": "05304000",
+			"station_nm": "SHAKOPEE CREEK NEAR BENSON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.79892242",
+			"LATDD": "45.10829203",
+			"site_no": "05304500",
+			"station_nm": "CHIPPEWA RIVER NEAR MILAN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.76697429",
+			"LATDD": "45.04995759",
+			"site_no": "05304800",
+			"station_nm": "DRY WEATHER CREEK NEAR MONTEVIDEO, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.71613722",
+			"LATDD": "44.97801247",
+			"site_no": "05305200",
+			"station_nm": "SPRING CREEK NEAR MONTEVIDEO, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.73085962",
+			"LATDD": "44.94801249",
+			"site_no": "05305400",
+			"station_nm": "CHIPPEWA RIVER AT MONTEVIDEO, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.73363738",
+			"LATDD": "44.9332903",
+			"site_no": "05311000",
+			"station_nm": "MINNESOTA RIVER AT MONTEVIDEO, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.99197604",
+			"LATDD": "44.62357207",
+			"site_no": "05311350",
+			"station_nm": "YELLOW MEDICINE RIVER NEAR MINNEOTA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.9975311",
+			"LATDD": "44.56385031",
+			"site_no": "05311400",
+			"station_nm": "SOUTH BRANCH YELLOW MEDICINE R AT MINNEOTA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.81002555",
+			"LATDD": "44.64579183",
+			"site_no": "05311500",
+			"station_nm": "YELLOW MEDICINE RIVER NEAR COTTONWOOD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.51890605",
+			"LATDD": "44.72162392",
+			"site_no": "05313500",
+			"station_nm": "YELLOW MEDICINE RIVER NEAR GRANITE FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.36140484",
+			"LATDD": "44.97801496",
+			"site_no": "05313670",
+			"station_nm": "HAWK CREEK NEAR CLARA CITY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.4419614",
+			"LATDD": "44.8749582",
+			"site_no": "05313760",
+			"station_nm": "UN-NAMED TRIBUTARY TO HAWK CREEK NEAR MAYNARD, MN",
+			"pt_symbol": "symbol8"
+		},
+		{
+			"LONGDD": "-95.4833518",
+			"LATDD": "44.86968",
+			"site_no": "05313780",
+			"station_nm": "HAWK CREEK NEAR MAYNARD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.54334942",
+			"LATDD": "44.64551261",
+			"site_no": "05314580",
+			"station_nm": "WOOD LAKE CREEK (J.D. 10) NEAR WOOD LAKE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.34112234",
+			"LATDD": "44.78468089",
+			"site_no": "05314590",
+			"station_nm": "COUNTY DITCH 104 AT SACRED HEART, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.3197298",
+			"LATDD": "44.66718055",
+			"site_no": "05314600",
+			"station_nm": "BOILING SPRING CREEK NEAR BELVIEW, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.27917175",
+			"LATDD": "44.63384739",
+			"site_no": "05314650",
+			"station_nm": "ECHO CREEK NEAR BELVIEW, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.24556018",
+			"LATDD": "44.67051445",
+			"site_no": "05314700",
+			"station_nm": "SACRED HEART CREEK NEAR DELHI, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.18639099",
+			"LATDD": "44.6355148",
+			"site_no": "05314725",
+			"station_nm": "TIMMS CREEK NEAR DELHI, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.97391453",
+			"LATDD": "44.29774143",
+			"site_no": "05314950",
+			"station_nm": "REDWOOD RIVER NEAR RUSSELL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.97863742",
+			"LATDD": "44.32274125",
+			"site_no": "05314970",
+			"station_nm": "COON CREEK NEAR RUSSELL, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.84557829",
+			"LATDD": "44.4302378",
+			"site_no": "05315000",
+			"station_nm": "REDWOOD RIVER NEAR MARSHALL, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.83696874",
+			"LATDD": "44.52495927",
+			"site_no": "05315300",
+			"station_nm": "THREEMILE CREEK NEAR GHENT, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.75168789",
+			"LATDD": "44.53912464",
+			"site_no": "05315400",
+			"station_nm": "THREEMILE CREEK AT GREEN VALLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.32305886",
+			"LATDD": "44.47995756",
+			"site_no": "05316300",
+			"station_nm": "CLEAR CREEK AT SEAFORTH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.17249918",
+			"LATDD": "44.52357012",
+			"site_no": "05316500",
+			"station_nm": "REDWOOD RIVER NEAR REDWOOD FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-95.17749996",
+			"LATDD": "44.55218127",
+			"site_no": "05316538",
+			"station_nm": "RAMSEY CREEK NEAR REDWOOD FALLS, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.04582994",
+			"LATDD": "44.56329355",
+			"site_no": "05316570",
+			"station_nm": "BEAVER CREEK NR BEAVER FALLS, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.99610603",
+			"LATDD": "44.54607172",
+			"site_no": "05316580",
+			"station_nm": "MINNESOTA RIVER AT MORTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.90665844",
+			"LATDD": "44.4957945",
+			"site_no": "05316630",
+			"station_nm": "WABASHA CREEK NEAR MORTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-94.72304169",
+			"LATDD": "44.44690651",
+			"site_no": "05316680",
+			"station_nm": "RIDGELY CR AT FT RIDGELY ST MEM P N ST.GEORGE MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.62109247",
+			"LATDD": "44.39468429",
+			"site_no": "05316740",
+			"station_nm": "LITTLE ROCK CREEK NEAR FAIRFAX, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.45275109",
+			"LATDD": "44.32468503",
+			"site_no": "05316770",
+			"station_nm": "MINNESOTA RIVER AT NEW ULM, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.61417854",
+			"LATDD": "44.34467948",
+			"site_no": "05316840",
+			"station_nm": "COTTONWOOD RIVER NEAR TRACY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.61417874",
+			"LATDD": "44.3544017",
+			"site_no": "05316855",
+			"station_nm": "MEADOW CREEK NEAR TRACY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.47250584",
+			"LATDD": "44.30023373",
+			"site_no": "05316863",
+			"station_nm": "LONE TREE CREEK NEAR WALNUT GROVE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.42778141",
+			"LATDD": "44.2691227",
+			"site_no": "05316870",
+			"station_nm": "PLUM CREEK NEAR WALNUT GROVE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-95.33249985",
+			"LATDD": "44.24634522",
+			"site_no": "05316879",
+			"station_nm": "PELL CREEK NEAR LAMBERTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.3113881",
+			"LATDD": "44.25467861",
+			"site_no": "05316880",
+			"station_nm": "COTTONWOOD RIVER NEAR LAMBERTON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.27027506",
+			"LATDD": "44.21606774",
+			"site_no": "05316890",
+			"station_nm": "DUTCH CHARLEY CREEK NEAR LAMBERTON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.24610749",
+			"LATDD": "44.20995667",
+			"site_no": "05316895",
+			"station_nm": "HIGHWATER CREEK NEAR LAMBERTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.13777125",
+			"LATDD": "44.19523534",
+			"site_no": "05316910",
+			"station_nm": "DRY CREEK AT SANBORN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.05971372",
+			"LATDD": "44.19440262",
+			"site_no": "05316940",
+			"station_nm": "MOUND CREEK NEAR SPRINGFIELD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.0483246",
+			"LATDD": "44.20329165",
+			"site_no": "05316950",
+			"station_nm": "COTTONWOOD RIVER NEAR SPRINGFIELD, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.03221322",
+			"LATDD": "44.22440302",
+			"site_no": "05316960",
+			"station_nm": "COAL MINE CREEK NEAR SPRINGFIELD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.80637358",
+			"LATDD": "44.22745991",
+			"site_no": "05316970",
+			"station_nm": "COTTONWOOD RIVER AT LEAVENWORTH, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.8266523",
+			"LATDD": "44.26134903",
+			"site_no": "05316990",
+			"station_nm": "SLEEPY EYE CREEK NEAR COBDEN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.44024954",
+			"LATDD": "44.29135177",
+			"site_no": "05317000",
+			"station_nm": "COTTONWOOD RIVER NEAR NEW ULM, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.33885582",
+			"LATDD": "44.24635343",
+			"site_no": "05317200",
+			"station_nm": "LITTLE COTTONWOOD RIVER NEAR COURTLAND, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.3269109",
+			"LATDD": "44.24218692",
+			"site_no": "05317300",
+			"station_nm": "MORGAN CREEK AT CAMBRIA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.19357255",
+			"LATDD": "44.19996569",
+			"site_no": "05317500",
+			"station_nm": "MINNESOTA RIVER AT JUDSON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.08301301",
+			"LATDD": "44.15329907",
+			"site_no": "05317600",
+			"station_nm": "MINNEOPA CREEK NEAR MANKATO, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.11357171",
+			"LATDD": "43.54328879",
+			"site_no": "05317812",
+			"station_nm": "WEST BRANCH BLUE EARTH RIVER NEAR ELMORE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.10246011",
+			"LATDD": "43.57273311",
+			"site_no": "05317818",
+			"station_nm": "BLUE EARTH RIVER NEAR BLUE EARTH, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.0977376",
+			"LATDD": "43.61578847",
+			"site_no": "05317830",
+			"station_nm": "COON CREEK NEAR BLUE EARTH, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.13801677",
+			"LATDD": "43.64051059",
+			"site_no": "05317840",
+			"station_nm": "BADGER CREEK NEAR BLUE EARTH, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.79050385",
+			"LATDD": "43.6305099",
+			"site_no": "05318000",
+			"station_nm": "EAST BRANCH BLUE EARTH RIVER NEAR BRICELYN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.79522597",
+			"LATDD": "43.59773207",
+			"site_no": "05318040",
+			"station_nm": "BRUSH CREEK NEAR BRICELYN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.10301549",
+			"LATDD": "43.64939943",
+			"site_no": "05318120",
+			"station_nm": "EAST BRANCH BLUE EARTH RIVER AT BLUE EARTH, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.17746238",
+			"LATDD": "43.70912146",
+			"site_no": "05318140",
+			"station_nm": "SOUTH CREEK NEAR WINNEBAGO, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.51247424",
+			"LATDD": "43.62495549",
+			"site_no": "05318145",
+			"station_nm": "DUTCH CREEK NEAR FAIRMONT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.49191723",
+			"LATDD": "43.67967741",
+			"site_no": "05318160",
+			"station_nm": "LILY CREEK NEAR FAIRMONT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.46247194",
+			"LATDD": "43.67273297",
+			"site_no": "05318170",
+			"station_nm": "CENTER CREEK ON CO. RD. 143, AT FAIRMONT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.20746335",
+			"LATDD": "43.73051031",
+			"site_no": "05318180",
+			"station_nm": "CENTER CREEK NEAR HUNTLEY, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.8419275",
+			"LATDD": "43.75745583",
+			"site_no": "05318195",
+			"station_nm": "ELM CREEK AT CO. RD. 103 NEAR TRIMONT, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.65303179",
+			"LATDD": "43.75412176",
+			"site_no": "05318200",
+			"station_nm": "ELM CREEK NEAR TRIMONT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.65469846",
+			"LATDD": "43.76412187",
+			"site_no": "05318220",
+			"station_nm": "CEDAR CREEK NEAR TRIMONT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.20912999",
+			"LATDD": "43.75051026",
+			"site_no": "05318250",
+			"station_nm": "ELM CREEK NEAR WINNEBAGO, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.195",
+			"LATDD": "43.796444",
+			"site_no": "05318270",
+			"station_nm": "BLUE EARTH RIVER NEAR WINNEBAGO, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.23884948",
+			"LATDD": "43.92690433",
+			"site_no": "05318286",
+			"station_nm": "WILLOW CREEK NEAR VERNON CENTER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.1707916",
+			"LATDD": "43.95662806",
+			"site_no": "05318288",
+			"station_nm": "BLUE EARTH RIVER AT VERNON CENTER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.10023457",
+			"LATDD": "44.06829786",
+			"site_no": "05318290",
+			"station_nm": "BLUE EARTH RIVER NEAR GOOD THUNDER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.11999139",
+			"LATDD": "43.99856833",
+			"site_no": "05318300",
+			"station_nm": "WATONWAN RIVER NEAR DELFT, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.79914955",
+			"LATDD": "44.02690202",
+			"site_no": "05318400",
+			"station_nm": "WATONWAN RIVER NEAR DARFUR, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.83942896",
+			"LATDD": "44.07940257",
+			"site_no": "05318550",
+			"station_nm": "NORTH FORK WATONWAN RIVER NEAR DARFUR, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.58969466",
+			"LATDD": "44.06468115",
+			"site_no": "05318700",
+			"station_nm": "WATONWAN RIVER AT LA SALLE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.61247278",
+			"LATDD": "43.97884664",
+			"site_no": "05318720",
+			"station_nm": "ST. JAMES CREEK ABOVE WWTP AT ST. JAMES, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.55802586",
+			"LATDD": "44.05079225",
+			"site_no": "05318750",
+			"station_nm": "BUTTERFIELD CREEK NEAR LA SALLE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.55774807",
+			"LATDD": "44.05107003",
+			"site_no": "05318800",
+			"station_nm": "ST. JAMES CREEK NEAR LA SALLE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.69108861",
+			"LATDD": "43.88551194",
+			"site_no": "05318890",
+			"station_nm": "SOUTH FORK WATONWAN RIVER NR ODIN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-94.68608827",
+			"LATDD": "43.88412311",
+			"site_no": "05318897",
+			"station_nm": "SOUTH FORK WATONWAN RIVER NEAR ORMSBY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.46191012",
+			"LATDD": "44.04245966",
+			"site_no": "05319100",
+			"station_nm": "SOUTH FORK WATONWAN RIVER NEAR MADELIA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.42940886",
+			"LATDD": "43.9744035",
+			"site_no": "05319220",
+			"station_nm": "SPRING CREEK NEAR LEWISVILLE, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.28746077",
+			"LATDD": "43.97579409",
+			"site_no": "05319350",
+			"station_nm": "PERCH CREEK NEAR VERNON CENTER, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-94.1955144",
+			"LATDD": "44.04635215",
+			"site_no": "05319500",
+			"station_nm": "WATONWAN RIVER NEAR GARDEN CITY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.10940185",
+			"LATDD": "44.09552035",
+			"site_no": "05320000",
+			"station_nm": "BLUE EARTH RIVER NEAR RAPIDAN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.45605009",
+			"LATDD": "43.94523937",
+			"site_no": "05320020",
+			"station_nm": "LE SUEUR RIVER NEAR NEW RICHLAND, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.51466313",
+			"LATDD": "43.93523933",
+			"site_no": "05320040",
+			"station_nm": "BOOT CREEK NEAR NEW RICHLAND, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.50910807",
+			"LATDD": "44.00162979",
+			"site_no": "05320060",
+			"station_nm": "LITTLE LE SUEUR RIVER NEAR WILTON, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.52744215",
+			"LATDD": "44.01440794",
+			"site_no": "05320070",
+			"station_nm": "LE SUEUR RIVER AT WILTON, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.78356021",
+			"LATDD": "43.98885598",
+			"site_no": "05320265",
+			"station_nm": "BULL RUN CREEK NEAR PEMBERTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.90856282",
+			"LATDD": "43.99663254",
+			"site_no": "05320270",
+			"station_nm": "LITTLE COBB RIVER NEAR BEAUFORD, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.00023182",
+			"LATDD": "44.0471875",
+			"site_no": "05320330",
+			"station_nm": "COBB RIVER NEAR GOOD THUNDER, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-93.89439681",
+			"LATDD": "43.81134627",
+			"site_no": "05320360",
+			"station_nm": "MAPLE RIVER NEAR EASTON, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.06217854",
+			"LATDD": "43.89884909",
+			"site_no": "05320420",
+			"station_nm": "RICE CREEK NEAR STERLING, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.0257882",
+			"LATDD": "44.0649652",
+			"site_no": "05320480",
+			"station_nm": "MAPLE RIVER NEAR RAPIDAN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.04134466",
+			"LATDD": "44.11107667",
+			"site_no": "05320500",
+			"station_nm": "LE SUEUR RIVER NEAR RAPIDAN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.00439979",
+			"LATDD": "44.1694109",
+			"site_no": "05325000",
+			"station_nm": "MINNESOTA RIVER AT MANKATO, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.90273401",
+			"LATDD": "44.29052226",
+			"site_no": "05325250",
+			"station_nm": "DOG CREEK NEAR KASOTA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.95523494",
+			"LATDD": "44.28857786",
+			"site_no": "05325260",
+			"station_nm": "SHANASKA CREEK AT KASOTA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.95995818",
+			"LATDD": "44.30718874",
+			"site_no": "05325300",
+			"station_nm": "MINNESOTA RIVER AT CO. HWY. 22 IN ST. PETER, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.9202363",
+			"LATDD": "44.33246618",
+			"site_no": "05325420",
+			"station_nm": "PAULS CREEK NEAR ST. PETER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.8680157",
+			"LATDD": "44.39885424",
+			"site_no": "05326030",
+			"station_nm": "LE SUEUR CREEK NEAR OTTAWA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.89663124",
+			"LATDD": "44.47996432",
+			"site_no": "05326060",
+			"station_nm": "LE SUEUR CREEK AT LE SUEUR, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.25080483",
+			"LATDD": "44.41107669",
+			"site_no": "05326200",
+			"station_nm": "JUDICIAL DITCH 1A NEAR NEW SWEDEN, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.90524352",
+			"LATDD": "44.49913074",
+			"site_no": "05326400",
+			"station_nm": "RUSH RIVER NEAR HENDERSON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-94.05191545",
+			"LATDD": "44.56218591",
+			"site_no": "05326800",
+			"station_nm": "BUFFALO CREEK (COUNTY DITCH 59) NEAR NEW ROME, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.92191132",
+			"LATDD": "44.57190791",
+			"site_no": "05327000",
+			"station_nm": "HIGH ISLAND CREEK NEAR HENDERSON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.68329268",
+			"LATDD": "44.71218497",
+			"site_no": "05329900",
+			"station_nm": "BEVENS CREEK AT EAST UNION, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.64190209",
+			"LATDD": "44.69301845",
+			"site_no": "05330000",
+			"station_nm": "MINNESOTA RIVER NEAR JORDAN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.599444",
+			"LATDD": "44.5725",
+			"site_no": "05330550",
+			"station_nm": "EAST BRANCH RAVEN STREAM NR NEW PRAGUE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.65023617",
+			"LATDD": "44.75024042",
+			"site_no": "05330650",
+			"station_nm": "CARVER CREEK NEAR CARVER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.60551262",
+			"LATDD": "44.78857392",
+			"site_no": "05330700",
+			"station_nm": "CHASKA CREEK AT CHASKA, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.48050808",
+			"LATDD": "44.80635215",
+			"site_no": "05330750",
+			"station_nm": "RILEY CREEK AT MOUTH IN EDEN PRAIRIE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.42439525",
+			"LATDD": "44.83051926",
+			"site_no": "05330800",
+			"station_nm": "PURGATORY CREEK AT EDEN PRAIRIE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.34328067",
+			"LATDD": "44.77829751",
+			"site_no": "05330875",
+			"station_nm": "CREDIT RIVER AT 123 ST. IN SAVAGE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.30216853",
+			"LATDD": "44.81274234",
+			"site_no": "05330900",
+			"station_nm": "NINE MILE CREEK AT BLOOMINGTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.21911025",
+			"LATDD": "44.82940964",
+			"site_no": "05330915",
+			"station_nm": "BLACK DOG CREEK AT BURNSVILLE, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.19244321",
+			"LATDD": "44.8702432",
+			"site_no": "05330920",
+			"station_nm": "MINNESOTA RIVER AT FORT SNELLING STATE PARK, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-93.10605225",
+			"LATDD": "44.93385459",
+			"site_no": "05331000",
+			"station_nm": "MISSISSIPPI RIVER AT ST. PAUL, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.50019569",
+			"LATDD": "46.0988347",
+			"site_no": "05335110",
+			"station_nm": "LOWER TAMARACK RIVER NEAR DUXBURY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.47519546",
+			"LATDD": "46.09883436",
+			"site_no": "05335130",
+			"station_nm": "MCDERMOTT CREEK NEAR DUXBURY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.40936144",
+			"LATDD": "46.08827803",
+			"site_no": "05335150",
+			"station_nm": "HAY CREEK NEAR MARKVILLE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.39380568",
+			"LATDD": "46.08022235",
+			"site_no": "05335151",
+			"station_nm": "LOWER TAMARACK RIVER NEAR MARKVILLE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.52936246",
+			"LATDD": "46.01161405",
+			"site_no": "05335170",
+			"station_nm": "CROOKED CREEK NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.71408639",
+			"LATDD": "46.12855937",
+			"site_no": "05335800",
+			"station_nm": "SAND CREEK NEAR SANDSTONE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.6654758",
+			"LATDD": "45.98300531",
+			"site_no": "05335890",
+			"station_nm": "LITTLE SAND CREEK NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.66797669",
+			"LATDD": "45.95217245",
+			"site_no": "05335900",
+			"station_nm": "SAND CREEK NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.71242203",
+			"LATDD": "45.94578431",
+			"site_no": "05336005",
+			"station_nm": "BEAR CREEK NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.90909558",
+			"LATDD": "46.54383506",
+			"site_no": "05336150",
+			"station_nm": "WEST BRANCH KETTLE RIVER NEAR KETTLE RIVER, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.79686826",
+			"LATDD": "46.50494612",
+			"site_no": "05336195",
+			"station_nm": "GLAISBY BROOK AT CO. RD. 6 NEAR KETTLE RIVER , MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.85964813",
+			"LATDD": "46.45522377",
+			"site_no": "05336200",
+			"station_nm": "GLAISBY BROOK NEAR KETTLE RIVER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.90826086",
+			"LATDD": "46.43577916",
+			"site_no": "05336220",
+			"station_nm": "SPLIT ROCK RIVER NEAR KETTLE RIVER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.8827033",
+			"LATDD": "46.39050146",
+			"site_no": "05336240",
+			"station_nm": "KETTLE RIVER NEAR STURGEON LAKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.69242034",
+			"LATDD": "46.50411251",
+			"site_no": "05336280",
+			"station_nm": "MOOSE HORN RIVER AT BARNUM, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.84103494",
+			"LATDD": "46.3824461",
+			"site_no": "05336320",
+			"station_nm": "MOOSE RIVER AT STURGEON LAKE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.64491905",
+			"LATDD": "46.36050112",
+			"site_no": "05336360",
+			"station_nm": "WILLOW RIVER NEAR KERRICK, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.67491941",
+			"LATDD": "46.36050141",
+			"site_no": "05336365",
+			"station_nm": "HAY CREEK NEAR KERRICK, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.69158603",
+			"LATDD": "46.31716829",
+			"site_no": "05336370",
+			"station_nm": "LITTLE WILLOW RIVER NEAR BRUNO, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.84075612",
+			"LATDD": "46.32327947",
+			"site_no": "05336380",
+			"station_nm": "WILLOW RIVER AT WILLOW RIVER, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.9710366",
+			"LATDD": "46.27383416",
+			"site_no": "05336440",
+			"station_nm": "PINE RIVER NEAR RUTLEDGE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.97992595",
+			"LATDD": "46.28105633",
+			"site_no": "05336460",
+			"station_nm": "BREMEN CREEK NEAR RUTLEDGE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.86575557",
+			"LATDD": "46.254946",
+			"site_no": "05336480",
+			"station_nm": "PINE RIVER AT RUTLEDGE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.8640899",
+			"LATDD": "46.10550485",
+			"site_no": "05336700",
+			"station_nm": "KETTLE RIVER BELOW SANDSTONE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.97131565",
+			"LATDD": "46.03411824",
+			"site_no": "05336900",
+			"station_nm": "NORTH BRANCH GRINDSTONE RIVER NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.97131574",
+			"LATDD": "46.02439631",
+			"site_no": "05336990",
+			"station_nm": "SOUTH BRANCH GRINDSTONE RIVER NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.87714657",
+			"LATDD": "46.01106264",
+			"site_no": "05337010",
+			"station_nm": "GRINDSTONE RIVER NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.26189533",
+			"LATDD": "46.33911412",
+			"site_no": "05337100",
+			"station_nm": "SNAKE RIVER AT PLINY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.24050276",
+			"LATDD": "46.21800387",
+			"site_no": "05337150",
+			"station_nm": "SNAKE RIVER NEAR MCGRATH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.23105294",
+			"LATDD": "46.02467651",
+			"site_no": "05337200",
+			"station_nm": "SNAKE RIVER NEAR WARMAN, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.23910899",
+			"LATDD": "46.02467659",
+			"site_no": "05337220",
+			"station_nm": "SNOWSHOE BROOK NEAR WARMAN, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.43273328",
+			"LATDD": "46.04634514",
+			"site_no": "05337300",
+			"station_nm": "KNIFE RIVER NEAR WARMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.30744674",
+			"LATDD": "45.91995775",
+			"site_no": "05337400",
+			"station_nm": "KNIFE RIVER NEAR MORA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.29661319",
+			"LATDD": "45.86384794",
+			"site_no": "05337500",
+			"station_nm": "SNAKE RIVER AT MORA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.41995336",
+			"LATDD": "45.93356937",
+			"site_no": "05337530",
+			"station_nm": "LITTLE ANN RIVER NEAR MORA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.33189281",
+			"LATDD": "45.83523765",
+			"site_no": "05337550",
+			"station_nm": "ANN RIVER NEAR MORA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.39800679",
+			"LATDD": "45.8032941",
+			"site_no": "05337600",
+			"station_nm": "GROUNDHOUSE RIVER NEAR OGILVIE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.39689554",
+			"LATDD": "45.78884995",
+			"site_no": "05337650",
+			"station_nm": "SOUTH FORK GROUNDHOUSE RIVER NEAR OGILVIE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.27605733",
+			"LATDD": "45.79107191",
+			"site_no": "05337700",
+			"station_nm": "GROUNDHOUSE RIVER AT BRUNSWICK, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.1635498",
+			"LATDD": "45.91940082",
+			"site_no": "05337790",
+			"station_nm": "MUD CREEK AT QUAMBA, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.14688449",
+			"LATDD": "45.78857045",
+			"site_no": "05337900",
+			"station_nm": "SNAKE RIVER AT GRASSTON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.94575974",
+			"LATDD": "45.99773019",
+			"site_no": "05338200",
+			"station_nm": "MISSION CREEK NEAR HINCKLEY, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-92.93354115",
+			"LATDD": "45.84162199",
+			"site_no": "05338500",
+			"station_nm": "SNAKE RIVER NEAR PINE CITY, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.88771022",
+			"LATDD": "45.71606829",
+			"site_no": "05339490",
+			"station_nm": "ROCK CREEK NEAR RUSH CITY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.98132401",
+			"LATDD": "45.68218138",
+			"site_no": "05339705",
+			"station_nm": "RUSH CREEK AT CO. RD. 54 ABOVE RUSH CITY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.89882321",
+			"LATDD": "45.65523643",
+			"site_no": "05339720",
+			"station_nm": "RUSH CREEK NEAR RUSH CITY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.97771547",
+			"LATDD": "45.58634994",
+			"site_no": "05339747",
+			"station_nm": "GOOSE CREEK AT HARRIS, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.95160606",
+			"LATDD": "45.33302146",
+			"site_no": "05339800",
+			"station_nm": "SUNRISE RIVER NEAR WYOMING, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.99799631",
+			"LATDD": "45.391354",
+			"site_no": "05339950",
+			"station_nm": "WEST BRANCH SUNRISE RIVER AT STACY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.88632689",
+			"LATDD": "45.44996297",
+			"site_no": "05340050",
+			"station_nm": "SUNRISE RIVER NEAR LINDSTROM, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.07911012",
+			"LATDD": "45.49996324",
+			"site_no": "05340100",
+			"station_nm": "NORTH BRANCH SUNRISE R TRIBUTARY NEAR WEBER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-93.05633149",
+			"LATDD": "45.49968541",
+			"site_no": "05340110",
+			"station_nm": "NORTH BRANCH SUNRISE RIVER NEAR WEBER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.97993967",
+			"LATDD": "45.51579584",
+			"site_no": "05340130",
+			"station_nm": "NORTH BRANCH SUNRISE RIVER AT NORTH BRANCH, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.89354922",
+			"LATDD": "45.51329503",
+			"site_no": "05340170",
+			"station_nm": "NORTH BRANCH SUNRISE RIVER NEAR NORTH BRANCH, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.69381959",
+			"LATDD": "45.37107409",
+			"site_no": "05340550",
+			"station_nm": "LAWRENCE CREEK AT FRANCONIA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.80604124",
+			"LATDD": "45.0763558",
+			"site_no": "05341540",
+			"station_nm": "BROWNS CREEK AT STILLWATER, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.7802039",
+			"LATDD": "44.91107849",
+			"site_no": "05341765",
+			"station_nm": "VALLEY BRANCH AT AFTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.78325942",
+			"LATDD": "44.89691184",
+			"site_no": "05341790",
+			"station_nm": "ST. CROIX RIVER TRIBUTARY AT AFTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.80131541",
+			"LATDD": "44.86357848",
+			"site_no": "05341810",
+			"station_nm": "TROUT BROOK NEAR AFTON, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.80020278",
+			"LATDD": "44.74580083",
+			"site_no": "05344500",
+			"station_nm": "MISSISSIPPI RIVER AT PRESCOTT, WI",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.05493576",
+			"LATDD": "44.66663318",
+			"site_no": "05345000",
+			"station_nm": "VERMILLION RIVER NEAR EMPIRE, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.0079896",
+			"LATDD": "44.65913365",
+			"site_no": "05345100",
+			"station_nm": "SOUTH BRANCH VERMILLION RIVER AT EMPIRE, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.86603892",
+			"LATDD": "44.71996738",
+			"site_no": "05346000",
+			"station_nm": "VERMILLION RIVER AT HASTINGS, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-93.60217172",
+			"LATDD": "44.30551993",
+			"site_no": "05348300",
+			"station_nm": "LITTLE CANNON RIVER NEAR KILKENNY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.62911671",
+			"LATDD": "44.29718703",
+			"site_no": "05348550",
+			"station_nm": "CANNON RIVER BELOW SABRE LAKE NR KILKENNY,MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.56355758",
+			"LATDD": "44.21774178",
+			"site_no": "05349550",
+			"station_nm": "WHITE WATER CREEK AT WATERVILLE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.4679999",
+			"LATDD": "44.25412965",
+			"site_no": "05351400",
+			"station_nm": "DEVIL CREEK NEAR MORRISTOWN, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.35688491",
+			"LATDD": "44.2549633",
+			"site_no": "05351800",
+			"station_nm": "MACKENZIE CREEK NEAR WARSAW, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.27299401",
+			"LATDD": "44.30774145",
+			"site_no": "05352010",
+			"station_nm": "CANNON RIVER AT FARIBAULT, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.24632177",
+			"LATDD": "44.03329577",
+			"site_no": "05352810",
+			"station_nm": "TURTLE CREEK NEAR OWATONNA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.22354411",
+			"LATDD": "44.09496291",
+			"site_no": "05352900",
+			"station_nm": "MAPLE CREEK AT OWATONNA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-93.25632406",
+			"LATDD": "44.14690747",
+			"site_no": "05353600",
+			"station_nm": "CRANE CREEK AT CLINTON FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.23104733",
+			"LATDD": "44.25801923",
+			"site_no": "05353800",
+			"station_nm": "STRAIGHT RIVER NEAR FARIBAULT, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-93.22104952",
+			"LATDD": "44.41051982",
+			"site_no": "05354600",
+			"station_nm": "WOLF CREEK NEAR DUNDAS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.18771572",
+			"LATDD": "44.44663138",
+			"site_no": "05355020",
+			"station_nm": "HEATH CREEK NEAR NORTHFIELD, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-93.16299286",
+			"LATDD": "44.45524278",
+			"site_no": "05355024",
+			"station_nm": "CANNON RIVER AT NORTHFIELD MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-93.02965615",
+			"LATDD": "44.5230223",
+			"site_no": "05355040",
+			"station_nm": "CHUB CREEK AT RANDOLPH, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.99465483",
+			"LATDD": "44.5058004",
+			"site_no": "05355060",
+			"station_nm": "SPRING CREEK NEAR CANNON FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.98743202",
+			"LATDD": "44.48607802",
+			"site_no": "05355080",
+			"station_nm": "PRAIRIE CREEK NEAR CANNON FALLS, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.93076135",
+			"LATDD": "44.40663264",
+			"site_no": "05355130",
+			"station_nm": "LITTLE CANNON RIVER AT SOGN, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.93159583",
+			"LATDD": "44.4735778",
+			"site_no": "05355140",
+			"station_nm": "LITTLE CANNON RIVER NEAR CANNON FALLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.73214291",
+			"LATDD": "44.56385593",
+			"site_no": "05355200",
+			"station_nm": "CANNON RIVER AT WELCH, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.73658735",
+			"LATDD": "44.53357802",
+			"site_no": "05355215",
+			"station_nm": "BELLE CREEK NEAR VASA, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.6118601",
+			"LATDD": "44.56163405",
+			"site_no": "05355240",
+			"station_nm": "SPRING CREEK NEAR RED WING, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.43407462",
+			"LATDD": "44.54413432",
+			"site_no": "05355256",
+			"station_nm": "BULLARD CREEK AT WACOUTA, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.29267809",
+			"LATDD": "44.45857867",
+			"site_no": "05355330",
+			"station_nm": "GILBERT CREEK AT LAKE CITY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.27656591",
+			"LATDD": "44.4308008",
+			"site_no": "05355335",
+			"station_nm": "MILLER CREEK NEAR LAKE CITY, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.16295014",
+			"LATDD": "44.41052277",
+			"site_no": "05355340",
+			"station_nm": "MISSISSIPPI RIVER TRIBUTARY AT MAPLE SPRINGS, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.47212113",
+			"LATDD": "44.00718591",
+			"site_no": "05372800",
+			"station_nm": "S FORK ZUMBRO R ON BELT LINE AT ROCHESTER, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.47184395",
+			"LATDD": "44.03079731",
+			"site_no": "05372990",
+			"station_nm": "CASCADE CREEK AT ROCHESTER, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.46628892",
+			"LATDD": "44.06163103",
+			"site_no": "05372995",
+			"station_nm": "SOUTH FORK ZUMBRO RIVER AT ROCHESTER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.46545568",
+			"LATDD": "44.0666311",
+			"site_no": "05373000",
+			"station_nm": "SOUTH FORK ZUMBRO RIVER NEAR ROCHESTER, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.76880333",
+			"LATDD": "44.13440845",
+			"site_no": "05373100",
+			"station_nm": "MILLIKEN CREEK AT CO RD 22 NEAR CONCORD, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.64602212",
+			"LATDD": "44.20274263",
+			"site_no": "05373130",
+			"station_nm": "NORTH BR MIDDLE FORK ZUMBRO R AT PINE ISLAND, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.57351839",
+			"LATDD": "44.16940958",
+			"site_no": "05373150",
+			"station_nm": "MIDDLE FORK ZUMBRO RIVER NEAR ORONOCO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.88741693",
+			"LATDD": "44.0299641",
+			"site_no": "05373200",
+			"station_nm": "DODGE CENTER CREEK NEAR DODGE CENTER, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.75491212",
+			"LATDD": "44.06413062",
+			"site_no": "05373220",
+			"station_nm": "SOUTH BRANCH MIDDLE FORK ZUMBRO R. AT MANTORVILLE",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.73935508",
+			"LATDD": "44.02940837",
+			"site_no": "05373230",
+			"station_nm": "MASTEN CREEK AT KASSON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.59768539",
+			"LATDD": "44.14302033",
+			"site_no": "05373290",
+			"station_nm": "SOUTH BRANCH MIDDLE FORK ZUMBRO R NR ORONOCO, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.50490508",
+			"LATDD": "44.19246585",
+			"site_no": "05373400",
+			"station_nm": "DRY RUN CREEK NEAR ORONOCO, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.81047607",
+			"LATDD": "44.31357592",
+			"site_no": "05373720",
+			"station_nm": "NORTH FORK ZUMBRO RIVER NEAR WANAMINGO, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.5496308",
+			"LATDD": "44.26663286",
+			"site_no": "05373850",
+			"station_nm": "NORTH FORK ZUMBRO RIVER AT MAZEPPA, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.52129648",
+			"LATDD": "44.27607764",
+			"site_no": "05373950",
+			"station_nm": "TROUT BROOK NEAR MAZEPPA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.43407081",
+			"LATDD": "44.28830018",
+			"site_no": "05373995",
+			"station_nm": "COLD CREEK AT ZUMBRO FALLS, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.43240405",
+			"LATDD": "44.28663351",
+			"site_no": "05374000",
+			"station_nm": "ZUMBRO RIVER AT ZUMBRO FALLS, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.24350739",
+			"LATDD": "44.30163368",
+			"site_no": "05374480",
+			"station_nm": "SPRING CREEK NEAR WEST ALBANY, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.19044968",
+			"LATDD": "44.28746666",
+			"site_no": "05374500",
+			"station_nm": "ZUMBRO RIVER AT THEILMAN, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-92.18294942",
+			"LATDD": "44.2891333",
+			"site_no": "05374520",
+			"station_nm": "WEST INDIAN CREEK AT THEILMAN, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.11489202",
+			"LATDD": "44.3469111",
+			"site_no": "05374600",
+			"station_nm": "TROUT BROOK AT DUMFRIES, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.00405411",
+			"LATDD": "44.31191029",
+			"site_no": "05374900",
+			"station_nm": "ZUMBRO RIVER AT KELLOGG, MN",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-91.98933105",
+			"LATDD": "44.29274335",
+			"site_no": "05375000",
+			"station_nm": "GORMAN CREEK NEAR KELLOGG, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.97655169",
+			"LATDD": "44.22802042",
+			"site_no": "05375800",
+			"station_nm": "EAST INDIAN CREEK TRIBUTARY NEAR WEAVER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-92.06599592",
+			"LATDD": "44.09163075",
+			"site_no": "05376000",
+			"station_nm": "NORTH FORK WHITEWATER RIVER NEAR ELBA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.02766107",
+			"LATDD": "44.08079704",
+			"site_no": "05376200",
+			"station_nm": "MIDDLE FORK WHITEWATER RIVER AT ELBA, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.980437",
+			"LATDD": "44.06940783",
+			"site_no": "05376500",
+			"station_nm": "SOUTH FORK WHITEWATER RIVER NEAR ALTURA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.00488427",
+			"LATDD": "44.15079757",
+			"site_no": "05376800",
+			"station_nm": "WHITEWATER RIVER NEAR BEAVER, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-92.01682918",
+			"LATDD": "44.15274212",
+			"site_no": "05377000",
+			"station_nm": "BEAVER CREEK AT BEAVER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.92682708",
+			"LATDD": "44.21107563",
+			"site_no": "05377510",
+			"station_nm": "WHITEWATER RIVER AT WEAVER, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.76431833",
+			"LATDD": "44.07107422",
+			"site_no": "05378235",
+			"station_nm": "GARVIN BROOK NEAR MINNESOTA CITY, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-91.76015174",
+			"LATDD": "44.08524096",
+			"site_no": "05378240",
+			"station_nm": "GARVIN BROOK ABOVE MINNESOTA CITY, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-91.77904151",
+			"LATDD": "44.09774107",
+			"site_no": "05378400",
+			"station_nm": "ROLLINGSTONE CREEK NEAR MINNESOTA CITY, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-91.63764861",
+			"LATDD": "44.05551861",
+			"site_no": "05378500",
+			"station_nm": "MISSISSIPPI RIVER AT WINONA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.69042726",
+			"LATDD": "44.04440743",
+			"site_no": "05379000",
+			"station_nm": "GILMORE CREEK AT WINONA, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.62098076",
+			"LATDD": "44.02496301",
+			"site_no": "05379050",
+			"station_nm": "BURNS VALLEY CREEK AT WINONA, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-91.60236905",
+			"LATDD": "44.01996303",
+			"site_no": "05379090",
+			"station_nm": "PLEASANT VALLEY CREEK AT WINONA, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-91.36347511",
+			"LATDD": "43.91663086",
+			"site_no": "05380520",
+			"station_nm": "DAKOTA CREEK AT U.S. HWY. 61 IN DAKOTA, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.32513854",
+			"LATDD": "43.81774395",
+			"site_no": "05383520",
+			"station_nm": "PINE CREEK AT LA CRESCENT, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.17349544",
+			"LATDD": "43.82246384",
+			"site_no": "05383740",
+			"station_nm": "NORTH BRANCH ROOT RIVER NEAR CHATFIELD, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.3043329",
+			"LATDD": "43.7391303",
+			"site_no": "05383830",
+			"station_nm": "DEER CREEK AT CO. RD. 8 NEAR FILLMORE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.2948881",
+			"LATDD": "43.7363526",
+			"site_no": "05383840",
+			"station_nm": "SPRING VALLEY CREEK NEAR FILLMORE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.28822105",
+			"LATDD": "43.753297",
+			"site_no": "05383860",
+			"station_nm": "BEAR CREEK NEAR FILLMORE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.19599608",
+			"LATDD": "43.81107499",
+			"site_no": "05383895",
+			"station_nm": "UPPER BEAR CREEK AT CO. RD. 5 NEAR CHATFIELD, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-92.18849581",
+			"LATDD": "43.80663053",
+			"site_no": "05383900",
+			"station_nm": "MIDDLE BRANCH ROOT RIVER NEAR CHATFIELD, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.11432676",
+			"LATDD": "43.80107482",
+			"site_no": "05383920",
+			"station_nm": "RICE CREEK NEAR FOUNTAIN, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.0498804",
+			"LATDD": "43.81774131",
+			"site_no": "05383940",
+			"station_nm": "TROUT RUN NEAR PILOT MOUND, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.03015728",
+			"LATDD": "43.7846858",
+			"site_no": "05383950",
+			"station_nm": "ROOT RIVER NEAR PILOT MOUND, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-91.97876638",
+			"LATDD": "43.74940821",
+			"site_no": "05384000",
+			"station_nm": "ROOT RIVER NEAR LANESBORO, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.23655478",
+			"LATDD": "43.59968718",
+			"site_no": "05384020",
+			"station_nm": "CANFIELD CREEK NEAR CHERRY GROVE, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.04960275",
+			"LATDD": "43.71079741",
+			"site_no": "05384095",
+			"station_nm": "WATSON CREEK NEAR PRESTON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.97876687",
+			"LATDD": "43.72190849",
+			"site_no": "05384120",
+			"station_nm": "SOUTH BRANCH ROOT RIVER AT LANESBORO, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.75292568",
+			"LATDD": "43.80301987",
+			"site_no": "05384350",
+			"station_nm": "ROOT RIVER AT RUSHFORD, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-91.77792689",
+			"LATDD": "43.83329733",
+			"site_no": "05384500",
+			"station_nm": "RUSH CREEK NEAR RUSHFORD, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.59458844",
+			"LATDD": "43.79496556",
+			"site_no": "05384900",
+			"station_nm": "MONEY CREEK NEAR HOUSTON, MN",
+			"pt_symbol": "symbol4"
+		},
+		{
+			"LONGDD": "-91.56986538",
+			"LATDD": "43.76857719",
+			"site_no": "05385000",
+			"station_nm": "ROOT RIVER NEAR HOUSTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.81320692",
+			"LATDD": "43.59774423",
+			"site_no": "05385200",
+			"station_nm": "WISEL CREEK NEAR TAWNEY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.68709067",
+			"LATDD": "43.68107745",
+			"site_no": "05385300",
+			"station_nm": "RICEFORD CREEK AT YUCATAN, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.60042158",
+			"LATDD": "43.70663345",
+			"site_no": "05385400",
+			"station_nm": "BEAVER CREEK NEAR SHELDON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.56403174",
+			"LATDD": "43.73857768",
+			"site_no": "05385500",
+			"station_nm": "SOUTH FORK ROOT RIVER NEAR HOUSTON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-91.49791939",
+			"LATDD": "43.78607751",
+			"site_no": "05386050",
+			"station_nm": "SILVER CREEK NEAR HOUSTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-91.4768076",
+			"LATDD": "43.77218889",
+			"site_no": "05386060",
+			"station_nm": "CRYSTAL CREEK AT U.S. HWY. 16 NEAR HOUSTON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.3451373",
+			"LATDD": "43.7580229",
+			"site_no": "05386103",
+			"station_nm": "THOMPSON CREEK AT CO. RD. 18 IN HOKAH, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.27985645",
+			"LATDD": "43.58941559",
+			"site_no": "05387040",
+			"station_nm": "CROOKED CREEK AT RENO, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.3079124",
+			"LATDD": "43.51775025",
+			"site_no": "05387200",
+			"station_nm": "WINNEBAGO CREEK NEAR NEW ALBIN, IOWA",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.53684315",
+			"LATDD": "43.52718752",
+			"site_no": "05387240",
+			"station_nm": "UPPER IOWA RIVER NEAR LEROY, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.39044963",
+			"LATDD": "43.50774322",
+			"site_no": "05387270",
+			"station_nm": "BEAVER CREEK NEAR LEROY, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.95682541",
+			"LATDD": "43.50052209",
+			"site_no": "05387425",
+			"station_nm": "PINE CREEK AT STATE LINE NEAR CANTON, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-91.56986536",
+			"LATDD": "43.50247057",
+			"site_no": "05388306",
+			"station_nm": "BEE CREEK NEAR EITZEN, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-92.94991332",
+			"LATDD": "43.75885138",
+			"site_no": "05455930",
+			"station_nm": "ROBERTS CREEK NEAR LANSING, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.95852461",
+			"LATDD": "43.74635134",
+			"site_no": "05455940",
+			"station_nm": "CEDAR RIVER AT LANSING, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.96019164",
+			"LATDD": "43.69107392",
+			"site_no": "05455960",
+			"station_nm": "WOLF CREEK AT AUSTIN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.93963534",
+			"LATDD": "43.67718522",
+			"site_no": "05455970",
+			"station_nm": "DOBBINS CREEK AT AUSTIN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.97491472",
+			"LATDD": "43.66024083",
+			"site_no": "05455975",
+			"station_nm": "CEDAR RIVER ABOVE TREATMENT PLANT AT AUSTIN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.03769515",
+			"LATDD": "43.68468429",
+			"site_no": "05456500",
+			"station_nm": "TURTLE CREEK NEAR AUSTIN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.97408133",
+			"LATDD": "43.63635197",
+			"site_no": "05457000",
+			"station_nm": "CEDAR RIVER NEAR AUSTIN, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-92.96963683",
+			"LATDD": "43.61329658",
+			"site_no": "05457160",
+			"station_nm": "ROSE CREEK NEAR AUSTIN, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.00963878",
+			"LATDD": "43.510241",
+			"site_no": "05457220",
+			"station_nm": "WOODBURY CREEK NEAR LYLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.93130277",
+			"LATDD": "43.49996448",
+			"site_no": "05457280",
+			"station_nm": "OTTER CREEK AT LYLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.12686622",
+			"LATDD": "43.49996015",
+			"site_no": "05457390",
+			"station_nm": "DEER CREEK NEAR MYRTLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-92.74935227",
+			"LATDD": "43.49996703",
+			"site_no": "05457780",
+			"station_nm": "LITTLE CEDAR RIVER BELOW JOHNSBURG, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.35659897",
+			"LATDD": "43.70245774",
+			"site_no": "05458960",
+			"station_nm": "BANCROFT CREEK AT BANCROFT, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.29242922",
+			"LATDD": "43.61217972",
+			"site_no": "05458966",
+			"station_nm": "SHELL ROCK RIVER NEAR GLENVILLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.26853894",
+			"LATDD": "43.51412349",
+			"site_no": "05458970",
+			"station_nm": "SHELL ROCK RIVER AT GORDONSVILLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.27353902",
+			"LATDD": "43.50356779",
+			"site_no": "05458975",
+			"station_nm": "GOOSE CREEK NEAR GORDONSVILLE, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-93.55827029",
+			"LATDD": "43.49995425",
+			"site_no": "05459040",
+			"station_nm": "LIME CREEK NEAR EMMONS, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-95.71917885",
+			"LATDD": "44.05829606",
+			"site_no": "05474770",
+			"station_nm": "BEAVER CREEK NEAR CURRIE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.52167154",
+			"LATDD": "43.94940715",
+			"site_no": "05474800",
+			"station_nm": "LIME CREEK NEAR AVOCA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.43139078",
+			"LATDD": "43.88579436",
+			"site_no": "05474860",
+			"station_nm": "DES MOINES RIVER BELOW TALCOTT LK, NR DUNDEE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.53278441",
+			"LATDD": "43.64746312",
+			"site_no": "05474885",
+			"station_nm": "OKABENA CREEK NEAR WORTHINGTON, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.3152765",
+			"LATDD": "43.74384839",
+			"site_no": "05474920",
+			"station_nm": "OKABENA CREEK AT OKABENA, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.31527631",
+			"LATDD": "43.76940378",
+			"site_no": "05474980",
+			"station_nm": "JACK CREEK NEAR HERON LAKE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-95.26694093",
+			"LATDD": "43.8049585",
+			"site_no": "05475000",
+			"station_nm": "HERON LAKE OUTLET NR SPILLWAY, C.H.24,HERON LAKE,M",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.1155477",
+			"LATDD": "43.85829082",
+			"site_no": "05475600",
+			"station_nm": "DES MOINES RIVER AT WINDOM, MN -DM5",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-95.10540862",
+			"LATDD": "43.84926303",
+			"site_no": "05475700",
+			"station_nm": "DES MOINES RIVER BELOW WINDON, MN (DM6)",
+			"pt_symbol": "symbol1"
+		},
+		{
+			"LONGDD": "-94.98637996",
+			"LATDD": "43.61940274",
+			"site_no": "05476000",
+			"station_nm": "DES MOINES RIVER AT JACKSON, MN",
+			"pt_symbol": "symbol0"
+		},
+		{
+			"LONGDD": "-94.65442413",
+			"LATDD": "43.56467824",
+			"site_no": "05476989",
+			"station_nm": "EAST FORK DES MOINES RIVER ABOVE CEYLON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-94.6347012",
+			"LATDD": "43.56884485",
+			"site_no": "05476990",
+			"station_nm": "EAST FORK DES MOINES RIVER NEAR CEYLON, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-94.57386659",
+			"LATDD": "43.52884496",
+			"site_no": "05477010",
+			"station_nm": "E FK DES MOINES R AT TUTTLE LK OTL NR CEYLON, MN",
+			"pt_symbol": "symbol2"
+		},
+		{
+			"LONGDD": "-96.44448725",
+			"LATDD": "44.24802334",
+			"site_no": "06479970",
+			"station_nm": "MEDARY CREEK NEAR ELKTON, S.D.",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.44476464",
+			"LATDD": "44.20830172",
+			"site_no": "06480350",
+			"station_nm": "SPRING CREEK NEAR ELKTON, S.D.",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.42476307",
+			"LATDD": "44.12552513",
+			"site_no": "06480590",
+			"station_nm": "WILLOW CREEK NEAR WARD, S.D.",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.30364467",
+			"LATDD": "44.00330362",
+			"site_no": "06482430",
+			"station_nm": "PIPESTONE CREEK AT PIPESTONE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.43587325",
+			"LATDD": "43.98024924",
+			"site_no": "06482520",
+			"station_nm": "PIPESTONE CREEK NEAR PIPESTONE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.43726232",
+			"LATDD": "43.77663819",
+			"site_no": "06482540",
+			"station_nm": "SPLIT ROCK CREEK NEAR JASPER, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.31447835",
+			"LATDD": "43.65969296",
+			"site_no": "06482710",
+			"station_nm": "BEAVER CREEK NEAR LUVERNE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.28086561",
+			"LATDD": "43.65997031",
+			"site_no": "06482720",
+			"station_nm": "LITTLE BEAVER CREEK NEAR LUVERNE, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.43226163",
+			"LATDD": "43.59191724",
+			"site_no": "06482740",
+			"station_nm": "BEAVER CREEK NEAR BEAVER CREEK, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.47254135",
+			"LATDD": "43.58608455",
+			"site_no": "06482745",
+			"station_nm": "BEAVER CREEK AT VALLEY SPRINGS, SD",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.14113748",
+			"LATDD": "43.87052383",
+			"site_no": "06482930",
+			"station_nm": "ROCK RIVER AT EDGERTON, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-96.06113412",
+			"LATDD": "43.89968938",
+			"site_no": "06482933",
+			"station_nm": "CHANARAMBIE CREEK NEAR EDGERTON, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.1644718",
+			"LATDD": "43.71774645",
+			"site_no": "06482945",
+			"station_nm": "ROCK RIVER NEAR HARDWICK, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.17280548",
+			"LATDD": "43.71413546",
+			"site_no": "06482965",
+			"station_nm": "MOUND CREEK NEAR LUVERNE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.13335938",
+			"LATDD": "43.70857941",
+			"site_no": "06482980",
+			"station_nm": "CHAMPEPADAN CREEK NEAR HARDWICK, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.20113994",
+			"LATDD": "43.65413598",
+			"site_no": "06483000",
+			"station_nm": "ROCK RIVER AT LUVERNE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.01307667",
+			"LATDD": "43.69163333",
+			"site_no": "06483020",
+			"station_nm": "ELK CREEK (SITE 219), NEAR LISMORE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-96.17308328",
+			"LATDD": "43.60302465",
+			"site_no": "06483030",
+			"station_nm": "ELK CREEK NEAR LUVERNE, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.19641743",
+			"LATDD": "43.5491362",
+			"site_no": "06483070",
+			"station_nm": "ASH CREEK AT ASH CREEK, MN",
+			"pt_symbol": "symbol6"
+		},
+		{
+			"LONGDD": "-96.12030382",
+			"LATDD": "43.50024649",
+			"site_no": "06483240",
+			"station_nm": "KANARANZI CREEK NEAR KANARANZI, MN",
+			"pt_symbol": "symbol3"
+		},
+		{
+			"LONGDD": "-96.34114583",
+			"LATDD": "43.51469409",
+			"site_no": "06483310",
+			"station_nm": "MUD CREEK NEAR HILLS, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.81640611",
+			"LATDD": "43.54329917",
+			"site_no": "06483350",
+			"station_nm": "LITTLE ROCK RIVER NR. RUSHMORE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.84751806",
+			"LATDD": "43.54357694",
+			"site_no": "06483353",
+			"station_nm": "LITTLE ROCK CREEK (SITE 218) NEAR RUSHMORE, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.84946295",
+			"LATDD": "43.49996615",
+			"site_no": "06483355",
+			"station_nm": "LITTLE ROCK RIVER NEAR BIGELOW, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.25777503",
+			"LATDD": "43.60218356",
+			"site_no": "06603530",
+			"station_nm": "LITTLE SIOUX RIVER NEAR SPAFFORD, MN",
+			"pt_symbol": "symbol5"
+		},
+		{
+			"LONGDD": "-95.25805293",
+			"LATDD": "43.57329518",
+			"site_no": "06603540",
+			"station_nm": "LITTLE SIOUX RIVER NEAR SIOUX VALLEY, MN",
+			"pt_symbol": "symbol7"
+		},
+		{
+			"LONGDD": "-95.27972063",
+			"LATDD": "43.50051883",
+			"site_no": "06603690",
+			"station_nm": "WEST FORK LITTLE SIOUX RIVER NR SIOUX VALLEY, MN",
+			"pt_symbol": "symbol6"
+		}
+	]
+}
