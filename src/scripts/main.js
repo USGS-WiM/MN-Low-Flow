@@ -136,13 +136,16 @@ $( document ).ready(function() {
 	// JSON DATA //
 	$.ajax({
 		dataType: "json",
-		url: "../data/data.json",
+		url: "./data/data.json",
 		success: function (json) {
 
 			console.log(json);
 
 			for (var i = 0; i < json.items.length; i++) {
 				var a = json.items[i];
+				var data = a.site_no;
+
+				
 
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
@@ -151,7 +154,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon0
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " +  data);
 					layer0.addLayer(marker0)
 				}
 				// regulated gages //
@@ -161,7 +164,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon1
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer1.addLayer(marker1)
 				}
 				// discontinuous gages (0-1 years) //
@@ -171,7 +174,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon2
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer2.addLayer(marker2)
 				}
 				// discontinuous gages (2-5 years) //
@@ -181,7 +184,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon3
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer3.addLayer(marker3)
 				}
 				// discontinuous gages (6-10 years) //
@@ -191,7 +194,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon4
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer4.addLayer(marker4)
 				}
 				// discontinuous gages (10-15 years) //
@@ -201,7 +204,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon5
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer5.addLayer(marker5)
 				}
 				// discontinuous gages (16-25 years) //
@@ -211,7 +214,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon6
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer6.addLayer(marker6)
 				}
 				// discontinuous gages (26-49 years) //
@@ -221,7 +224,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon7
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer7.addLayer(marker7)
 				}
 				// discontinuous gages (50+ years) //
@@ -231,7 +234,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon8
-					}).bindPopup("Station: " + a.station_nm);
+					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
 					layer8.addLayer(marker8)
 				}
 			}

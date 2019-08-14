@@ -274,11 +274,8 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type=checkbox]
 {
-  /* Double-sized Checkboxes */
-  -ms-transform: scale(1.25); /* IE */
-  -moz-transform: scale(1.25); /* FF */
-  -webkit-transform: scale(1.25); /* Safari and Chrome */
-  -o-transform: scale(1.25); /* Opera */
+  /* Double-sized Checkboxes */ /* IE */ /* FF */
+  -webkit-transform: scale(1.25); /* Safari and Chrome */ /* Opera */
   transform: scale(1.25);
   padding: 10px;
   float:left;
