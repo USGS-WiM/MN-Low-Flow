@@ -144,8 +144,7 @@ $( document ).ready(function() {
 			for (var i = 0; i < json.items.length; i++) {
 				var a = json.items[i];
 				var data = a.site_no;
-
-				
+				var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + data + ".txt"
 
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
@@ -154,7 +153,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon0
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " +  data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer0.addLayer(marker0)
 				}
 				// regulated gages //
@@ -164,7 +163,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon1
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer1.addLayer(marker1)
 				}
 				// discontinuous gages (0-1 years) //
@@ -174,7 +173,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon2
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer2.addLayer(marker2)
 				}
 				// discontinuous gages (2-5 years) //
@@ -184,7 +183,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon3
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer3.addLayer(marker3)
 				}
 				// discontinuous gages (6-10 years) //
@@ -194,7 +193,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon4
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer4.addLayer(marker4)
 				}
 				// discontinuous gages (10-15 years) //
@@ -204,7 +203,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon5
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer5.addLayer(marker5)
 				}
 				// discontinuous gages (16-25 years) //
@@ -214,7 +213,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon6
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer6.addLayer(marker6)
 				}
 				// discontinuous gages (26-49 years) //
@@ -224,7 +223,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon7
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer7.addLayer(marker7)
 				}
 				// discontinuous gages (50+ years) //
@@ -234,7 +233,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon8
-					}).bindPopup("Station: " + a.station_nm + " Site_No: " + data);
+					}).bindPopup("Station: " + a.station_nm + " " + link);
 					layer8.addLayer(marker8)
 				}
 			}
