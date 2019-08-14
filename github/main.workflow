@@ -21,7 +21,7 @@ action "GitHub Action for AWS" {
     "AWS_ACCESS_KEY_ID",
     "AWS_SECRET_ACCESS_KEY"
   ]
-  args = "s3 cp $GITHUB_WORKSPACE/build/ s3://https://test.wim.usgs.gov/MN-Low-Flow/  --recursive"
+  args = "s3 cp $GITHUB_WORKSPACE/build/ s3://test.wim.usgs.gov/MN-Low-Flow/  --recursive"
 }
 
 action "GitHub Action for Slack" {
