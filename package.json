@@ -1,6 +1,9 @@
 {
 	"name": "geojsonclustertest",
 	"version": "0.0.0",
+	"scripts": {
+		"build": "npm install && bower install && gulp build"
+	},
 	"description": "WiM generator",
 	"repository": {
 		"type": "git",
