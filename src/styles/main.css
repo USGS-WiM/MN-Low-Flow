@@ -204,13 +204,9 @@ body {
   }
 
   #aboutNav {
-    /*background-color: #474747;*/
-
     background: 0 0;
     border: none;
     line-height: 16px;
-    /*padding-top: 0;*/
-    /*padding-bottom: 0;*/
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
