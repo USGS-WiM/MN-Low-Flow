@@ -24,10 +24,6 @@ body {
     #legendButtonNavBar {
         display: none;
     }
-
-    /*.basemapThumb {*/
-    /*display: none;*/
-    /*}*/
 }
 
 .overflow-y-hidden {
@@ -52,7 +48,6 @@ body {
     padding:2px;
 }
 
-
 .esriSimpleSliderTL {
     top: 5px;
     left: 5px;
@@ -72,10 +67,6 @@ body {
     top: 115px;
     left: 5px;
     z-index: 50;
-}
-
-.hover-content {
-    display:none;
 }
 
 .latLngScale {
@@ -102,55 +93,6 @@ body {
     margin-bottom: 0px;
 }
 
-#legendDiv {
-    overflow-y: auto;
-    /*max-height: inherit;*/
-}
-
-/*#legendElement {*/
-/*position:absolute;*/
-/*padding:4px;*/
-/*top:1em;*/
-/*right:10px;*/
-/*z-index:1;*/
-/*color: black;*/
-/*background-color: rgb(255,255,255);*/
-/*background-color: rgba(255,255,255,0.8);*/
-/*box-shadow: 0 1px 5px rgba(0,0,0,0.65);*/
-/*min-width: 200px;*/
-/*border-radius: 4px;*/
-/*overflow: auto;*/
-
-/*}*/
-
-.legendClass {
-    position:absolute;
-    top:5px;
-    right:5px;
-    z-index:3;
-    color: black;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
-    /*min-width: 150px;*/
-    border-radius: 4px;
-}
-
-.legendHeading {
-    color: black;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.8);
-    text-decoration: none !important;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#legendButtonSidebar {
-    width: 100%;
-}
-
 .map {
     overflow: auto;
 }
@@ -159,42 +101,6 @@ body {
     min-height: 100%;
     max-height: 100%;
 }
-
-
-.marker-cluster-small {
-    background-color: rgba(153, 185, 234, 0.6);
-}
-.marker-cluster-small div {
-    background-color: rgba(0, 81, 204, 0.6);
-}
-
-.marker-cluster-medium {
-    background-color: rgba(153, 177, 214, 0.6);
-}
-.marker-cluster-medium div {
-    background-color: rgba(0, 61, 153, 0.6);
-}
-
-.marker-cluster-large {
-    background-color: rgba(153, 169, 193, 0.6);
-
-}
-.marker-cluster-large div {
-    background-color: rgba(0, 40, 102, 0.6);
-}
-
-.marker-cluster div {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    margin-top: 5px;
-
-    text-align: center;
-    color: white;
-    border-radius: 15px;
-    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-
 
 .opacitySlider {
     position: absolute;
@@ -213,18 +119,170 @@ body {
     padding-top: 60px;
 }
 
-.navbar-brand {
-    padding:7px 4px;
+#navbar {
+    background-color: #1E2732;
+    box-sizing: border-box;
+  }
+  #navbar .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px 0 0;
+    padding: 0 15px 0 15px;
+    margin-left: -5%;
+  }
+  #navbar .navbar-toggle .icon-bar {
+    height: 2px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  @media (max-width: 768px) {
+    #navbar .navbar-toggle {
+      margin: 0;
+    }
+  }
+  #navbar .navbar-toggle:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  #navbar .navbar-toggle:hover .icon-bar {
+    background-color: #FFFFFF;
+  }
+  #navbar .navbar-brand {
+    padding: 0 0 0 15px;
+  }
+  #navbar .navbar-brand img {
+    padding: 9px 0;
+    height: 50px !important;
+  }
+  #navbar .navbar-brand span {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 1.25px;
+    box-sizing: border-box;
+    padding: 0px 0 0 15px;
+    height: 100%;
+    line-height: 50px;
+    float: right;
+  }
+  #navbar .navbar-text {
+    color: #ffffff;
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.5px;
+  }
+  @media (max-width: 1015px) {
+    #navbar .navbar-text {
+      font-size: 12pt;
+    }
+  }
+  #navbar button {
+    background-color: #4574CC;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-size: 9pt;
+    font-weight: 300;
+    height: 50px;
+    margin: 0 4px 0 4px;
+    padding: 0 15px 2px 15px;
+    border-radius: 0;
+    transition: 0.15s;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #navbar button:hover {
+    cursor: pointer;
+    transition: 0.15s;
+    background-color: rgba(69, 116, 204, 0.8);
+  }
+  #navbar #aboutNav {
+    background-color: transparent;
+    font-size: 8pt;
+    position: relative;
+    top: 1px;
+  }
+
+  #aboutNav {
+    /*background-color: #474747;*/
+
+    background: 0 0;
+    border: none;
+    line-height: 16px;
+    /*padding-top: 0;*/
+    /*padding-bottom: 0;*/
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 2px;
+    transition: .2s;
+    color: rgba(255,255,255,.35);
 }
 
-.navbar-dark {
-    border-width:0;
-    background-color:#474747;
-    color:#ffffff;
-    font-family:arial,sans-serif;
-    top:0;
-    position:fixed;
-    width:inherit;
+
+#aboutNav{
+    letter-spacing: 2px;
+    position: relative; top: 2px;
+    transition: 0.2s;
+    color: rgba(255,255,255,0.35);
+}
+#aboutNav:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+    transition: 0.2s;
+}
+#aboutNav:focus{
+    outline: none;
+}
+
+
+.search-bar {
+    margin:0px;
+    padding-left:0px;
+}
+
+#sapi-searchTextBox {
+    font-family: 'Open Sans', sans-serif !important;
+    width: 100% !important;
+    height: 35px !important;
+    padding: 6px 12px !important;
+    margin-left: 0px !important;
+    border-radius: 2px !important;
+    border: 2px solid rgba(45, 49, 70, 0.23) !important;
+}
+
+.sapi .ui-autocomplete {
+    font-family: 'Open Sans', sans-serif !important;
+    border-radius: 4px !important;
+}
+
+.sapi-autocomplete-title {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color : #2D3146 !important
+}
+
+.sapi-autocomplete-tip {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.sapi-autocomplete-category {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color : #0071BC !important
+}
+
+.sapi-autocomplete-item {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 200 !important;
+}
+
+.sapi-autocomplete-item {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 200 !important;
+}
+
+.sapi-autocomplete-itemAnnotation {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: bold !important;
 }
 
 .no-col-padding {
@@ -245,7 +303,6 @@ body {
     background: #eee;
 }
 
-
 [class*="col-"] {
     background-color: #eee;
     border: 1px solid #E7E7E7;
@@ -264,13 +321,11 @@ input[type="checkbox"], input[type="radio"] {
     float: left;
 }
 
-
 .lyrTog {
     width: 100%;
     padding: 1px;
     font-weight: bold;
 }
-
 
 input[type=checkbox]
 {

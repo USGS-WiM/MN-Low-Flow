@@ -67,38 +67,6 @@ function myFunction8(checkbox) {
 		map.removeLayer(layer8)
 	}}
 
-	function setBasemap(basemap) {
-		if (layer) {
-		  map.removeLayer(layer);
-		}
-	
-		layer = L.esri.basemapLayer(basemap);
-	
-		map.addLayer(layer);
-	
-		if (layerLabels) {
-		  map.removeLayer(layerLabels);
-		}
-	
-		if (basemap === 'ShadedRelief'
-		 || basemap === 'Oceans'
-		 || basemap === 'Gray'
-		 || basemap === 'DarkGray'
-		 || basemap === 'Terrain'
-	   ) {
-		  layerLabels = L.esri.basemapLayer(basemap + 'Labels');
-		  map.addLayer(layerLabels);
-		} else if (basemap.includes('Imagery')) {
-		  layerLabels = L.esri.basemapLayer('ImageryLabels');
-		  map.addLayer(layerLabels);
-		}
-	  }
-	
-	  function changeBasemap(button){
-		var basemap = button.value;
-		setBasemap(basemap);
-	  }
-
 $( document ).ready(function() {
 
 	/* create map */
@@ -106,10 +74,147 @@ $( document ).ready(function() {
 	var layer = L.esri.basemapLayer('Topographic').addTo(map);
 	var layerLabels;
 
-	map.addControl( L.control.search() );
-
 	$('#mapDiv').height($('body').height());
 	map.invalidateSize();
+
+	function setBasemap(basemap) {
+	    if (layer) {
+	      map.removeLayer(layer);
+	    }
+	    layer = L.esri.basemapLayer(basemap);
+	    map.addLayer(layer);
+	    if (layerLabels) {
+	      map.removeLayer(layerLabels);
+	    }
+
+	    if (basemap === 'ShadedRelief' || basemap === 'Oceans' || basemap === 'Gray' || basemap === 'DarkGray' || basemap === 'Imagery' || basemap === 'Terrain') {
+
+	      layerLabels = L.esri.basemapLayer(basemap + 'Labels');
+	      map.addLayer(layerLabels);
+	    }
+	}
+
+	$('.basemapBtn').on('click',function() {
+	  	var baseMap = this.id.replace('btn','');
+
+	  	// https://github.com/Esri/esri-leaflet/issues/504 submitted issue that esri-leaflet basemaps dont match esri jsapi
+
+	  	switch (baseMap) {
+		    case 'Streets': baseMap = 'Streets'; break;
+		    case 'Satellite': baseMap = 'Imagery'; break;
+		    case 'Topo': baseMap = 'Topographic'; break;
+		    case 'Terrain': baseMap = 'ShadedRelief'; break;
+		    case 'Gray': baseMap = 'Gray'; break;
+		    case 'NatGeo': baseMap = 'NationalGeographic'; break;
+		}
+
+		setBasemap(baseMap);
+
+	});
+
+	var searchScript = document.createElement('script');
+	searchScript.src = 'https://txpub.usgs.gov/DSS/search_api/1.1/api/search_api.min.js';
+	searchScript.onload = function() {
+		setSearchAPI();
+	};
+	document.body.appendChild(searchScript);
+
+	function setSearchAPI() {
+		// setup must be done after the search_api is loaded and ready ('load' event triggered)
+		search_api.on('load', function() {
+
+			$('#chkExtent').change(function(){
+				if($(this).is(':checked')){
+					console.log('Checked',map.getBounds().getSouth(),map.getBounds().getNorth(),map.getBounds().getWest(),map.getBounds().getEast());
+					var mapBounds = map.getBounds();
+
+					search_api.setOpts({
+						'LATmin' : mapBounds.getSouth(),
+						'LATmax' : mapBounds.getNorth(),
+						'LONmin' : mapBounds.getWest(),
+						'LONmax' : mapBounds.getEast()
+					});
+				}
+			});
+
+			search_api.setOpts({
+				'textboxPosition': 'user-defined',
+				'theme': 'user-defined',
+				'DbSearchIncludeUsgsSiteSW': true,
+				'DbSearchIncludeUsgsSiteGW': true,
+				'DbSearchIncludeUsgsSiteSP': true,
+				'DbSearchIncludeUsgsSiteAT': true,
+				'DbSearchIncludeUsgsSiteOT': true
+			});
+			
+			// define what to do when a location is found
+			search_api.on('location-found', function(lastLocationFound) {
+
+				$('#geosearchModal').modal('hide');
+
+				var zoomlevel = 14;
+				if (lastLocationFound.Category === 'U.S. State or Territory') zoomlevel = 9;
+
+				map.setView([lastLocationFound.y, lastLocationFound.x], zoomlevel);
+
+				L.popup()
+					.setLatLng([lastLocationFound.y,lastLocationFound.x])
+					.setContent(
+						'<p>' +
+							'<b>' + lastLocationFound.label + '</b> '                + '<br/>' +
+							'<br/>' +
+							'<b>NAME:            </b> ' + lastLocationFound.name     + '<br/>' +
+							'<b>CATEGORY:        </b> ' + lastLocationFound.category + '<br/>' +
+							'<b>STATE:           </b> ' + lastLocationFound.state    + '<br/>' +
+							'<b>COUNTY:          </b> ' + lastLocationFound.county   + '<br/>' +
+							'<br/>' +
+							'<b>LATITUDE:        </b> ' + lastLocationFound.y        + '<br/>' +
+							'<b>LONGITUDE:       </b> ' + lastLocationFound.x        + '<br/>' +
+							'<b>ELEVATION (FEET):</b> ' + lastLocationFound.elevFt   + '<br/>' +
+							'<br/>' +
+							'<b>PERCENT MATCH:   </b> ' + lastLocationFound.pctMatch + '<br/>' +
+						'</p>'
+					)
+					.openOn(map);
+
+			});
+			
+			// define what to do when no location is found
+			search_api.on('no-result', function() {
+				// show alert dialog
+				console.error('No location matching the entered text could be found.');
+			});
+			
+			// define what to do when a search times out
+			search_api.on('timeout', function() {
+				// show alert dialog
+				console.error('The search operation timed out.');
+			});
+		});
+
+
+		$('#searchSubmit').on('click', function(){
+			console.log('in search submit');
+			$('#sapi-searchTextBox').keyup();
+		});
+	}
+
+	$('.check').on('click', function(){
+		$(this).find('span').toggle();
+	});
+
+	function showGeosearchModal() {
+		$('#geosearchModal').modal('show');
+	}
+	$('#geosearchNav').click(function(){
+		showGeosearchModal();
+	});
+	function showAboutModal () {
+		$('#aboutModal').modal('show');
+	}
+	$('#aboutNav').click(function(){
+		showAboutModal();
+	});
 
 // defining each icon //
 	var icon0 = L.icon({iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
@@ -143,8 +248,11 @@ $( document ).ready(function() {
 
 			for (var i = 0; i < json.items.length; i++) {
 				var a = json.items[i];
-				var data = a.site_no;
-				var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + data + ".txt"
+				var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + a.site_no + ".txt"
+				var link2 = "https://mn.water.usgs.gov/infodata/lowflow/contData/freqOutput/" + a.site_no + ".txt"
+				var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
+				var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
+				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
 
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
@@ -153,7 +261,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon0
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a href='"+ link4 +"'> Log Pearson </a>"); 
 					layer0.addLayer(marker0)
 				}
 				// regulated gages //
@@ -163,7 +271,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon1
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer1.addLayer(marker1)
 				}
 				// discontinuous gages (0-1 years) //
@@ -173,7 +281,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon2
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer2.addLayer(marker2)
 				}
 				// discontinuous gages (2-5 years) //
@@ -183,7 +291,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon3
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer3.addLayer(marker3)
 				}
 				// discontinuous gages (6-10 years) //
@@ -193,7 +301,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon4
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer4.addLayer(marker4)
 				}
 				// discontinuous gages (10-15 years) //
@@ -203,7 +311,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon5
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer5.addLayer(marker5)
 				}
 				// discontinuous gages (16-25 years) //
@@ -213,7 +321,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon6
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer6.addLayer(marker6)
 				}
 				// discontinuous gages (26-49 years) //
@@ -223,7 +331,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon7
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer7.addLayer(marker7)
 				}
 				// discontinuous gages (50+ years) //
@@ -233,7 +341,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon8
-					}).bindPopup("Station: " + a.station_nm + " " + link);
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
 					layer8.addLayer(marker8)
 				}
 			}

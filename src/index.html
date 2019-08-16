@@ -57,6 +57,9 @@
     <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
     integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
     crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.3.0/dist/esri-leaflet.js"
+    integrity="sha512-1tScwpjXwwnm6tTva0l0/ZgM3rYNbdyMj5q6RSQMbNX6EUMhYDE3pMRGZaT41zHEvLoWEK7qFEJmZDOoDMU7/Q=="
+    crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js"></script>
 
     <link rel="stylesheet" href="https://txpub.usgs.gov/DSS/search_api/2.1/api/search_api.css"/> 
@@ -65,25 +68,103 @@
 </head>
 <body>
 
-<div id="navbar" class="navbar navbar-static navbar-default navbar-fixed-top navbar-dark">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+    <div id="navbar" class="navbar navbar-static navbar-default navbar-fixed-top navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.usgs.gov">
+                    <img alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
+                    <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
+                </a>
+            </div>
+    
+            <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
+                <span class="glyphicon glyphicon-search"></span>
+                <span id="geosearchButtonText"> Geosearch</span>
             </button>
-            <a class="navbar-brand">
-                <img alt="USGS logo" src="https://stn.wim.usgs.gov/fev/images/USGS_ID_white.png" width="120" height="42">
-                <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
-            </a>
+    
+            <button id="aboutNav" class="btn btn-default navbar-btn pull-right">
+                <i class="fa fa-question-circle"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
+            </button>
         </div>
-        <button id="aboutNav" class="btn btn-default navbar-btn pull-right">
-            <i class="fa fa-question-circle"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
-        </button>
-        </button>
     </div>
-</div>
+
+    <div class="modal fade overflow-y-hidden" id="geosearchModal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <h4 class="modal-title">Geosearch</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div id="sapi_searchTextBoxDiv">Loading Search Bar...</div>
+                            <span class="input-group-btn">
+                            <button id="searchSubmit" class="btn btn-success" type="button">Go!</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div>
+                    <form id="geosearch-form" class="form-inline">
+                        <input id="chkExtent" type="checkbox">  Search within current map extent only<br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+    <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
+                    <h4 class="modal-title">Flood Event Viewer</h4>
+                </div>
+                <div id="aboutModalBody" class="modal-body">
+                    <ul class="nav nav-tabs" id="aboutModalTabs">
+                        <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
+                        <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Data Limitations</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="aboutTabPane"></br>
+                            <p style="color:black; font-size: larger">The USGS MN-Low-Flow is the public data discovery component of the Short-Term Network (STN) database. Data viewable and downloadable from this page are from the STN database.</p>
+    
+                            <p>This application relies on the STN Web Services to retrieve and display STN data. Application developers and general data seekers are encouraged to use the web services data API to retrieve STN data. Visit the <span><a href="https://stn.wim.usgs.gov/STNServices/Documentation/home" target="_blank">STN Web Services Documentation Page <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for more information, including full documentation of available endpoints and examples. See the <a href="https://my.usgs.gov/confluence/display/WSN/STN+Data+Dictionary+-+Top+Level" target="_blank">STN Data Dictionary</a> for field names and definitions.</p>
+    
+                            <p>This application integrates with the <span><a href="https://waterdata.usgs.gov/nwis" target="_blank">USGS National Water Information System (NWIS) database <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for display of time-series water data. As a user of MN-Low-Flow you will encounter links to NWIS pages and data sources, which are maintained separately from STN and FEV.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"></br>
+                            <h3>Data Limitations</h3>
+                            <p>Data are provisional and are subject to revision until thoroughly reviewed and approved.</p>
+    
+                            <p>Real-time data relayed by satellite or other telemetry are automatically screened to not display improbable values until they can be verified.</p>
+    
+                            <p>Provisional data may be inaccurate due to instrument malfunctions or physical changes at the measurement site. Subsequent review based on field inspections and measurements may result in significant revisions to the data.</p>
+    
+                            <p>The data are being provided to meet the need for timely best science and are released on the condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from authorized or unauthorized use of the information. Data users are cautioned to consider carefully the provisional nature of the information before using it for decisions that concern personal or public safety or the conduct of business that involves substantial monetary or operational consequences.</p>
+    
+                            <p>Information concerning the accuracy and appropriate uses of these data or concerning other hydrologic data may be obtained from the USGS.</p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="modal-footer">
+                    <p style="color:black; margin-left:35px;text-align:left">
+                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/wimvectorxs.png" id="wim_logo"></a>
+                    </p>
+                    <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 <!-- Begin page content -->
 <div class="container-fluid keepit100">
@@ -101,12 +182,15 @@
                         </div>
                         <div id="basemapsPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="basemapsHeader">
                             <div class="panel-body collapse in">
-                                <button id="btnStreets" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/streets.jpg"><br class="basemapThumb">Streets</button>
-                                <button id="btnSatellite" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/satellite.jpg"><br class="basemapThumb">Satellite</button>
-                                <button id="btnTopo" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/topo.jpg"><br class="basemapThumb">Topo</button>
-                                <button id="btnTerrain" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/terrain.jpg"><br class="basemapThumb">Terrain</button>
-                                <button id="btnGray" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/gray.jpg"><br class="basemapThumb">Gray</button>
-                                <button id="btnNatGeo" class="btn btn-default basemapBtn equalize" onClick="changeBasemap(this)"><img class="basemapThumb" alt="" src="images/natgeo.jpg"><br class="basemapThumb">NatGeo</button>
+                                <button id="btnStreets" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/streets.jpg"><br class="basemapThumb">Streets</button>
+                                <button id="btnSatellite" class="btn btn-default basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/satellite.jpg"><br class="basemapThumb">Satellite</button>
+                                <!--<button id="btnHybrid" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/imagery_labels.jpg"><br class="basemapThumb">Hybrid</button>-->
+                                <button id="btnTopo" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/topo.jpg"><br class="basemapThumb">Topo</button>
+                                <button id="btnTerrain" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/terrain.jpg"><br class="basemapThumb">Terrain</button>
+                                <button id="btnGray" class="btn btn-default basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/gray.jpg"><br class="basemapThumb">Gray</button>
+                                <!--<button id="btnOSM" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/osm.jpg"><br class="basemapThumb">OSM</button>-->
+                                <button id="btnNatGeo" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/natgeo.jpg"><br class="basemapThumb">NatGeo</button>
+                                <!--<button id="btnNatlMap" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/national_map.jpg"><br class="basemapThumb">Nat'l Map</button>-->
                             </div>
         
                         </div>
@@ -135,7 +219,7 @@
                     </div>
                 </div>
 
-        <div id="mapDiv">
+        <div class="custom-popup" id="mapDiv">
 
     </div>
 </div>
