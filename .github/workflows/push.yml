@@ -1,15 +1,14 @@
-on: push
+on:
+  push:
+    branches:
+    - master
 name: Deploy to S3
 jobs:
-  filtersForGitHubActions:
-    name: Filters for GitHub Actions
+  deployToTest:
+    name: Deploy to test site
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Filters for GitHub Actions
-      uses: actions/bin/filter@c6471707d308175c57dfe91963406ef205837dbd
-      with:
-        args: branch master
     - name: GitHub Action for npm
       uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
       with:
