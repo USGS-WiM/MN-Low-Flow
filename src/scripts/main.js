@@ -1,4 +1,4 @@
-// NATHAN'S AMAZING MN-LOW-FLOW PROJECT //
+//////// NATHAN'S AMAZING MN-LOW-FLOW PROJECT ////////
 
 var map;
 var layer0;
@@ -11,7 +11,8 @@ var layer6;
 var layer7;
 var layer8;
 
-// removing and adding the layers when boxes are checked/unchecked //
+//////// BEGIN removing and adding the layers ////////
+
 function myFunction0(checkbox) {
 	if(checkbox.checked == true){
 		map.addLayer(layer0);
@@ -67,9 +68,12 @@ function myFunction8(checkbox) {
 		map.removeLayer(layer8)
 	}}
 
+//////// END removing and adding the layers ////////
+
 $( document ).ready(function() {
 
-	/* create map */
+//////// BEGIN create map + switching basemap utility ////////
+
 	map = L.map('mapDiv').setView([46.39, -94.63], 6);
 	var layer = L.esri.basemapLayer('Topographic').addTo(map);
 	var layerLabels;
@@ -88,7 +92,6 @@ $( document ).ready(function() {
 	    }
 
 	    if (basemap === 'ShadedRelief' || basemap === 'Oceans' || basemap === 'Gray' || basemap === 'DarkGray' || basemap === 'Imagery' || basemap === 'Terrain') {
-
 	      layerLabels = L.esri.basemapLayer(basemap + 'Labels');
 	      map.addLayer(layerLabels);
 	    }
@@ -96,9 +99,6 @@ $( document ).ready(function() {
 
 	$('.basemapBtn').on('click',function() {
 	  	var baseMap = this.id.replace('btn','');
-
-	  	// https://github.com/Esri/esri-leaflet/issues/504 submitted issue that esri-leaflet basemaps dont match esri jsapi
-
 	  	switch (baseMap) {
 		    case 'Streets': baseMap = 'Streets'; break;
 		    case 'Satellite': baseMap = 'Imagery'; break;
@@ -107,10 +107,12 @@ $( document ).ready(function() {
 		    case 'Gray': baseMap = 'Gray'; break;
 		    case 'NatGeo': baseMap = 'NationalGeographic'; break;
 		}
-
 		setBasemap(baseMap);
-
 	});
+
+//////// END create map + switching basemap utility ////////
+
+//////// BEGIN geosearch utility ////////
 
 	var searchScript = document.createElement('script');
 	searchScript.src = 'https://txpub.usgs.gov/DSS/search_api/1.1/api/search_api.min.js';
@@ -120,7 +122,6 @@ $( document ).ready(function() {
 	document.body.appendChild(searchScript);
 
 	function setSearchAPI() {
-		// setup must be done after the search_api is loaded and ready ('load' event triggered)
 		search_api.on('load', function() {
 
 			$('#chkExtent').change(function(){
@@ -176,7 +177,6 @@ $( document ).ready(function() {
 						'</p>'
 					)
 					.openOn(map);
-
 			});
 			
 			// define what to do when no location is found
@@ -184,14 +184,12 @@ $( document ).ready(function() {
 				// show alert dialog
 				console.error('No location matching the entered text could be found.');
 			});
-			
 			// define what to do when a search times out
 			search_api.on('timeout', function() {
 				// show alert dialog
 				console.error('The search operation timed out.');
 			});
 		});
-
 
 		$('#searchSubmit').on('click', function(){
 			console.log('in search submit');
@@ -202,19 +200,88 @@ $( document ).ready(function() {
 	$('.check').on('click', function(){
 		$(this).find('span').toggle();
 	});
-
 	function showGeosearchModal() {
 		$('#geosearchModal').modal('show');
 	}
 	$('#geosearchNav').click(function(){
 		showGeosearchModal();
 	});
+
+//////// END geosearch utility ////////
+
+//////// BEGIN about modal ////////
+
 	function showAboutModal () {
 		$('#aboutModal').modal('show');
 	}
 	$('#aboutNav').click(function(){
 		showAboutModal();
 	});
+
+//////// END about modal ////////
+
+//////// BEGIN latLngScale utility logic ////////
+
+		map.whenReady( function() {
+			var mapScale =  scaleLookup(map.getZoom());
+			$('#scale')[0].innerHTML = mapScale;
+			console.log('Initial Map scale registered as ' + mapScale, map.getZoom());
+			var initMapCenter = map.getCenter();
+			$('#latitude').html(initMapCenter.lat.toFixed(4));
+			$('#longitude').html(initMapCenter.lng.toFixed(4));
+		});
+	
+	//displays map scale on scale change (i.e. zoom level)
+		map.on( 'zoomend', function () {
+			var mapZoom = map.getZoom();
+			var mapScale = scaleLookup(mapZoom);
+			$('#scale')[0].innerHTML = mapScale;
+			$('#zoomLevel')[0].innerHTML = mapZoom;
+		});
+	//updates lat/lng indicator on mouse move. does not apply on devices w/out mouse. removes 'map center' label
+		map.on( 'mousemove', function (cursorPosition) {
+			$('#mapCenterLabel').css('display', 'none');
+			if (cursorPosition.latlng !== null) {
+				$('#latitude').html(cursorPosition.latlng.lat.toFixed(4));
+				$('#longitude').html(cursorPosition.latlng.lng.toFixed(4));
+			}
+		});
+	//updates lat/lng indicator to map center after pan and shows 'map center' label.
+		map.on( 'dragend', function () {
+			//displays latitude and longitude of map center
+			$('#mapCenterLabel').css('display', 'inline');
+			var geographicMapCenter = map.getCenter();
+			$('#latitude').html(geographicMapCenter.lat.toFixed(4));
+			$('#longitude').html(geographicMapCenter.lng.toFixed(4));
+		});
+		function scaleLookup(mapZoom) {
+			switch (mapZoom) {
+				case 19: return '1,128';
+				case 18: return '2,256';
+				case 17: return '4,513';
+				case 16: return '9,027';
+				case 15: return '18,055';
+				case 14: return '36,111';
+				case 13: return '72,223';
+				case 12: return '144,447';
+				case 11: return '288,895';
+				case 10: return '577,790';
+				case 9: return '1,155,581';
+				case 8: return '2,311,162';
+				case 7: return '4,622,324';
+				case 6: return '9,244,649';
+				case 5: return '18,489,298';
+				case 4: return '36,978,596';
+				case 3: return '73,957,193';
+				case 2: return '147,914,387';
+				case 1: return '295,828,775';
+				case 0: return '591,657,550';
+			}
+		}
+
+//////// END latLngScale utility logic ////////
+
+//////// BEGIN defining each gage layer, grouping them, and showing them w/checkbox ////////
 
 // defining each icon //
 	var icon0 = L.icon({iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
@@ -226,7 +293,6 @@ $( document ).ready(function() {
 	var icon6 = L.icon({iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 	var icon7 = L.icon({iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 	var icon8 = L.icon({iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0,2], iconSize: [16,16]})
-
 
 	layer0 = L.layerGroup();
 	layer1 = L.layerGroup();
@@ -243,11 +309,10 @@ $( document ).ready(function() {
 		dataType: "json",
 		url: "./data/data.json",
 		success: function (json) {
-
 			console.log(json);
-
 			for (var i = 0; i < json.items.length; i++) {
 				var a = json.items[i];
+				// links to data //
 				var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + a.site_no + ".txt"
 				var link2 = "https://mn.water.usgs.gov/infodata/lowflow/contData/freqOutput/" + a.site_no + ".txt"
 				var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
@@ -266,7 +331,6 @@ $( document ).ready(function() {
 				}
 				// regulated gages //
 				if (a.pt_symbol == "symbol1") {
-					
 					var marker1 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -276,7 +340,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (0-1 years) //
 				if (a.pt_symbol == "symbol2") {
-					
 					var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -286,7 +349,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (2-5 years) //
 				if (a.pt_symbol == "symbol3") {
-					
 					var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -296,7 +358,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (6-10 years) //
 				if (a.pt_symbol == "symbol4") {
-					
 					var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -306,7 +367,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (10-15 years) //
 				if (a.pt_symbol == "symbol5") {
-					
 					var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -316,7 +376,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (16-25 years) //
 				if (a.pt_symbol == "symbol6") {
-					
 					var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -326,7 +385,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (26-49 years) //
 				if (a.pt_symbol == "symbol7") {
-					
 					var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -336,7 +394,6 @@ $( document ).ready(function() {
 				}
 				// discontinuous gages (50+ years) //
 				if (a.pt_symbol == "symbol8") {
-					
 					var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -345,6 +402,7 @@ $( document ).ready(function() {
 					layer8.addLayer(marker8)
 				}
 			}
+			// checkboxes //
 			if($("#Check0").prop('checked')) {
 				map.addLayer(layer0)
 			}
@@ -374,4 +432,7 @@ $( document ).ready(function() {
 			}
 		}
 	});
+
+	//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
+
 });
