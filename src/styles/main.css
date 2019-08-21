@@ -1,3 +1,4 @@
+/* MAIN */
 html, body {
     height: 100%;
     overflow:hidden;
@@ -16,67 +17,47 @@ body {
     height: 100%;
 }
 
-@media (max-width: 767px) {
-    #geosearchButtonText {
-        display: none;
-    }
-
-    #legendButtonNavBar {
-        display: none;
-    }
+/* MAP STUFF */
+.map {
+    overflow: auto;
 }
 
-.overflow-y-hidden {
-    overflow-y: hidden;
+#mapDiv {
+    min-height: 100%;
+    max-height: 100%;
 }
 
-@media (min-width: 768px) {
-    #legendButtonSidebar {
-        display: none;
-    }
-}
+#mapDiv_zoom_slider {
+    background-color: #eceef3;
+    border-radius: 0px;
+    border-color: transparent;
+    margin: 0;
+    left: 13px;
+    top: 60px;
+    box-shadow: 0 3px 6px rgba(30, 39, 50, 0.1), 0 3px 6px rgba(30, 39, 50, 0.1);
+  }
+  #mapDiv_zoom_slider span {
+    color: #6F758E;
+  }
+  #mapDiv_zoom_slider .esriSimpleSliderVertical,
+  #mapDiv_zoom_slider .esriSimpleSliderIncrementButton,
+  #mapDiv_zoom_slider .esriSimpleSliderDecrementButton {
+    border-color: transparent;
+    border-bottom: 0px solid black !important;
+    border-radius: 0;
+  }
+  #mapDiv_zoom_slider .esriSimpleSliderVertical:hover,
+  #mapDiv_zoom_slider .esriSimpleSliderIncrementButton:hover,
+  #mapDiv_zoom_slider .esriSimpleSliderDecrementButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
-.basemapThumb {
-    border:1px solid #ffffff;
-    border-radius: 5px;
-}
-
-/*basemapBtn elements manually set to width of widest - temp solution until dynamic solution is implemented */
-.basemapBtn {
-    width: 86px;
-    margin-bottom: 2px;
-    padding:2px;
-}
-
-.esriSimpleSliderTL {
-    top: 5px;
-    left: 5px;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.8);
-}
-
-#homeButton {
-    position: absolute;
-    top: 75px;
-    left: 5px;
-    z-index: 50;
-}
-
-#locateButton {
-    position: absolute;
-    top: 115px;
-    left: 5px;
-    z-index: 50;
-}
-
-.latLngScale {
+  .latLngScale {
     position:absolute;
     padding:4px;
     bottom:1.6em;
     left: 20px;
-    /*width:250px*/
-    /*height:320px;*/
-    z-index:1;
+    z-index:99999;
     color: black;
     background-color: rgb(255,255,255);
     background-color: rgba(255,255,255,0.8);
@@ -88,32 +69,7 @@ body {
     display:inline-block;
 }
 
-.alert {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.map {
-    overflow: auto;
-}
-
-#mapDiv {
-    min-height: 100%;
-    max-height: 100%;
-}
-
-.opacitySlider {
-    position: absolute;
-    color: white;
-    width: 200px;
-    padding: 10px;
-    /*padding-bottom: 40px;*/
-    opacity: 0.8;
-    border: solid 1px white;
-    background-color: black;
-    z-index: 1000;
-    border-radius: 5px;
-}
+/* NAVBAR TOP STUFF */
 
 .modal-dialog {
     padding-top: 60px;
@@ -215,7 +171,6 @@ body {
     color: rgba(255,255,255,.35);
 }
 
-
 #aboutNav{
     letter-spacing: 2px;
     position: relative; top: 2px;
@@ -230,7 +185,6 @@ body {
 #aboutNav:focus{
     outline: none;
 }
-
 
 .search-bar {
     margin:0px;
@@ -281,6 +235,17 @@ body {
     font-weight: bold !important;
 }
 
+@media (max-width: 767px) {
+    #geosearchButtonText {
+        display: none;
+    }
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+/* SIDEBAR */
 .no-col-padding {
     padding: 0;
 }
@@ -293,10 +258,6 @@ body {
 }
 .panel-heading a.collapsed:after {
     content:"\e080";
-}
-
-.row-map {
-    background: #eee;
 }
 
 [class*="col-"] {
@@ -313,22 +274,146 @@ body {
     top: 50px;
     padding-bottom: 50px;
 }
+
 input[type="checkbox"], input[type="radio"] {
     float: left;
 }
 
-.lyrTog {
-    width: 100%;
-    padding: 1px;
-    font-weight: bold;
-}
-
 input[type=checkbox]
 {
-  /* Double-sized Checkboxes */ /* IE */ /* FF */
-  -webkit-transform: scale(1.25); /* Safari and Chrome */ /* Opera */
+  -webkit-transform: scale(1.25);
   transform: scale(1.25);
   padding: 10px;
   float:left;
   margin-left:10px;
+}
+
+.basemapThumb {
+    border:1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.basemapBtn {
+    width: 86px;
+    margin-bottom: 2px;
+    padding:2px;
+}
+
+/* ALL LEGEND STUFF */
+#legendElement {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 3px 6px rgba(30, 39, 50, 0.2), 0 3px 6px rgba(30, 39, 50, 0.2);
+    margin-top: 5px;
+    right: 10px;
+    top: 0px;
+  }
+  @media (max-width: 990px) {
+    #legendElement {
+      top: 55px;
+    }
+  }
+  #legendElement #legendHeading {
+    background-color: #FFFFFF;
+    color: #6F758E;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  #legendElement #legendHeading h4 {
+    font-size: 10pt;
+    padding: 0;
+  }
+  #legendElement #legendHeading h4 a {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  #legendElement #legendHeading h4 a:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+  }
+  #legendElement #legendDiv {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  #legendElement{
+    margin-top: 10px;
+}
+.legend-panel-body input[type='checkbox']{
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    color: rgba(0,0,0,0.7) !important;
+}
+.legendHeading {
+    color: black;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.8);
+    text-decoration: none !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#legendDiv p{
+    display: block;
+    box-sizing: border-box;
+    padding: 8px 0 0 0;
+    text-align: center;
+    font-size: 8pt;
+    color: rgba(0,0,0,0.5) !important;
+    margin: 0 auto;
+}
+#legendDiv b{
+    box-sizing: border-box;
+    padding: 0 0 0 5px;
+}
+#legendDiv {
+    overflow-y: auto;
+}
+.legend-panel-body {
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.panel-body h3{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bolder;
+    letter-spacing: -0.5px;
+    color: rgba(0,0,0,0.75);
+}
+#legendButtonSidebar {
+    width: 100%;
+}
+.legend-item-panel{
+    border-radius: 0;
+}
+.legendClass i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.legendClass {
+    position:absolute;
+    top:5px;
+    right:5px;
+    z-index:99999;
+    color: black;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    border-radius: 4px;
+    text-align: left;
+    line-height: 26px;
+    margin-left: 0;
+    margin-right:0;
+    padding-left: 0;
+    padding-right: 0;
 }

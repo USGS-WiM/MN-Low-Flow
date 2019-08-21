@@ -219,7 +219,40 @@
                     </div>
                 </div>
 
-        <div class="custom-popup" id="mapDiv">
+                <div id="mapContainer" class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 no-col-padding keepit100">
+
+                        <div id="mapDiv">
+                        
+                            <div id="legendElement" class="panel panel-default legendClass">
+                                <div id="legendHeading" class=" legendHeading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" style="text-decoration: none"  href="#legendCollapse" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="glyphicon glyphicon-list"></span>
+                                            Map Layers
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="legendCollapse" class="panel-collapse " role="tabpanel">
+                                    <div id="legendDiv" class="panel-body legend-panel-body">
+                                            <b>Real-Time Data</b></br>
+                                            <b>Observed Data</b></br>
+                                            <b>Interpreted Data</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div id="latLngScale" class="latLngScale">
+                            <span class="hover-content"> <b>Map scale </b></span>
+                            1:<span id="scale"></span> | <span class="hover-content"> <b>Zoom level </b></span> <span id="zoomLevel"></span><br>
+                            <span class="hover-content"><b>Latitude</b></span>
+                            <span id="latitude">y</span> |
+                            <span class="hover-content"> <b>Longitude</b></span>
+                            <span id="longitude">x</span>
+                            <span id="mapCenterLabel"  class="hover-content"> (center)</span>
+                        </div>
+            
+                    </div>
 
     </div>
 </div>
