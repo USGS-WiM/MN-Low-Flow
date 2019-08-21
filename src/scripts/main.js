@@ -74,7 +74,7 @@ $( document ).ready(function() {
 
 //////// BEGIN create map + switching basemap utility ////////
 
-	map = L.map('mapDiv').setView([46.39, -94.63], 6);
+	map = L.map('mapDiv').setView([46.39, -94.63], 7);
 	var layer = L.esri.basemapLayer('Topographic').addTo(map);
 	var layerLabels;
 
@@ -124,18 +124,14 @@ $( document ).ready(function() {
 	function setSearchAPI() {
 		search_api.on('load', function() {
 
-			$('#chkExtent').change(function(){
-				if($(this).is(':checked')){
-					console.log('Checked',map.getBounds().getSouth(),map.getBounds().getNorth(),map.getBounds().getWest(),map.getBounds().getEast());
-					var mapBounds = map.getBounds();
+			// setting the bounds of the search to MN Area //
+			var mapBounds = map.getBounds();
 
-					search_api.setOpts({
-						'LATmin' : mapBounds.getSouth(),
-						'LATmax' : mapBounds.getNorth(),
-						'LONmin' : mapBounds.getWest(),
-						'LONmax' : mapBounds.getEast()
-					});
-				}
+			search_api.setOpts({
+				'LATmin' : mapBounds.getSouth(),
+				'LATmax' : mapBounds.getNorth(),
+				'LONmin' : mapBounds.getWest(),
+				'LONmax' : mapBounds.getEast()
 			});
 
 			search_api.setOpts({
@@ -326,7 +322,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon0
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a href='"+ link4 +"'> Log Pearson </a>"); 
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"+ link4 +"'> Log Pearson </a>"); 
 					layer0.addLayer(marker0)
 				}
 				// regulated gages //
@@ -335,7 +331,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon1
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer1.addLayer(marker1)
 				}
 				// discontinuous gages (0-1 years) //
@@ -344,7 +340,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon2
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer2.addLayer(marker2)
 				}
 				// discontinuous gages (2-5 years) //
@@ -353,7 +349,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon3
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer3.addLayer(marker3)
 				}
 				// discontinuous gages (6-10 years) //
@@ -362,7 +358,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon4
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer4.addLayer(marker4)
 				}
 				// discontinuous gages (10-15 years) //
@@ -371,7 +367,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon5
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer5.addLayer(marker5)
 				}
 				// discontinuous gages (16-25 years) //
@@ -380,7 +376,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon6
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer6.addLayer(marker6)
 				}
 				// discontinuous gages (26-49 years) //
@@ -389,7 +385,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon7
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer7.addLayer(marker7)
 				}
 				// discontinuous gages (50+ years) //
@@ -398,7 +394,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon8
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a href='"+ link +"'> Data </a>");
+					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
 					layer8.addLayer(marker8)
 				}
 			}
