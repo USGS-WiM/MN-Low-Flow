@@ -316,25 +316,43 @@ $( document ).ready(function() {
 				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
 
 				var content = '<div class="tabs">' +
-
 				'<div class="tab" id="tab-1">' +
 				'<div class="content">' +
-				"<a target='_blank' href='"+ link +"'> Data </a>" +
+				"Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>"+
 				'</div>' +
 				'</div>' +
-	
 				'<div class="tab" id="tab-2">' +
 				'<div class="content">' +
 				'<b>Tab 2 content</b>' +
 				'</div>' +
 				'</div>' +
-	
 				'<div class="tab" id="tab-3">' +
 				'<div class="content">' +
 				'<b>Tab 3 content</b>' +
 				'</div>' +
 				'</div>' +
-	
+				'<ul class="tabs-link">' +
+				'<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
+				'<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
+				'<li class="tab-link"> <a href="#tab-3"><span>Tab 3</span></a></li>' +
+				'</ul>' +
+			'</div>';
+			var content0 = '<div class="tabs">' +
+				'<div class="tab" id="tab-1">' +
+				'<div class="content">' +
+				"Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"+ link4 +"'> Log Pearson </a>" +
+				'</div>' +
+				'</div>' +
+				'<div class="tab" id="tab-2">' +
+				'<div class="content">' +
+				'<b>Tab 2 content</b>' +
+				'</div>' +
+				'</div>' +
+				'<div class="tab" id="tab-3">' +
+				'<div class="content">' +
+				'<b>Tab 3 content</b>' +
+				'</div>' +
+				'</div>' +
 				'<ul class="tabs-link">' +
 				'<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
 				'<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
@@ -349,7 +367,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon0
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"+ link4 +"'> Log Pearson </a>"); 
+					}).bindPopup(content0); 
 					layer0.addLayer(marker0)
 				}
 				// regulated gages //
@@ -367,7 +385,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon2
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer2.addLayer(marker2)
 				}
 				// discontinuous gages (2-5 years) //
@@ -376,7 +394,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon3
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer3.addLayer(marker3)
 				}
 				// discontinuous gages (6-10 years) //
@@ -385,7 +403,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon4
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer4.addLayer(marker4)
 				}
 				// discontinuous gages (10-15 years) //
@@ -394,7 +412,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon5
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer5.addLayer(marker5)
 				}
 				// discontinuous gages (16-25 years) //
@@ -403,7 +421,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon6
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer6.addLayer(marker6)
 				}
 				// discontinuous gages (26-49 years) //
@@ -412,7 +430,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon7
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer7.addLayer(marker7)
 				}
 				// discontinuous gages (50+ years) //
@@ -421,7 +439,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon8
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer8.addLayer(marker8)
 				}
 			}
