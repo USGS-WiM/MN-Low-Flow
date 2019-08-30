@@ -315,6 +315,33 @@ $( document ).ready(function() {
 				var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
 				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
 
+				var content = '<div class="tabs">' +
+
+				'<div class="tab" id="tab-1">' +
+				'<div class="content">' +
+				"<a target='_blank' href='"+ link +"'> Data </a>" +
+				'</div>' +
+				'</div>' +
+	
+				'<div class="tab" id="tab-2">' +
+				'<div class="content">' +
+				'<b>Tab 2 content</b>' +
+				'</div>' +
+				'</div>' +
+	
+				'<div class="tab" id="tab-3">' +
+				'<div class="content">' +
+				'<b>Tab 3 content</b>' +
+				'</div>' +
+				'</div>' +
+	
+				'<ul class="tabs-link">' +
+				'<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
+				'<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
+				'<li class="tab-link"> <a href="#tab-3"><span>Tab 3</span></a></li>' +
+				'</ul>' +
+			'</div>';
+
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
 					
@@ -331,7 +358,7 @@ $( document ).ready(function() {
 						radius: 3,
 						fillOpacity: 0.95,
 						icon: icon1
-					}).bindPopup("Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>");
+					}).bindPopup(content);
 					layer1.addLayer(marker1)
 				}
 				// discontinuous gages (0-1 years) //
