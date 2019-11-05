@@ -280,12 +280,27 @@ $( document ).ready(function() {
 //////// BEGIN defining each gage layer, grouping them, and showing them w/checkbox ////////
 
 // defining each icon //
-	var icon0 = L.icon({iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	
+	var icon0 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
 	var icon1 = L.icon({iconUrl: 'images/image2.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
-	var icon2 = L.icon({iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
-	var icon3 = L.icon({iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
-	var icon4 = L.icon({iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
-	var icon5 = L.icon({iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+
+
+	var icon2_sm = L.icon({iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon2_md = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	var icon2_lg = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+	
+	var icon3_sm = L.icon({iconUrl: 'images/image3.png', iconAnchor: [12, 12], popupAnchor: [0, 2], iconSize: [12,12]});
+	var icon3_md = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	var icon3_lg = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [25, 25] });
+	
+	var icon4_sm = L.icon({iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon4_md = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [20, 20] });
+	var icon4_lg = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	
+	var icon5_sm = L.icon({iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon5_md = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	var icon5_lg = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+	
 	var icon6 = L.icon({iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 	var icon7 = L.icon({iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 	var icon8 = L.icon({iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0,2], iconSize: [16,16]})
@@ -384,7 +399,7 @@ $( document ).ready(function() {
 					var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
-						icon: icon2
+						icon: icon2_lg
 					}).bindPopup(content);
 					layer2.addLayer(marker2)
 				}
@@ -393,7 +408,7 @@ $( document ).ready(function() {
 					var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
-						icon: icon3
+						icon: icon3_sm
 					}).bindPopup(content);
 					layer3.addLayer(marker3)
 				}
@@ -402,7 +417,7 @@ $( document ).ready(function() {
 					var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
-						icon: icon4
+						icon: icon4_md
 					}).bindPopup(content);
 					layer4.addLayer(marker4)
 				}
@@ -411,7 +426,7 @@ $( document ).ready(function() {
 					var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
-						icon: icon5
+						icon: icon5_lg
 					}).bindPopup(content);
 					layer5.addLayer(marker5)
 				}

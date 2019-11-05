@@ -33,11 +33,11 @@
 
     <!-- build:js scripts/combined.js -->
     <!--<script src="scripts/stnSitesGeo.js" defer></script>-->
-    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
         <!-- endbuild -->
 
         <!-- build:js data/data.json -->
-    <script src="data/data.json"></script>
+    <script type="application/json" src="data/data.json"></script>
     <!-- endbuild -->
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -190,15 +190,15 @@
                             </h4>
                         </div>
                         <div id="filtersPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="filtersHeader">
-                            <input type="checkbox" id="Check0" onClick="myFunction0(this)" checked> <span>Continuous</span><br>
-                            <input type="checkbox" id="Check1" onClick="myFunction1(this)" checked> <span>Regulated</span><br>
-                            <input type="checkbox" id="Check2" onClick="myFunction2(this)" checked> <span>0-1 years</span><br>
-                            <input type="checkbox" id="Check3" onClick="myFunction3(this)" checked> <span>2-5 years</span><br>
-                            <input type="checkbox" id="Check4" onClick="myFunction4(this)" checked> <span>6-10 years</span><br>
-                            <input type="checkbox" id="Check5" onClick="myFunction5(this)" checked> <span>11-15 years</span><br>
-                            <input type="checkbox" id="Check6" onClick="myFunction6(this)" checked> <span>16-25 years</span><br>
-                            <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span>26-49 years</span><br>
-                            <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span>50+ years</span><br>
+                            <input type="checkbox" id="Check0" onClick="myFunction0(this)" checked> <span class="iconWrap"><img src="images/image1.png" class="filter-icon"></span><span>Continuous</span><br>
+                            <input type="checkbox" id="Check1" onClick="myFunction1(this)" checked> <span class="iconWrap"><img src="images/image2.png" class="filter-icon"></span><span>Regulated</span><br>
+                            <input type="checkbox" id="Check2" onClick="myFunction2(this)" checked> <span class="iconWrap"><img src="images/rdg.png" class="filter-icon"></span><span>0-1 years</span><br>
+                            <input type="checkbox" id="Check3" onClick="myFunction3(this)" checked> <span class="iconWrap"><img src="images/image3.png" class="filter-icon"></span><span>2-5 years</span><br>
+                            <input type="checkbox" id="Check4" onClick="myFunction4(this)" checked> <span class="iconWrap"><img src="images/image4.png" class="filter-icon"></span><span>6-10 years</span><br>
+                            <input type="checkbox" id="Check5" onClick="myFunction5(this)" checked> <span class="iconWrap"><img src="images/image5.png" class="filter-icon"></span><span>11-15 years</span><br>
+                            <input type="checkbox" id="Check6" onClick="myFunction6(this)" checked> <span class="iconWrap"><img src="images/image6.png" class="filter-icon"></span><span>16-25 years</span><br>
+                            <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span class="iconWrap"><img src="images/nwis.png" class="filter-icon"></span><span>26-49 years</span><br>
+                            <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span class="iconWrap"><img src="images/image8.png" class="filter-icon"></span><span>50+ years</span><br>
                         </div>
                     </div>
                     <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WiM</a></div>
@@ -219,9 +219,9 @@
                                 <div id="legendCollapse" class="panel-collapse " role="tabpanel">
                                     <div id="legendDiv" class="panel-body legend-panel-body">
                                             <img src="images/image1.png" style="width:16px;height:16px;"><b>Continuous Gages</b></br>
-                                            <img src="images/image2.png" style="width:16px;height:16px;"><b>Less than three measurements</b></br>
-                                            <img src="images/rdg.png" style="width:16px;height:16px;"><b>3 to 10 measurements</b></br>
-                                            <img src="images/image3.png" style="width:16px;height:16px;"><b>More than ten measurements</b>
+                                            <img src="images/nwis.png" style="width:11px;height:11px;"><b>Less than three measurements</b></br>
+                                            <img src="images/nwis.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
+                                            <img src="images/nwis.png" style="width:29px;height:29px;"><b>More than ten measurements</b>
                                     </div>
                                 </div>
                             </div>
