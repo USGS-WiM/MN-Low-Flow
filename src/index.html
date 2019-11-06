@@ -6,11 +6,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css">
-    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" href="bower_components/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-sidebar/dist/css/sidebar.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- CSS for the mapping components -->
@@ -22,22 +20,23 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery.nicescroll/jquery.nicescroll.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
-    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
     <script src="bower_components/esri-leaflet/dist/esri-leaflet.js"></script>
+    <script src="bower_components/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/combined.js -->
     <!--<script src="scripts/stnSitesGeo.js" defer></script>-->
-    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
         <!-- endbuild -->
 
         <!-- build:js data/data.json -->
-    <script src="data/data.json"></script>
+    <script type="application/json" src="data/data.json"></script>
     <!-- endbuild -->
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -71,7 +70,12 @@
                 </button>
                 <a class="navbar-brand" href="https://www.usgs.gov">
                     <img alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
+                   <!--  <img alt="MPCA logo" height="38px" src="images/MPCA_logo.png">-->
                     <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
+                    
+                </a>
+                <a class="navbar-brand" href="https://www.pca.state.mn.us">
+                    &nbsp;&nbsp;<img alt="MPCA logo" height="38px" src="images/MPCA_logo.png">
                 </a>
             </div>
             <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
@@ -120,26 +124,56 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                    <h4 class="modal-title">MN-Low-Flow</h4>
+                    <h4 class="modal-title">MN-Low-Flow <img alt="MPCA logo" height="38px" src="images/MPCA_logo.png"></h4>
+                    
                 </div>
                 <div id="aboutModalBody" class="modal-body">
                     <ul class="nav nav-tabs" id="aboutModalTabs">
                         <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                        <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Data Limitations</a></li>
+                        <li role="presentation"><a id="dataLimitationsTab" href="#dataLimitationsTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Data Limitations</a></li>
+                        <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-triangle"></i>&nbsp;Disclaimer</a></li>
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="aboutTabPane"></br>
-                            <p style="color:black; font-size: larger">The USGS MN-Low-Flow is the public data discovery component of the Short-Term Network (STN) database. Data viewable and downloadable from this page are from the STN database.</p>
+                            <p style="color:black; font-size: larger">The USGS Minnesota Low-Flow web application is used as a preparation and management tool for tracking, visualization,
+                                and management of historic and future low flow measurements for the state of Minnesota.</p>
+                                <p>Reference: 
+                                    <a href="https://pubs.usgs.gov/of/2007/1033/" target="_blank">Methods Used to Compute Low-Flow Frequency
+                                        Characteristics for Continuous-Record Streamflow Stations in
+                                        Minnesota, 2006</a>
+                                </p>
+                            <p>The USGS MN-Low-Flow is the public data discovery component of the Short-Term Network (STN) database. Data viewable and downloadable from this page are from the STN database.</p>
                             <p>This application relies on the STN Web Services to retrieve and display STN data. Application developers and general data seekers are encouraged to use the web services data API to retrieve STN data. Visit the <span><a href="https://stn.wim.usgs.gov/STNServices/Documentation/home" target="_blank">STN Web Services Documentation Page <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for more information, including full documentation of available endpoints and examples. See the <a href="https://my.usgs.gov/confluence/display/WSN/STN+Data+Dictionary+-+Top+Level" target="_blank">STN Data Dictionary</a> for field names and definitions.</p>
                             <p>This application integrates with the <span><a href="https://waterdata.usgs.gov/nwis" target="_blank">USGS National Water Information System (NWIS) database <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for display of time-series water data. As a user of MN-Low-Flow you will encounter links to NWIS pages and data sources, which are maintained separately from STN and FEV.</p>
+                            
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"></br>
-                            <h3>Data Limitations</h3>
+                        <div role="tabpanel" class="tab-pane" id="dataLimitationsTabPane"></br>
+                            <h4>Data Limitations</h4>
                             <p>Data are provisional and are subject to revision until thoroughly reviewed and approved.</p>
                             <p>Real-time data relayed by satellite or other telemetry are automatically screened to not display improbable values until they can be verified.</p>
                             <p>Provisional data may be inaccurate due to instrument malfunctions or physical changes at the measurement site. Subsequent review based on field inspections and measurements may result in significant revisions to the data.</p>
                             <p>The data are being provided to meet the need for timely best science and are released on the condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from authorized or unauthorized use of the information. Data users are cautioned to consider carefully the provisional nature of the information before using it for decisions that concern personal or public safety or the conduct of business that involves substantial monetary or operational consequences.</p>
                             <p>Information concerning the accuracy and appropriate uses of these data or concerning other hydrologic data may be obtained from the USGS.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"></br>
+                            <h4>USGS Data Disclaimer</h4>
+                            <p>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards
+                            relative to the purpose for which the data were collected. Although these data and associated metadata have been
+                            reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty
+                            expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer
+                            systems, nor shall the act of distribution constitute any such warranty.</p>
+
+                            <h4>USGS Software Disclaimer</h4>
+                            <p>This software has been approved for release by the U.S. Geological Survey (USGS). Although the software has been
+                            subjected to rigorous review, the USGS reserves the right to update the software as needed pursuant to further analysis
+                            and review. No warranty, expressed or implied, is made by the USGS or the U.S. Government as to the functionality of the
+                            software and related material nor shall the fact of release constitute any such warranty. Furthermore, the software is
+                            released on condition that neither the USGS nor the U.S. Government shall be held liable for any damages resulting from
+                            its authorized or unauthorized use.</p>
+
+                            <h4>USGS Product Names Disclaimer</h4>
+                            <p>Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S.
+                            Government.</p>
                         </div>
                     </div>
                 </div>
@@ -190,15 +224,15 @@
                             </h4>
                         </div>
                         <div id="filtersPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="filtersHeader">
-                            <input type="checkbox" id="Check0" onClick="myFunction0(this)" checked> <span>Continuous</span><br>
-                            <input type="checkbox" id="Check1" onClick="myFunction1(this)" checked> <span>Regulated</span><br>
-                            <input type="checkbox" id="Check2" onClick="myFunction2(this)" checked> <span>0-1 years</span><br>
-                            <input type="checkbox" id="Check3" onClick="myFunction3(this)" checked> <span>2-5 years</span><br>
-                            <input type="checkbox" id="Check4" onClick="myFunction4(this)" checked> <span>6-10 years</span><br>
-                            <input type="checkbox" id="Check5" onClick="myFunction5(this)" checked> <span>11-15 years</span><br>
-                            <input type="checkbox" id="Check6" onClick="myFunction6(this)" checked> <span>16-25 years</span><br>
-                            <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span>26-49 years</span><br>
-                            <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span>50+ years</span><br>
+                            <input type="checkbox" id="Check0" onClick="myFunction0(this)" checked> <span class="iconWrap"><img src="images/image1.png" class="filter-icon"></span><span>Continuous</span><br>
+                            <input type="checkbox" id="Check1" onClick="myFunction1(this)" checked> <span class="iconWrap"><img src="images/image2.png" class="filter-icon"></span><span>Regulated</span><br>
+                            <input type="checkbox" id="Check2" onClick="myFunction2(this)" checked> <span class="iconWrap"><img src="images/rdg.png" class="filter-icon"></span><span>0-1 years</span><br>
+                            <input type="checkbox" id="Check3" onClick="myFunction3(this)" checked> <span class="iconWrap"><img src="images/image3.png" class="filter-icon"></span><span>2-5 years</span><br>
+                            <input type="checkbox" id="Check4" onClick="myFunction4(this)" checked> <span class="iconWrap"><img src="images/image4.png" class="filter-icon"></span><span>6-10 years</span><br>
+                            <input type="checkbox" id="Check5" onClick="myFunction5(this)" checked> <span class="iconWrap"><img src="images/image5.png" class="filter-icon"></span><span>11-15 years</span><br>
+                            <input type="checkbox" id="Check6" onClick="myFunction6(this)" checked> <span class="iconWrap"><img src="images/image6.png" class="filter-icon"></span><span>16-25 years</span><br>
+                            <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span class="iconWrap"><img src="images/nwis.png" class="filter-icon"></span><span>26-49 years</span><br>
+                            <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span class="iconWrap"><img src="images/image8.png" class="filter-icon"></span><span>50+ years</span><br>
                         </div>
                     </div>
                     <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WiM</a></div>
@@ -219,9 +253,9 @@
                                 <div id="legendCollapse" class="panel-collapse " role="tabpanel">
                                     <div id="legendDiv" class="panel-body legend-panel-body">
                                             <img src="images/image1.png" style="width:16px;height:16px;"><b>Continuous Gages</b></br>
-                                            <img src="images/image2.png" style="width:16px;height:16px;"><b>Less than three measurements</b></br>
-                                            <img src="images/rdg.png" style="width:16px;height:16px;"><b>3 to 10 measurements</b></br>
-                                            <img src="images/image3.png" style="width:16px;height:16px;"><b>More than ten measurements</b>
+                                            <img src="images/nwis.png" style="width:11px;height:11px;"><b>Less than three measurements</b></br>
+                                            <img src="images/nwis.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
+                                            <img src="images/nwis.png" style="width:29px;height:29px;"><b>More than ten measurements</b>
                                     </div>
                                 </div>
                             </div>
