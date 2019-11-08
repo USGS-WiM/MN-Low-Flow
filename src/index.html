@@ -21,7 +21,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery.nicescroll/jquery.nicescroll.js"></script>
+    <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
     <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
@@ -179,7 +179,7 @@
                 </div>
                 <div class="modal-footer">
                     <p style="color:black; margin-left:35px;text-align:left">
-                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/wimvectorxs.png" id="wim_logo"></a>
+                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/logo_fullres.png" style="width:150px;height:50px" id="wim_logo"></a>
                     </p>
                     <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
                 </div>
@@ -219,7 +219,7 @@
                         <div class="panel-heading" id="filtersHeader">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#filtersPanel" aria-expanded="false" aria-controls="filtersPanel">
-                                    Filters
+                                    Layers
                                 </a>
                             </h4>
                         </div>
@@ -234,6 +234,7 @@
                             <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span class="iconWrap"><img src="images/nwis.png" class="filter-icon"></span><span>26-49 years</span><br>
                             <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span class="iconWrap"><img src="images/image8.png" class="filter-icon"></span><span>50+ years</span><br>
                             <input type="checkbox" id="Check9" onClick="myFunction9(this)" checked> <span>Active wastewater surface water discharges</span><br>
+                            <input type="checkbox" id="Check10" onClick="myFunction10(this)" checked> <span>HUC 8 Layer</span><br>
                         </div>
                     </div>
                     <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WiM</a></div>
