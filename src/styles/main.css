@@ -421,10 +421,11 @@ input[type=checkbox]
 }
 .legend-panel-body {
     width:100%;
+    line-height: 3em;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .panel-body h3{
     display: block;
@@ -464,4 +465,11 @@ input[type=checkbox]
     margin-right:0;
     padding-left: 0;
     padding-right: 0;
+}
+.filter-icon{
+  height:16px;
+  width:16px;
+}
+.iconWrap{
+  padding-right:10px;
 }
