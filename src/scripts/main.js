@@ -281,7 +281,7 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	var icon0 = L.icon({ iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
 	var icon1 = L.icon({iconUrl: 'images/image2.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 
 
@@ -302,7 +302,7 @@ $( document ).ready(function() {
 	var icon5_lg = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
 	
 	var icon6 = L.icon({iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
-	var icon7 = L.icon({iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon7 = L.icon({iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 	var icon8 = L.icon({iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0,2], iconSize: [16,16]})
 
 	layer0 = L.layerGroup();
@@ -329,6 +329,8 @@ $( document ).ready(function() {
 				var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
 				var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
 				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
+
+				$.get(link2, function(response){console.log(response)});
 
 				var content = '<div class="tabs">' +
 				'<div class="tab" id="tab-1">' +
@@ -377,7 +379,6 @@ $( document ).ready(function() {
 
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
-					
 					var marker0 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
