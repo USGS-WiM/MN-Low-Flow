@@ -295,7 +295,7 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16, 16] });
+	var icon0 = L.icon({ iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
 	var icon1 = L.icon({iconUrl: 'images/image2.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 
 
