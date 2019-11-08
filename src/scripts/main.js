@@ -10,6 +10,7 @@ var layer5;
 var layer6;
 var layer7;
 var layer8;
+var Sites;
 
 //////// BEGIN removing and adding the layers ////////
 
@@ -67,6 +68,12 @@ function myFunction8(checkbox) {
 	} else {
 		map.removeLayer(layer8)
 	}}
+	function myFunction9(checkbox) {
+		if(checkbox.checked == true){
+			map.addLayer(Sites);
+		} else {
+			map.removeLayer(Sites)
+		}}
 
 //////// END removing and adding the layers ////////
 
@@ -486,8 +493,27 @@ $( document ).ready(function() {
 			if($("#Check8").prop('checked')) {
 				map.addLayer(layer8)
 			}
+			if($("#Check9").prop('checked')) {
+				map.addLayer(Sites)
+			}
 		}
 	});
+
+		// Discharge Points //
+		Sites = L.esri.dynamicMapLayer({
+			url: 'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer',
+			layers: [6]
+		}).addTo(map);
+	
+		Sites.bindPopup(function (error, featureCollection) {
+			if (error || featureCollection.features.length === 0) {
+			  return false;
+			} else {
+			  return featureCollection.features[0].properties.description + "<br>"
+			  + "- " + featureCollection.features[0].properties.ai_name + "<br>"
+			  + "ID : " + featureCollection.features[0].properties.OBJECTID 
+			}
+		  });
 
 	//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
 
