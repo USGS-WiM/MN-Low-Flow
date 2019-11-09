@@ -321,7 +321,7 @@ $( document ).ready(function() {
 
 	function findCount (id){
 		var found = measurementCounts.filter(function(measurementCounts){return measurementCounts.site_no == id});
-		console.log('id: ' + id + ' found: ' + found[0]);
+		//console.log('id: ' + id + ' found: ' + found[0]);
 		if (found.length > 0){
 			if (found[0].sampleCount < 3) {
 				return "s"
