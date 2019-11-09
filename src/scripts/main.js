@@ -355,7 +355,6 @@ $( document ).ready(function() {
 			
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
-					
 					var marker0 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 						radius: 3,
 						fillOpacity: 0.95,
@@ -495,9 +494,27 @@ $( document ).ready(function() {
 
 		  //////// HUC 8 Layer ////////
 
-		  Huc8 = L.esri.dynamicMapLayer({
+		Huc8 = L.esri.dynamicMapLayer({
 			url: "https://fwsprimary.wim.usgs.gov/server/rest/services/HUCs/MapServer/",
 			layers: [1],
-			layerDefs: {1: "STATES LIKE '%MN%'"}
+			layerDefs: { 1: "STATES LIKE '%MN%'" }
 		}).addTo(map);
+
+		map.on('click', function(e){
+			console.log(e);
+			Huc8.identify().on(map).at(e.latlng).run(function(error, featureCollection){
+				if (error){
+					return false;
+				} 
+				//only show popups if user clicks on a MN feature
+				if (featureCollection.features[0].properties.States.indexOf("MN") >= 0 ){
+					var infos = featureCollection.features[0].properties
+					//console.log(infos)
+					var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
+				} else{
+					return false;
+
+				}
+			});
+		});
 });
