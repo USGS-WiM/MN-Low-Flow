@@ -299,34 +299,6 @@ $( document ).ready(function() {
 	var icon0 = L.icon({ iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
 	var icon1 = L.icon({iconUrl: 'images/image2.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 
-/* 	var icon2_sm = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon2_md = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19]});
-	var icon2_lg = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
-	
-	var icon3_sm = L.icon({iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12,12]});
-	var icon3_md = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19]});
-	var icon3_lg = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
-	
-	var icon4_sm = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon4_md = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19]});
-	var icon4_lg = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
-	
-	var icon5_sm = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon5_md = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19]});
-	var icon5_lg = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
-	
-	var icon6_sm = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon6_md = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-	var icon6_lg = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-	
-	var icon7_sm = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon7_md = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-	var icon7_lg = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-	
-	var icon8_sm = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon8_md = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19]});
-	var icon8_lg = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
- */
 	layer0 = L.layerGroup();
 	layer1 = L.layerGroup();
 	layer2 = L.layerGroup();
