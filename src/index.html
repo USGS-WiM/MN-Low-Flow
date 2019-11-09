@@ -70,12 +70,7 @@
                 </button>
                 <a class="navbar-brand" href="https://www.usgs.gov">
                     <img alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
-                   <!--  <img alt="MPCA logo" height="38px" src="images/MPCA_logo.png">-->
                     <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
-                    
-                </a>
-                <a class="navbar-brand" href="https://www.pca.state.mn.us">
-                    &nbsp;&nbsp;<img alt="MPCA logo" height="38px" src="images/MPCA_logo.png">
                 </a>
             </div>
             <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
@@ -142,10 +137,6 @@
                                         Characteristics for Continuous-Record Streamflow Stations in
                                         Minnesota, 2006</a>
                                 </p>
-                            <p>The USGS MN-Low-Flow is the public data discovery component of the Short-Term Network (STN) database. Data viewable and downloadable from this page are from the STN database.</p>
-                            <p>This application relies on the STN Web Services to retrieve and display STN data. Application developers and general data seekers are encouraged to use the web services data API to retrieve STN data. Visit the <span><a href="https://stn.wim.usgs.gov/STNServices/Documentation/home" target="_blank">STN Web Services Documentation Page <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for more information, including full documentation of available endpoints and examples. See the <a href="https://my.usgs.gov/confluence/display/WSN/STN+Data+Dictionary+-+Top+Level" target="_blank">STN Data Dictionary</a> for field names and definitions.</p>
-                            <p>This application integrates with the <span><a href="https://waterdata.usgs.gov/nwis" target="_blank">USGS National Water Information System (NWIS) database <i class="fa fa-external-link" aria-hidden="true"></i></a></span> for display of time-series water data. As a user of MN-Low-Flow you will encounter links to NWIS pages and data sources, which are maintained separately from STN and FEV.</p>
-                            
                         </div>
                         <div role="tabpanel" class="tab-pane" id="dataLimitationsTabPane"></br>
                             <h4>Data Limitations</h4>
@@ -179,7 +170,7 @@
                 </div>
                 <div class="modal-footer">
                     <p style="color:black; margin-left:35px;text-align:left">
-                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/wim_abbr_black.png" style="width:60px" id="wim_logo"></a>
+                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/logo_fullres.png" style="width:150px;height:50px" id="wim_logo"></a>
                     </p>
                     <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
                 </div>
@@ -219,7 +210,7 @@
                         <div class="panel-heading" id="filtersHeader">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#filtersPanel" aria-expanded="false" aria-controls="filtersPanel">
-                                    Filters
+                                    Layers
                                 </a>
                             </h4>
                         </div>
@@ -234,9 +225,10 @@
                             <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span class="iconWrap"><img src="images/image1.png" class="filter-icon"></span><span>26-49 years</span><br>
                             <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span class="iconWrap"><img src="images/image8.png" class="filter-icon"></span><span>50+ years</span><br>
                             <input type="checkbox" id="Check9" onClick="myFunction9(this)" checked> <span>Active wastewater surface water discharges</span><br>
+                            <input type="checkbox" id="Check10" onClick="myFunction10(this)" checked> <span>HUC 8 Layer</span><br>
                         </div>
                     </div>
-                    <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WiM</a></div>
+                    <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WIM</a></div>
                 </div>
 
                 <div id="mapContainer" class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 no-col-padding keepit100">
@@ -254,9 +246,9 @@
                                 <div id="legendCollapse" class="panel-collapse " role="tabpanel">
                                     <div id="legendDiv" class="panel-body legend-panel-body">
                                             <img src="images/nwis.png" style="width:29px;height:29px;"><b>Continuous Gages</b></br>
-                                            <img src="images/image3.png" style="width:11px;height:11px;"><b>Less than three measurements</b></br>
-                                            <img src="images/image3.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
-                                            <img src="images/image3.png" style="width:29px;height:29px;"><b>More than ten measurements</b>
+                                            <img src="images/image1.png" style="width:11px;height:11px;"><b>Less than three measurements</b></br>
+                                            <img src="images/image1.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
+                                            <img src="images/image1.png" style="width:29px;height:29px;"><b>More than ten measurements</b>
                                     </div>
                                 </div>
                             </div>

@@ -11,6 +11,7 @@ var layer6;
 var layer7;
 var layer8;
 var Sites;
+var Huc8;
 
 //////// BEGIN removing and adding the layers ////////
 
@@ -68,12 +69,18 @@ function myFunction8(checkbox) {
 	} else {
 		map.removeLayer(layer8)
 	}}
-	function myFunction9(checkbox) {
-		if(checkbox.checked == true){
-			map.addLayer(Sites);
-		} else {
-			map.removeLayer(Sites)
-		}}
+function myFunction9(checkbox) {
+	if(checkbox.checked == true){
+		map.addLayer(Sites);
+	} else {
+		map.removeLayer(Sites)
+	}}
+function myFunction10(checkbox) {
+	if(checkbox.checked == true){
+		map.addLayer(Huc8);
+	} else {
+		map.removeLayer(Huc8)
+	}};
 
 //////// END removing and adding the layers ////////
 
@@ -336,54 +343,16 @@ $( document ).ready(function() {
 				var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
 				var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
 				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
+				var linkNWIS = "https://waterdata.usgs.gov/monitoring-location/" + a.site_no + "/"
 
-				$.get(link2, function(response){console.log(response)});
+				var content = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>"+
+				"<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
 
-				var content = '<div class="tabs">' +
-				'<div class="tab" id="tab-1">' +
-				'<div class="content">' +
-				"Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>"+
-				'</div>' +
-				'</div>' +
-				'<div class="tab" id="tab-2">' +
-				'<div class="content">' +
-				'<b>Tab 2 content</b>' +
-				'</div>' +
-				'</div>' +
-				'<div class="tab" id="tab-3">' +
-				'<div class="content">' +
-				'<b>Tab 3 content</b>' +
-				'</div>' +
-				'</div>' +
-				'<ul class="tabs-link">' +
-				'<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
-				'<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
-				'<li class="tab-link"> <a href="#tab-3"><span>Tab 3</span></a></li>' +
-				'</ul>' +
-			'</div>';
-			var content0 = '<div class="tabs">' +
-				'<div class="tab" id="tab-1">' +
-				'<div class="content">' +
-				"Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 +"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" + "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"+ link4 +"'> Log Pearson </a>" +
-				'</div>' +
-				'</div>' +
-				'<div class="tab" id="tab-2">' +
-				'<div class="content">' +
-				'<b>Tab 2 content</b>' +
-				'</div>' +
-				'</div>' +
-				'<div class="tab" id="tab-3">' +
-				'<div class="content">' +
-				'<b>Tab 3 content</b>' +
-				'</div>' +
-				'</div>' +
-				'<ul class="tabs-link">' +
-				'<li class="tab-link"> <a href="#tab-1"><span>Tab 1</span></a></li>' +
-				'<li class="tab-link"> <a href="#tab-2"><span>Tab 2</span></a></li>' +
-				'<li class="tab-link"> <a href="#tab-3"><span>Tab 3</span></a></li>' +
-				'</ul>' +
-			'</div>';
-
+			var content0 = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 
+			+"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" 
+			+ "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"
+			+ link4 +"'> Log Pearson </a>" + "<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
+			
 				 // continuous gages //
 				if (a.pt_symbol == "symbol0") {
 					var marker0 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
@@ -497,8 +466,13 @@ $( document ).ready(function() {
 			if($("#Check9").prop('checked')) {
 				map.addLayer(Sites)
 			}
+			if($("#Check10").prop('checked')) {
+				map.addLayer(Huc8)
+			}
 		}
 	});
+
+		//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
 
 		// Discharge Points //
 		Sites = L.esri.dynamicMapLayer({
@@ -512,10 +486,35 @@ $( document ).ready(function() {
 			} else {
 			  return featureCollection.features[0].properties.description + "<br>"
 			  + "- " + featureCollection.features[0].properties.ai_name + "<br>"
-			  + "ID : " + featureCollection.features[0].properties.OBJECTID 
+			  + "ID : " + featureCollection.features[0].properties.OBJECTID + "<br>" + "<br>" + "HUC8 : "
+			  + featureCollection.features[0].properties.huc8_name + "<br>" + "HUC8 ID : "
+			  + featureCollection.features[0].properties.huc8
 			}
 		  });
 
-	//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
+		  //////// HUC 8 Layer ////////
 
+		Huc8 = L.esri.dynamicMapLayer({
+			url: "https://fwsprimary.wim.usgs.gov/server/rest/services/HUCs/MapServer/",
+			layers: [1],
+			layerDefs: { 1: "STATES LIKE '%MN%'" }
+		}).addTo(map);
+
+		map.on('click', function(e){
+			console.log(e);
+			Huc8.identify().on(map).at(e.latlng).run(function(error, featureCollection){
+				if (error){
+					return false;
+				} 
+				//only show popups if user clicks on a MN feature
+				if (featureCollection.features[0].properties.States.indexOf("MN") >= 0 ){
+					var infos = featureCollection.features[0].properties
+					//console.log(infos)
+					var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
+				} else{
+					return false;
+
+				}
+			});
+		});
 });
