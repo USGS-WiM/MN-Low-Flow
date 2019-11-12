@@ -310,255 +310,255 @@ $( document ).ready(function() {
 	layer8 = L.layerGroup();
 
 	// JSON DATA //
-	$.ajax({
-		dataType: "json",
-		url: "./data/LookupCount.json",
-		success: function(json){
+	$.getJSON("./data/LookupCount.json",
+		function(json){
 			measurementCounts = json;
 			
-		}
-	});
 
-	function findCount (id){
-		var found = measurementCounts.filter(function(measurementCounts){return measurementCounts.site_no == id});
-		//console.log('id: ' + id + ' found: ' + found[0]);
-		if (found.length > 0){
-			if (found[0].sampleCount < 3) {
-				return "s"
-			}
-			if (found[0].sampleCount >= 3 && found[0].sampleCount <= 10) {
-				return "m"
-			}
-			if (found[0].sampleCount > 10) {
-				return "l"
-			} else {
-				console.log("ERROR@: " + found[0]);
-			}
-		}else{
-			console.log("not found: " + id);
-			return "m"
-		}
-	}
 
-	$.ajax({
-		dataType: "json",
-		url: "./data/data.json",
-		success: function (json) {
-			//console.log(json);
-			//console.log("measurements" + measurementCounts);
-			for (var i = 0; i < json.items.length; i++) {
-				var a = json.items[i];
-				// links to data //
-				var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + a.site_no + ".txt"
-				var link2 = "https://mn.water.usgs.gov/infodata/lowflow/contData/freqOutput/" + a.site_no + ".txt"
-				var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
-				var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
-				var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
-				var linkNWIS = "https://waterdata.usgs.gov/monitoring-location/" + a.site_no + "/"
+			function findCount (id){
+				var found = measurementCounts.filter(function(measurementCounts){return measurementCounts.site_no == id});
+				//console.log('id: ' + id + ' found: ' + found[0]);
+				if (found.length > 0){
+					if (found[0].sampleCount < 3) {
+						return "s"
+					}
+					if (found[0].sampleCount >= 3 && found[0].sampleCount <= 10) {
+						return "m"
+					}
+					if (found[0].sampleCount > 10) {
+						return "l"
+					} else {
+						console.log("ERROR@: " + found[0]);
+					}
+				}else{
+					console.log("not found: " + id);
+					return "m"
+				}
+			} 
 
-				var content = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>"+
-				"<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
+			$.ajax({
+				dataType: "json",
+				url: "./data/data.json",
 
-				var content0 = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 
-				+"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" 
-				+ "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"
-				+ link4 +"'> Log Pearson </a>" + "<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
-			
-				 // continuous gages //
-				if (a.pt_symbol == "symbol0") {
-					var marker0 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon0
-					}).bindPopup(content0); 
-					layer0.addLayer(marker0)
+				success: function (json) {
+					//console.log(json);
+					//console.log("measurements" + measurementCounts);
+					for (var i = 0; i < json.items.length; i++) {
+						var a = json.items[i];
+						// links to data //
+						var link = "https://mn.water.usgs.gov/infodata/lowflow/disContData/" + a.site_no + ".txt"
+						var link2 = "https://mn.water.usgs.gov/infodata/lowflow/contData/freqOutput/" + a.site_no + ".txt"
+						var link3 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logNormal/p" + a.site_no + ".pdf"
+						var link4 = "https://mn.water.usgs.gov/infodata/lowflow/contData/logPearson/p" + a.site_no + ".pdf"
+						var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
+						var linkNWIS = "https://waterdata.usgs.gov/monitoring-location/" + a.site_no + "/"
+
+						var content = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link +"'> Data </a>"+
+						"<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
+
+						var content0 = "Station: " + a.station_nm + "<br>" + "<a target='_blank' href='"+ link5 
+						+"'> Station Description </a>" + "<br>" + "<a target='_blank' href='"+ link2 +"'> Frequency Output </a>" 
+						+ "<br>" + "<a target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<br>" + "<a target='_blank' href='"
+						+ link4 +"'> Log Pearson </a>" + "<br>" + "<a target='_blank' href='"+ linkNWIS +"'> NWIS </a>";
+					
+						// continuous gages //
+						if (a.pt_symbol == "symbol0") {
+							var marker0 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon0
+							}).bindPopup(content0); 
+							layer0.addLayer(marker0)
+						}
+						// regulated gages //
+						if (a.pt_symbol == "symbol1") {
+							var marker1 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon1
+							}).bindPopup(content);
+							layer1.addLayer(marker1)
+						}
+						// discontinuous gages (0-1 years) //
+						if (a.pt_symbol == "symbol2") {
+							var category = findCount(a.site_no);
+							var icon2;
+							if (category == "s"){
+								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] })
+							}
+							if (category == "m") {
+								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+							}
+							if (category == "l") {
+								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] })
+							}
+							var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon2
+							}).bindPopup(content);
+							layer2.addLayer(marker2)
+						}
+						// discontinuous gages (2-5 years) //
+						if (a.pt_symbol == "symbol3") {
+							var category = findCount(a.site_no);
+							var icon3;
+							if (category == "s") {
+								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon3
+							}).bindPopup(content);
+							layer3.addLayer(marker3)
+						}
+						// discontinuous gages (6-10 years) //
+						if (a.pt_symbol == "symbol4") {
+							var category = findCount(a.site_no);
+							var icon4;
+							if (category == "s") {
+								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon4
+							}).bindPopup(content);
+							layer4.addLayer(marker4)
+						}
+						// discontinuous gages (10-15 years) //
+						if (a.pt_symbol == "symbol5") {
+							var category = findCount(a.site_no);
+							var icon5;
+							if (category == "s") {
+								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon5
+							}).bindPopup(content);
+							layer5.addLayer(marker5)
+						}
+						// discontinuous gages (16-25 years) //
+						if (a.pt_symbol == "symbol6") {
+							var category = findCount(a.site_no);
+							var icon6;
+							if (category == "s") {
+								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon6
+							}).bindPopup(content);
+							layer6.addLayer(marker6)
+						}
+						// discontinuous gages (26-49 years) //
+						if (a.pt_symbol == "symbol7") {
+							var category = findCount(a.site_no);
+							var icon7;
+							if (category == "s") {
+								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon7
+							}).bindPopup(content);
+							layer7.addLayer(marker7)
+						}
+						// discontinuous gages (50+ years) //
+						if (a.pt_symbol == "symbol8") {
+							var category = findCount(a.site_no);
+							var icon8;
+							if (category == "s") {
+								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+							}
+							if (category == "m") {
+								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+							}
+							if (category == "l") {
+								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+							}
+							var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+								radius: 3,
+								fillOpacity: 0.95,
+								icon: icon8
+							}).bindPopup(content);
+							layer8.addLayer(marker8)
+						}
+					}
+					// checkboxes //
+					if($("#Check0").prop('checked')) {
+						map.addLayer(layer0)
+					}
+					if($("#Check1").prop('checked')) {
+						map.addLayer(layer1)
+					}
+					if($("#Check2").prop('checked')) {
+						map.addLayer(layer2)
+					}
+					if($("#Check3").prop('checked')) {
+						map.addLayer(layer3)
+					}
+					if($("#Check4").prop('checked')) {
+						map.addLayer(layer4)
+					}
+					if($("#Check5").prop('checked')) {
+						map.addLayer(layer5)
+					}
+					if($("#Check6").prop('checked')) {
+						map.addLayer(layer6)
+					}
+					if($("#Check7").prop('checked')) {
+						map.addLayer(layer7)
+					}
+					if($("#Check8").prop('checked')) {
+						map.addLayer(layer8)
+					}
+					if($("#Check9").prop('checked')) {
+						map.addLayer(Sites)
+					}
+					if($("#Check10").prop('checked')) {
+						map.addLayer(Huc8)
+					}
 				}
-				// regulated gages //
-				if (a.pt_symbol == "symbol1") {
-					var marker1 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon1
-					}).bindPopup(content);
-					layer1.addLayer(marker1)
-				}
-				// discontinuous gages (0-1 years) //
-				if (a.pt_symbol == "symbol2") {
-					var category = findCount(a.site_no);
-					var icon2;
-					if (category == "s"){
-						icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] })
-					}
-					if (category == "m") {
-						icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-					}
-					if (category == "l") {
-						icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] })
-					}
-					var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon2
-					}).bindPopup(content);
-					layer2.addLayer(marker2)
-				}
-				// discontinuous gages (2-5 years) //
-				if (a.pt_symbol == "symbol3") {
-					var category = findCount(a.site_no);
-					var icon3;
-					if (category == "s") {
-						icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon3
-					}).bindPopup(content);
-					layer3.addLayer(marker3)
-				}
-				// discontinuous gages (6-10 years) //
-				if (a.pt_symbol == "symbol4") {
-					var category = findCount(a.site_no);
-					var icon4;
-					if (category == "s") {
-						icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon4
-					}).bindPopup(content);
-					layer4.addLayer(marker4)
-				}
-				// discontinuous gages (10-15 years) //
-				if (a.pt_symbol == "symbol5") {
-					var category = findCount(a.site_no);
-					var icon5;
-					if (category == "s") {
-						icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon5
-					}).bindPopup(content);
-					layer5.addLayer(marker5)
-				}
-				// discontinuous gages (16-25 years) //
-				if (a.pt_symbol == "symbol6") {
-					var category = findCount(a.site_no);
-					var icon6;
-					if (category == "s") {
-						icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon6
-					}).bindPopup(content);
-					layer6.addLayer(marker6)
-				}
-				// discontinuous gages (26-49 years) //
-				if (a.pt_symbol == "symbol7") {
-					var category = findCount(a.site_no);
-					var icon7;
-					if (category == "s") {
-						icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon7
-					}).bindPopup(content);
-					layer7.addLayer(marker7)
-				}
-				// discontinuous gages (50+ years) //
-				if (a.pt_symbol == "symbol8") {
-					var category = findCount(a.site_no);
-					var icon8;
-					if (category == "s") {
-						icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-					}
-					if (category == "m") {
-						icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-					}
-					if (category == "l") {
-						icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-					}
-					var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-						radius: 3,
-						fillOpacity: 0.95,
-						icon: icon8
-					}).bindPopup(content);
-					layer8.addLayer(marker8)
-				}
-			}
-			// checkboxes //
-			if($("#Check0").prop('checked')) {
-				map.addLayer(layer0)
-			}
-			if($("#Check1").prop('checked')) {
-				map.addLayer(layer1)
-			}
-			if($("#Check2").prop('checked')) {
-				map.addLayer(layer2)
-			}
-			if($("#Check3").prop('checked')) {
-				map.addLayer(layer3)
-			}
-			if($("#Check4").prop('checked')) {
-				map.addLayer(layer4)
-			}
-			if($("#Check5").prop('checked')) {
-				map.addLayer(layer5)
-			}
-			if($("#Check6").prop('checked')) {
-				map.addLayer(layer6)
-			}
-			if($("#Check7").prop('checked')) {
-				map.addLayer(layer7)
-			}
-			if($("#Check8").prop('checked')) {
-				map.addLayer(layer8)
-			}
-			if($("#Check9").prop('checked')) {
-				map.addLayer(Sites)
-			}
-			if($("#Check10").prop('checked')) {
-				map.addLayer(Huc8)
-			}
-		}
-	});
+			});
+ 		
+	}); 
 
 		//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
 
