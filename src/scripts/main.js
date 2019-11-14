@@ -296,8 +296,8 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
-	var icon1 = L.icon({iconUrl: 'images/image2.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon0 = L.divIcon({ className: ' wmm-triangle wmm-black wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
+	var icon1 = L.divIcon({ className: ' wmm-triangle wmm-C700FF wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 
 	layer0 = L.layerGroup();
 	layer1 = L.layerGroup();
@@ -385,13 +385,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon2;
 							if (category == "s"){
-								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] })
+								icon2 = L.divIcon({ className: 'wmm-triangle wmm-129443 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]})
 							}
 							if (category == "m") {
-								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+								icon2 = L.divIcon({ className: 'wmm-triangle wmm-129443 wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]})
 							}
 							if (category == "l") {
-								icon2 = L.icon({ iconUrl: 'images/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] })
+								icon2 = L.divIcon({ className: 'wmm-triangle wmm-129443 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2]})
 							}
 							var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -405,13 +405,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon3;
 							if (category == "s") {
-								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon3 = L.divIcon({ className: ' wmm-triangle wmm-000 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon3 = L.divIcon({ className: ' wmm-triangle wmm-000 wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "l") {
-								icon3 = L.icon({ iconUrl: 'images/image3.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon3 = L.divIcon({ className: ' wmm-triangle wmm-000 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -425,13 +425,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon4;
 							if (category == "s") {
-								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon4 = L.divIcon({ className: 'wmm-triangle wmm-F23324 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon4 = L.divIcon({ className: 'wmm-triangle wmm-F23324 wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2] });
 							}
 							if (category == "l") {
-								icon4 = L.icon({ iconUrl: 'images/image4.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon4 = L.divIcon({ className: 'wmm-triangle wmm-F23324 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2] });
 							}
 							var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -445,13 +445,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon5;
 							if (category == "s") {
-								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon5 = L.divIcon({ className: ' wmm-triangle wmm-3CFF01 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon5 = L.divIcon({ className: ' wmm-triangle wmm-3CFF01 wmm-icon-circle wmm-icon-white wmm-size-25 ', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "l") {
-								icon5 = L.icon({ iconUrl: 'images/image5.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon5 = L.divIcon({ className: ' wmm-triangle wmm-3CFF01 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -465,13 +465,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon6;
 							if (category == "s") {
-								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon6 = L.divIcon({ className: ' wmm-triangle wmm-FD66CC wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon6 = L.divIcon({ className: ' wmm-triangle wmm-FD66CC wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "l") {
-								icon6 = L.icon({ iconUrl: 'images/image6.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon6 = L.divIcon({ className: ' wmm-triangle wmm-FD66CC wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -485,13 +485,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon7;
 							if (category == "s") {
-								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon7 = L.divIcon({ className: ' wmm-triangle wmm-FFFF02 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon7 = L.divIcon({ className: ' wmm-triangle wmm-FFFF02 wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "l") {
-								icon7 = L.icon({ iconUrl: 'images/image1.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon7 = L.divIcon({ className: ' wmm-triangle wmm-FFFF02 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2] });
 							}
 							var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -505,13 +505,13 @@ $( document ).ready(function() {
 							var category = findCount(a.site_no);
 							var icon8;
 							if (category == "s") {
-								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+								icon8 = L.divIcon({ className: ' wmm-triangle wmm-FDA500 wmm-icon-circle wmm-icon-white wmm-size-15', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "m") {
-								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+								icon8 = L.divIcon({ className: ' wmm-triangle wmm-FDA500 wmm-icon-circle wmm-icon-white wmm-size-25', iconAnchor: [8, 8], popupAnchor: [0, 2]});
 							}
 							if (category == "l") {
-								icon8 = L.icon({ iconUrl: 'images/image8.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+								icon8 = L.divIcon({ className: ' wmm-triangle wmm-FDA500 wmm-icon-circle wmm-icon-white wmm-size-35', iconAnchor: [8, 8], popupAnchor: [0, 2] });
 							}
 							var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
