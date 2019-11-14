@@ -5,6 +5,11 @@ var gulp = require('gulp');
 var open = require('open');
 var del = require('del');
 var wiredep = require('wiredep').stream;
+var browserSync = require('browser-sync').create();
+var less = require('gulp-less');
+var browserSync = require("browser-sync").create();
+var reload = browserSync.reload;
+
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -145,4 +150,51 @@ gulp.task('watch', ['connect', 'serve'], function () {
 
     // Watch bower files
     gulp.watch('bower.json', ['wiredep']);
+});
+
+
+
+
+
+/////////////////
+// Browsersync //
+/////////////////
+// Watch for less changes
+// Compile less on save
+// inject CSS to browser
+// Live reload for HTML and JS
+gulp.task('compile-less', function () {
+    gulp.src('./src/styles/less/app.less')
+        .pipe(less())
+        .pipe(gulp.dest('./src/styles/css/'))
+        .pipe(browserSync.stream());
+}); 
+
+
+////////////////////
+// Serve from Dev //
+////////////////////
+gulp.task('bs', function () {
+
+    // Serve files from the root of this project
+    browserSync.init({
+        server: "./src/"
+    });
+
+    gulp.watch("src/styles/less/**/*.less", ['compile-less']);
+    gulp.watch("./src/**/*.html").on("change", reload);
+    gulp.watch("./src/**/*.js").on("change", reload);
+});
+
+
+//////////////////////
+// Serve From Build //
+//////////////////////
+gulp.task('serve-build', function () {
+
+    // Serve files from the root of this project
+    browserSync.init({
+        server: "./build/"
+    });
+
 });

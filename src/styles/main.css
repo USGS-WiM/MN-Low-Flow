@@ -2,10 +2,10 @@
 
 html, body {
     height: 100%;
-    overflow:hidden;
+	overflow:hidden;
+	font-family: 'Public Sans', -apple-system, sans-serif;
 }
 body {
-    padding-top: 50px;
     background-image: url("../images/wimlogoCompact.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -173,10 +173,6 @@ width:240px;
   #navbar .navbar-brand {
     padding: 0 0 0 15px;
   }
-  #navbar .navbar-brand img {
-    padding: 9px 0;
-    height: 50px !important;
-  }
   #navbar .navbar-brand span {
     color: #FFFFFF;
     font-weight: 300;
@@ -190,7 +186,6 @@ width:240px;
   #navbar .navbar-text {
     color: #ffffff;
     font-weight: 200;
-    font-family: 'Open Sans', sans-serif;
     letter-spacing: -0.5px;
   }
   @media (max-width: 1015px) {
@@ -198,56 +193,6 @@ width:240px;
       font-size: 12pt;
     }
   }
-  #navbar button {
-    background-color: #4574CC;
-    letter-spacing: 0.5px;
-    box-sizing: border-box;
-    font-size: 9pt;
-    font-weight: 300;
-    height: 50px;
-    margin: 0 4px 0 4px;
-    padding: 0 15px 2px 15px;
-    border-radius: 0;
-    transition: 0.15s;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-  }
-  #navbar button:hover {
-    cursor: pointer;
-    transition: 0.15s;
-    background-color: rgba(69, 116, 204, 0.8);
-  }
-  #navbar #aboutNav {
-    background-color: transparent;
-    font-size: 8pt;
-    position: relative;
-    top: 1px;
-  }
-  #aboutNav {
-    background: 0 0;
-    border: none;
-    line-height: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    top: 2px;
-    transition: .2s;
-    color: rgba(255,255,255,.35);
-}
-#aboutNav{
-    letter-spacing: 2px;
-    position: relative; top: 2px;
-    transition: 0.2s;
-    color: rgba(255,255,255,0.35);
-}
-#aboutNav:hover{
-    cursor: pointer;
-    color: rgba(255,255,255,1);
-    transition: 0.2s;
-}
-#aboutNav:focus{
-    outline: none;
-}
 .search-bar {
     margin:0px;
     padding-left:0px;
@@ -288,11 +233,6 @@ width:240px;
     font-family: 'Open Sans', sans-serif !important;
     font-weight: bold !important;
 }
-@media (max-width: 767px) {
-    #geosearchButtonText {
-        display: none;
-    }
-}
 .overflow-y-hidden {
     overflow-y: hidden;
 }
@@ -316,36 +256,11 @@ width:240px;
     border: 1px solid #E7E7E7;
     text-align: center;
 }
-.wim-sidebar-panel {
-    margin-bottom: 2px;
-}
 #sidebar {
     top: 50px;
     padding-bottom: 50px;
 }
-input[type="checkbox"], input[type="radio"] {
-    float: left;
-}
-input[type=checkbox]
-{
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
-  padding: 10px;
-  float:left;
-  margin-left:10px;
-}
-.basemapThumb {
-    border:1px solid #ffffff;
-    border-radius: 5px;
-}
-.basemapBtn {
-    width: 86px;
-    margin-bottom: 2px;
-    padding:2px;
-}
-#powered {
-    float:center;
-}
+
 
 /* ALL LEGEND STUFF */
 
@@ -473,3 +388,8 @@ input[type=checkbox]
 .iconWrap{
   padding-right:10px;
 }
+
+
+
+
+

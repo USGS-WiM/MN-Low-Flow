@@ -14,8 +14,9 @@
     <!-- CSS for the mapping components -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/markers.css">
+    <link rel="stylesheet" href="styles/css/app.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="images/publicsans/stylesheet.css" />
     <!-- endbuild -->
     <link rel="shortcut icon" href="/favicon.ico">
 
@@ -66,29 +67,44 @@
 
 </head>
 <body>
-    <div id="navbar" class="navbar navbar-static navbar-default navbar-fixed-top navbar-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://www.usgs.gov">
-                    <img alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
-                    <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
-                </a>
-            </div>
-            <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
-                <span class="glyphicon glyphicon-search"></span>
-                <span id="geosearchButtonText"> Geosearch</span>
-            </button>
-    
-            <button id="aboutNav" class="btn btn-default navbar-btn pull-right">
-                <i class="fa fa-question-circle"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
-            </button>
-        </div>
-    </div>
+
+	<!-- 
+		Nav 
+		Nav 
+		Nav 
+	-->
+	<nav id="nav" class="xs-f-start">
+		<div class="nav-branding xs-f-start xs-pl-5 lg-pl-15">
+			<button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="nav-title xs-f-start" href="https://www.usgs.gov">
+				<div class="nav-logo xs-f-center xs-f-col xs-mr-15 lg-mr-25">
+					<img alt="USGS logo" src="images/USGS_ID_white.png">
+				</div>
+				<div class="nav-appname xs-f-center xs-f-col">MN-Low-Flow</div>
+			</a>
+		</div>
+
+		<!-- Nav links and buttons -->
+		<div class="nav-right xs-pr-5 lg-pr-15 xs-f-end">
+			<div class="xs-f-col xs-f-center xs-mr-15">
+				<button id="aboutNav" class="btn-white">About</button>
+			</div>
+			<div class="xs-f-col xs-f-center">
+				<button id="geosearchNav" type="button" class="">Geosearch</button>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- 
+		Geosearch Modal
+		Geosearch Modal
+		Geosearch Modal
+	 -->
     <div class="modal fade overflow-y-hidden" id="geosearchModal" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -119,7 +135,13 @@
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div>
+	</div>
+	
+	<!-- 
+		About Modal
+		About Modal
+		About Modal
+	 -->
     <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
         <div class="modal-dialog  modal-lg">
             <div class="modal-content">
@@ -182,13 +204,23 @@
                 </div>
             </div><!-- /.modal-content -->
         </div> <!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+	</div><!-- /.modal -->
+	
+
+<!-- 
+	Page Content
+	Page Content
+	Page Content
+ -->
 <!-- Begin page content -->
 <div class="container-fluid keepit100">
     <div class="row keepit100">
 
+
+			<!-- Sidebar -->
             <div id="sidebar" class="col-xs-11 col-sm-10 col-md-3 col-lg-2 sidebar sidebar-left sidebar-animate sidebar-md-show no-col-padding sidebar-open">
-                    <h4 class="event-name"><small></small><b><span id="largeEventNameDisplay">MN-Low-Flow</span></b></h4>
+
+                    <!-- <h4 class="event-name"><small></small><b><span id="largeEventNameDisplay">MN-Low-Flow</span></b></h4> -->
                     <div class="panel panel-default wim-sidebar-panel">
                         <div class="panel-heading" id="basemapsHeader">
                             <h4 class="panel-title">
@@ -234,7 +266,6 @@
                             <input type="checkbox" id="Check10" onClick="myFunction10(this)" checked> <span>HUC 8 Layer</span><br>
                         </div>
                     </div>
-                    <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WIM</a></div>
                 </div>
 
                 <div id="mapContainer" class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 no-col-padding keepit100">
