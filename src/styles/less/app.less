@@ -286,6 +286,35 @@ nav#nav{
 	}
 }
 
+// Custom leaflet popup layout
+.leaflet-popup-content{
+	padding: 8px;
+	margin: 0 auto !important;
+	width: 160px !important;
+
+	label{
+		font-weight: 500;
+		display: block;
+	}
+	b{
+		display: block;
+		font-size: 12px;
+		line-height: 12px;
+		margin-bottom: 5px;
+		text-transform: capitalize;
+	}
+
+	.leaflet-popup-buttons{
+
+		a{
+			margin: 0 4px 4px 0;
+			color: white;
+		}
+	}
+
+}
+
+
 // Geosearch Tweaks
 // Geosearch Tweaks
 // Geosearch Tweaks
@@ -630,9 +659,6 @@ nav#nav{
 #mapDiv {
     min-height: 100%;
     max-height: 100%;
-}
-.leaflet-popup-content {
-	width:240px;    
 }
 .no-col-padding {
 	padding: 0;

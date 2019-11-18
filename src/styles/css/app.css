@@ -5586,6 +5586,26 @@ nav#nav .nav-appname {
 #latLngScale:hover .hover-content {
   display: inline-block;
 }
+.leaflet-popup-content {
+  padding: 8px;
+  margin: 0 auto !important;
+  width: 160px !important;
+}
+.leaflet-popup-content label {
+  font-weight: 500;
+  display: block;
+}
+.leaflet-popup-content b {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.leaflet-popup-content .leaflet-popup-buttons a {
+  margin: 0 4px 4px 0;
+  color: white;
+}
 .sapi .ui-autocomplete {
   border: none;
   box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.3);
@@ -5866,9 +5886,6 @@ nav#nav .nav-appname {
 #mapDiv {
   min-height: 100%;
   max-height: 100%;
-}
-.leaflet-popup-content {
-  width: 240px;
 }
 .no-col-padding {
   padding: 0;
