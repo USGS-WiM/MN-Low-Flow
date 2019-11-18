@@ -5363,28 +5363,47 @@ nav#nav {
   width: 100%;
   height: 50px;
   background-color: #0c141e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1005;
 }
-nav .nav-branding {
+nav#nav .nav-branding {
   -webkit-flex-grow: 3;
   flex-grow: 3;
 }
-nav .nav-logo img {
+nav#nav .nav-branding .navbar-toggle {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6px 5px 10px;
+  line-height: 0;
+}
+nav#nav .nav-logo img {
   height: 35px;
 }
-nav .nav-appname {
+@media (max-width: 768px) {
+  nav#nav .nav-logo img {
+    height: 28px;
+  }
+}
+nav#nav .nav-appname {
   font-size: 20px;
   font-weight: 700;
   color: white;
   letter-spacing: -0.2px;
 }
 @media (max-width: 768px) {
-  nav .nav-appname {
+  nav#nav .nav-appname {
     font-size: 14px;
   }
 }
 #sidebar {
   background-color: white;
   border: none;
+  box-shadow: 0 10px 35px -2px rgba(30, 16, 84, 0.1);
+  z-index: 1005;
 }
 #sidebar .panel {
   margin: 0 auto;
@@ -5473,7 +5492,7 @@ nav .nav-appname {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 4px 0;
+  padding: 0px 0;
 }
 #sidebar .panel .panel-body .sidebar-layer input {
   margin: 0 7px 0 0;
@@ -5485,8 +5504,8 @@ nav .nav-appname {
   min-width: 24px;
 }
 #sidebar .panel .panel-body .sidebar-layer .icon-wrap img {
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
   box-sizing: border-box;
   padding: 2px;
 }
@@ -5497,6 +5516,7 @@ nav .nav-appname {
   justify-content: center;
   text-align: left;
   font-size: 13px;
+  font-weight: 500;
   letter-spacing: -0.2px;
 }
 #sidebar .panel .panel-body .sidebar-layer:hover {
@@ -5523,20 +5543,72 @@ nav .nav-appname {
 .leaflet-bar {
   border: 1px solid #D9DDE4 !important;
   box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.1) !important;
+  top: 50px;
 }
 .leaflet-control-zoom a,
 .leaflet-bar a {
   padding-right: 1px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .leaflet-control-zoom a,
+  .leaflet-bar a {
+    padding-bottom: 0;
+  }
 }
 .leaflet-touch .leaflet-bar a {
   line-height: 25px !important;
+}
+#latLngScale {
+  z-index: 1002;
+  background-color: white;
+  font-size: 12px;
+  line-height: 14px;
+  box-shadow: 0 10px 35px -2px rgba(30, 16, 84, 0.1);
+}
+.sapi .ui-autocomplete {
+  border: none;
+  box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.3);
+}
+.sapi-autocomplete-tip {
+  font-size: 10.5px;
+  font-style: normal !important;
+  color: #1c304a !important;
+  text-align: left !important;
+  padding: 6px 4px !important;
+  display: block;
+}
+.sapi-autocomplete-title {
+  padding: 4px !important;
+}
+.sapi-autocomplete-title span {
+  float: right;
+}
+.sapi ul .ui-menu-item {
+  padding: 2px 0;
+  text-decoration: none;
+}
+.sapi ul .ui-menu-item.ui-state-focus {
+  background: none !important;
+  background-color: #eef0f3 !important;
+  border: none !important;
+  text-decoration: underline;
+}
+.sapi ul .sapi-autocomplete-category {
+  background-color: #D9DDE4 !important;
+  color: #030508;
+  padding: 4px 0;
+  font-size: 12px;
 }
 #legendElement {
   border-radius: 4px;
   border: none;
   box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.1);
   right: 10px;
-  top: 10px;
+  top: 60px;
   max-width: 200px;
   z-index: 1000!important;
   position: absolute;
@@ -5606,6 +5678,19 @@ nav .nav-appname {
 .modal .modal-dialog {
   max-width: 600px;
   max-height: 90vh;
+}
+@media (max-width: 768px) {
+  .modal .modal-dialog {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    position: fixed;
+    transform: unset !important;
+  }
 }
 .modal .modal-dialog .modal-header {
   padding: 8px 12px;
@@ -5682,11 +5767,24 @@ nav .nav-appname {
   max-height: 50vh;
   overflow: auto;
 }
+@media (max-width: 768px) {
+  .modal .modal-body {
+    height: 40vh;
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+}
 .modal .modal-footer {
   padding: 8px 15px 15px 8px;
   background-color: white;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .modal .modal-footer {
+    border-radius: 0;
+  }
 }
 .modal .modal-footer p {
   font-size: 12px;
@@ -5712,6 +5810,9 @@ nav .nav-appname {
 .modal .modal-footer .modal-actions {
   display: flex;
   justify-content: center;
+}
+.modal .modal-footer .modal-actions button {
+  padding: 6px 35px;
 }
 .geosearch-form {
   box-sizing: border-box;

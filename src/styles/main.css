@@ -137,59 +137,6 @@ width:240px;
 
 /* NAVBAR TOP STUFF */
 
-#navbar {
-    background-color: #0c141e;
-    box-sizing: border-box;
-  }
-  #navbar .navbar-toggle {
-    background-color: transparent;
-    border: none;
-    display: inline-block;
-    padding: 0;
-    margin: 0 20px 0 0;
-    padding: 0 15px 0 15px;
-    margin-left: -5%;
-  }
-  #navbar .navbar-toggle .icon-bar {
-    height: 2px;
-    border-radius: 3px;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  @media (max-width: 768px) {
-    #navbar .navbar-toggle {
-      margin: 0;
-    }
-  }
-  #navbar .navbar-toggle:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  #navbar .navbar-toggle:hover .icon-bar {
-    background-color: #FFFFFF;
-  }
-  #navbar .navbar-brand {
-    padding: 0 0 0 15px;
-  }
-  #navbar .navbar-brand span {
-    color: #FFFFFF;
-    font-weight: 300;
-    letter-spacing: 1.25px;
-    box-sizing: border-box;
-    padding: 0px 0 0 15px;
-    height: 100%;
-    line-height: 50px;
-    float: right;
-  }
-  #navbar .navbar-text {
-    color: #ffffff;
-    font-weight: 200;
-    letter-spacing: -0.5px;
-  }
-  @media (max-width: 1015px) {
-    #navbar .navbar-text {
-      font-size: 12pt;
-    }
-  }
 .search-bar {
     margin:0px;
     padding-left:0px;
