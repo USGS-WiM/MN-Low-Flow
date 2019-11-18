@@ -5384,6 +5384,7 @@ nav .nav-appname {
 }
 #sidebar {
   background-color: white;
+  border: none;
 }
 #sidebar .panel {
   margin: 0 auto;
@@ -5392,4 +5393,347 @@ nav .nav-appname {
 }
 #sidebar .panel .panel-heading {
   background-color: #f8f9fa;
+  border-bottom: 1px solid #D9DDE4;
+  padding: 0;
+}
+#sidebar .panel .panel-heading .panel-title a {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  transition: 0.15s;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px 14px;
+}
+#sidebar .panel .panel-heading .panel-title a:after {
+  transition: 0.15s;
+  font-family: 'Glyphicons Halflings';
+  content: "\2212";
+  float: right;
+}
+#sidebar .panel .panel-heading .panel-title a.collapsed:after {
+  content: "\2b";
+}
+#sidebar .panel .panel-heading .panel-title a:hover {
+  color: #1b6cf9;
+  transition: 0.15s;
+  text-decoration: underline;
+}
+#sidebar .panel .panel-heading .panel-title a:hover:after {
+  color: #1b6cf9;
+  transition: 0.15s;
+}
+#sidebar .panel .panel-heading .panel-title a:focus {
+  outline: none;
+}
+#sidebar .panel .panel-body {
+  padding: 8px 8px;
+  border-bottom: 1px solid #D9DDE4;
+}
+#sidebar .panel .panel-body .basemap-button {
+  display: flex;
+  width: 100%;
+  padding: 4px 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: #0c141e;
+}
+#sidebar .panel .panel-body .basemap-button .basemap-thumb {
+  width: 55px;
+  height: 32px;
+}
+#sidebar .panel .panel-body .basemap-button .basemap-thumb img {
+  height: 100%;
+}
+#sidebar .panel .panel-body .basemap-button b {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+  letter-spacing: -0.2px;
+}
+#sidebar .panel .panel-body .basemap-button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+#sidebar .panel .panel-body .basemap-button.active {
+  font-weight: 600;
+}
+#sidebar .panel .panel-body .basemap-button.active b {
+  font-weight: 600;
+  text-decoration: underline;
+}
+#sidebar .panel .panel-body .sidebar-layer {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+#sidebar .panel .panel-body .sidebar-layer input {
+  margin: 0 7px 0 0;
+}
+#sidebar .panel .panel-body .sidebar-layer .icon-wrap {
+  margin-right: 4px;
+  width: 24px;
+  max-width: 24px;
+  min-width: 24px;
+}
+#sidebar .panel .panel-body .sidebar-layer .icon-wrap img {
+  height: 25px;
+  width: 25px;
+  box-sizing: border-box;
+  padding: 2px;
+}
+#sidebar .panel .panel-body .sidebar-layer span {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: -0.2px;
+}
+#sidebar .panel .panel-body .sidebar-layer:hover {
+  cursor: pointer;
+}
+#sidebar .panel .panel-body .sidebar-layer:hover span {
+  text-decoration: underline;
+}
+#sidebar .sidebar-footer {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  color: #1c304a;
+  padding: 15px 0;
+}
+#sidebar .sidebar-footer img {
+  height: 16px;
+  width: auto;
+  position: relative;
+  top: 4px;
+  margin-left: 2px;
+}
+.leaflet-control-zoom,
+.leaflet-bar {
+  border: 1px solid #D9DDE4 !important;
+  box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.1) !important;
+}
+.leaflet-control-zoom a,
+.leaflet-bar a {
+  padding-right: 1px !important;
+}
+.leaflet-touch .leaflet-bar a {
+  line-height: 25px !important;
+}
+#legendElement {
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 5px 25px -5px rgba(30, 16, 84, 0.1);
+  right: 10px;
+  top: 10px;
+  max-width: 200px;
+  z-index: 1000!important;
+  position: absolute;
+  z-index: 9999;
+  color: #0c141e;
+  background-color: white;
+}
+#legendElement .legend-heading {
+  display: block;
+  box-sizing: border-box;
+  padding: 7px 15px;
+  background-color: white;
+  color: #0c141e;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0px;
+  border-bottom: 1px solid #D9DDE4;
+  border-radius: 4px;
+}
+#legendElement .legend-heading:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+#legendElement .legend-panel-body {
+  padding: 8px !important;
+}
+#legendElement .legend-panel-body .legend-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 0;
+}
+#legendElement .legend-panel-body .legend-item .legend-icon {
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+#legendElement .legend-panel-body .legend-item .legend-icon img {
+  max-width: 29px;
+  max-height: 29px;
+}
+#legendElement .legend-panel-body .legend-item .legend-icon.icon-sm img {
+  margin-top: 8px;
+  width: 12px;
+  height: 12px;
+}
+#legendElement .legend-panel-body .legend-item .legend-icon.icon-md img {
+  width: 19px;
+  height: 19px;
+  margin-top: 5px;
+}
+#legendElement .legend-panel-body .legend-item .legend-icon.icon-lg img {
+  width: 29px;
+  height: 29px;
+}
+#legendElement .legend-panel-body .legend-item span {
+  flex-grow: 3;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal .modal-dialog {
+  max-width: 600px;
+  max-height: 90vh;
+}
+.modal .modal-dialog .modal-header {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modal-dialog .modal-header .modal-title {
+  display: flex;
+  justify-content: flex-start;
+}
+.modal .modal-dialog .modal-header .modal-title span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #142234;
+  letter-spacing: -0.2px;
+  padding-right: 5px;
+}
+.modal .modal-dialog .modal-header .modal-title .modal-title-image img {
+  height: 25px;
+  width: auto;
+}
+.modal .modal-dialog .modal-header .modal-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 34px;
+  color: #1c304a !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.modal .modal-dialog .modal-header .modal-close:hover {
+  color: #F45D5D !important;
+  transition: 0.15s;
+  opacity: 1 !important;
+}
+.modal .modal-dialog .modal-header .modal-close:focus,
+.modal .modal-dialog .modal-header .modal-close:active {
+  text-decoration-style: normal;
+}
+.modal .nav-tabs li a {
+  padding: 8px;
+  border-radius: 0;
+  margin: 0;
+  text-decoration: none;
+  transition: 0.15s;
+  color: #0c141e;
+}
+.modal .nav-tabs li a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #030508;
+  transition: 0.15s;
+}
+.modal .nav-tabs li.active {
+  border-radius: 0;
+  text-decoration: underline;
+}
+.modal .nav-tabs li.active a {
+  border-radius: 0;
+  border-top: 0;
+  background-color: #eef0f3;
+  color: #0c141e;
+  font-weight: 600;
+}
+.modal .tab-content {
+  padding: 8px 15px;
+}
+.modal .modal-body {
+  padding: 0;
+  max-height: 50vh;
+  overflow: auto;
+}
+.modal .modal-footer {
+  padding: 8px 15px 15px 8px;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.modal .modal-footer p {
+  font-size: 12px;
+  color: #142234;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.modal .modal-footer p span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 15px;
+}
+.modal .modal-footer p .modal-footer-logo {
+  box-sizing: border-box;
+  padding: 4px 0 0 5px;
+}
+.modal .modal-footer p .modal-footer-logo img {
+  height: 18px;
+  width: auto;
+}
+.modal .modal-footer .modal-actions {
+  display: flex;
+  justify-content: center;
+}
+.geosearch-form {
+  box-sizing: border-box;
+  padding: 25px 15px 0 15px;
+}
+.geosearch-form .input-group {
+  margin-bottom: 15px;
+}
+.geosearch-form .input-group #sapi_searchTextBoxDiv input {
+  background-color: white;
+  border: 1px solid #D9DDE4 !important;
+}
+.geosearch-form .input-group button {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 15px !important;
+}
+.geosearch-form .geosearch-examples b {
+  font-weight: 600;
+  display: block;
+}
+.geosearch-form .geosearch-examples code {
+  margin: 0 2px 5px 0;
+  display: inline-block;
 }
