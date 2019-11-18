@@ -14,10 +14,11 @@
     <!-- CSS for the mapping components -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/css/app.css">
+	<link rel="stylesheet" href="images/publicsans/stylesheet.css" />
     <!-- endbuild -->
-    <link rel="shortcut icon" href="/favicon.ico">
-
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+	
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -65,212 +66,376 @@
 
 </head>
 <body>
-    <div id="navbar" class="navbar navbar-static navbar-default navbar-fixed-top navbar-dark">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://www.usgs.gov">
-                    <img alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
-                    <span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;MN-Low-Flow</span>
-                </a>
-            </div>
-            <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
-                <span class="glyphicon glyphicon-search"></span>
-                <span id="geosearchButtonText"> Geosearch</span>
-            </button>
-    
-            <button id="aboutNav" class="btn btn-default navbar-btn pull-right">
-                <i class="fa fa-question-circle"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
-            </button>
-        </div>
-    </div>
+
+	<!-- 
+		Nav 
+		Nav 
+		Nav 
+	-->
+	<nav id="nav" class="xs-f-start">
+		<div class="nav-branding xs-f-start xs-pl-5 lg-pl-15">
+			<button type="button" class="navbar-toggle toggle-left hidden-md hidden-lg" data-toggle="sidebar" data-target=".sidebar-left">
+				<span class="glyphicon glyphicon-th" aria-label="Menu"></span>
+			</button>
+			<div class="nav-title xs-f-start">
+				<a class="nav-logo xs-f-center xs-f-col xs-mr-15 lg-mr-25" href="https://www.usgs.gov" target="_blank">
+					<img alt="USGS logo" src="images/USGS_ID_white.png">
+				</a>
+				<div class="nav-appname xs-f-center xs-f-col">MN-Low-Flow</div>
+			</div>
+		</div>
+
+		<!-- Nav links and buttons -->
+		<div class="nav-right xs-pr-5 lg-pr-15 xs-f-end">
+			<div class="xs-f-col xs-f-center xs-mr-15">
+				<button id="aboutNav" class="btn-white">About</button>
+			</div>
+			<div class="xs-f-col xs-f-center">
+				<button id="geosearchNav" type="button" class="">Geosearch</button>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- 
+		Geosearch Modal
+		Geosearch Modal
+		Geosearch Modal
+	 -->
     <div class="modal fade overflow-y-hidden" id="geosearchModal" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                    <h4 class="modal-title">Geosearch</h4>
-                </div>
+
+				<div class="modal-header">
+					<div class="modal-title">
+						<span>Geosearch</span>
+					</div>
+					<button class="modal-close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+
                 <div class="modal-body">
-                    <div class="form-group">
+                    <div class="form-group geosearch-form">
                         <div class="input-group">
                             <div id="sapi_searchTextBoxDiv">Loading Search Bar...</div>
                             <span class="input-group-btn">
-                            <button id="searchSubmit" class="btn btn-success" type="button">Go!</button>
+                            	<button id="searchSubmit" type="button">Go!</button>
                             </span>
-                        </div><!-- /input-group -->
-                        <b style="text-align: center">Supported Search Strings:</b>
-                        <code>GNIS Locations</code>
-                        <code>USGS Sites</code>
-                        <code>Zip Codes</code>
-                        <code>Area Codes</code>
-                        <code>States</code>
-                        <code>Lat/Long (ie. '43.9,-72.1')</code>
-                        <code>Street Address</code>
+						</div><!-- /input-group -->
+						<div class="geosearch-examples">
+							<b class="caption xs-mb-10">Supported Search Strings:</b>
+							<div>
+								<code>GNIS Locations</code>
+								<code>USGS Sites</code>
+								<code>Zip Codes</code>
+								<code>Area Codes</code>
+								<code>States</code>
+								<code>Lat/Long (ie. '43.9,-72.1')</code>
+								<code>Street Address</code>
+							</div>
+						</div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
+					<div class="modal-actions">
+						<button class="btn-grey" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+					</div>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div>
-    <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
+	</div>
+	
+	<!-- 
+		About Modal
+		About Modal
+		About Modal
+	 -->
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog  modal-lg">
             <div class="modal-content">
+
                 <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                    <h4 class="modal-title">MN-Low-Flow <img alt="MPCA logo" height="38px" src="images/MPCA_logo.png"></h4>
-                    
-                </div>
+					<div class="modal-title">
+						<span>About MN Low Flow</span>
+						<div class="modal-title-logo">
+							<img alt="MPCA logo" height="38px" src="images/MPCA_logo.png"/>
+						</div>
+					</div>
+                    <button class="modal-close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<ul class="nav nav-tabs" id="aboutModalTabs">
+					<li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
+					<li role="presentation"><a id="dataLimitationsTab" href="#dataLimitationsTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Data Limitations</a></li>
+					<li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-triangle"></i>&nbsp;Disclaimer</a></li>
+				</ul>
                 <div id="aboutModalBody" class="modal-body">
-                    <ul class="nav nav-tabs" id="aboutModalTabs">
-                        <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                        <li role="presentation"><a id="dataLimitationsTab" href="#dataLimitationsTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Data Limitations</a></li>
-                        <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-triangle"></i>&nbsp;Disclaimer</a></li>
-                    </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="aboutTabPane"></br>
-                            <p style="color:black; font-size: larger">The USGS Minnesota Low-Flow web application is used as a preparation and management tool for tracking, visualization,
-                                and management of historic and future low flow measurements for the state of Minnesota.</p>
-                                <p>Reference: 
-                                    <a href="https://pubs.usgs.gov/of/2007/1033/" target="_blank">Methods Used to Compute Low-Flow Frequency
-                                        Characteristics for Continuous-Record Streamflow Stations in
-                                        Minnesota, 2006</a>
-                                </p>
+                            <p class="text-sm">
+								The USGS Minnesota Low-Flow web application is used as a preparation and management tool for tracking, visualization, and management of historic and future low flow measurements for the state of Minnesota.
+							</p>
+							<p class="xs-mt-15">
+								<b>Reference:</b><br/> 
+								<a href="https://pubs.usgs.gov/of/2007/1033/" target="_blank">Methods Used to Compute Low-Flow Frequency Characteristics for Continuous-Record Streamflow Stations in Minnesota, 2006</a>
+							</p>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="dataLimitationsTabPane"></br>
-                            <h4>Data Limitations</h4>
-                            <p>Data are provisional and are subject to revision until thoroughly reviewed and approved.</p>
-                            <p>Real-time data relayed by satellite or other telemetry are automatically screened to not display improbable values until they can be verified.</p>
-                            <p>Provisional data may be inaccurate due to instrument malfunctions or physical changes at the measurement site. Subsequent review based on field inspections and measurements may result in significant revisions to the data.</p>
-                            <p>The data are being provided to meet the need for timely best science and are released on the condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from authorized or unauthorized use of the information. Data users are cautioned to consider carefully the provisional nature of the information before using it for decisions that concern personal or public safety or the conduct of business that involves substantial monetary or operational consequences.</p>
-                            <p>Information concerning the accuracy and appropriate uses of these data or concerning other hydrologic data may be obtained from the USGS.</p>
+                            <h2>Data Limitations</h2>
+                            <p class="xs-m5-10 lg-mt-15">Data are provisional and are subject to revision until thoroughly reviewed and approved.</p>
+                            <p class="xs-m5-10 lg-mt-15">Real-time data relayed by satellite or other telemetry are automatically screened to not display improbable values until they can be verified.</p>
+                            <p class="xs-m5-10 lg-mt-15">Provisional data may be inaccurate due to instrument malfunctions or physical changes at the measurement site. Subsequent review based on field inspections and measurements may result in significant revisions to the data.</p>
+                            <p class="xs-m5-10 lg-mt-15">The data are being provided to meet the need for timely best science and are released on the condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from authorized or unauthorized use of the information. Data users are cautioned to consider carefully the provisional nature of the information before using it for decisions that concern personal or public safety or the conduct of business that involves substantial monetary or operational consequences.</p>
+                            <p class="xs-m5-10 lg-mt-15">Information concerning the accuracy and appropriate uses of these data or concerning other hydrologic data may be obtained from the USGS.</p>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"></br>
-                            <h4>USGS Data Disclaimer</h4>
-                            <p>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards
+                            <h2>USGS Data Disclaimer</h2>
+                            <p class="xs-m5-10 lg-mt-15">Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards
                             relative to the purpose for which the data were collected. Although these data and associated metadata have been
                             reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty
                             expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer
                             systems, nor shall the act of distribution constitute any such warranty.</p>
 
-                            <h4>USGS Software Disclaimer</h4>
-                            <p>This software has been approved for release by the U.S. Geological Survey (USGS). Although the software has been
+                            <h2 class="xs-m5-15 lg-mt-20">USGS Software Disclaimer</h2>
+                            <p class="xs-m5-10 lg-mt-15">This software has been approved for release by the U.S. Geological Survey (USGS). Although the software has been
                             subjected to rigorous review, the USGS reserves the right to update the software as needed pursuant to further analysis
                             and review. No warranty, expressed or implied, is made by the USGS or the U.S. Government as to the functionality of the
                             software and related material nor shall the fact of release constitute any such warranty. Furthermore, the software is
                             released on condition that neither the USGS nor the U.S. Government shall be held liable for any damages resulting from
                             its authorized or unauthorized use.</p>
 
-                            <h4>USGS Product Names Disclaimer</h4>
-                            <p>Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S.
+                            <h2 class="xs-m5-15 lg-mt-20">USGS Product Names Disclaimer</h2>
+                            <p class="xs-m5-10 lg-mt-15">Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S.
                             Government.</p>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <p style="color:black; margin-left:35px;text-align:left">
-                        For more information about the MN-Low-Flow please contact <a href="https://wim.usgs.gov/" target="_blank"><img src="images/logo_fullres.png" style="width:150px;height:50px" id="wim_logo"></a>
-                    </p>
-                    <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
+                    <p>
+						<span>For more information about the MN-Low-Flow please contact</span>
+						<a class="modal-footer-logo" href="https://wim.usgs.gov/" target="_blank"><img src="images/wim.png"/></a>
+					</p>
+					<div class="modal-actions">
+						<button class="btn-grey" type="button" data-dismiss="modal" aria-hidden="true">Close</button>
+					</div>
                 </div>
             </div><!-- /.modal-content -->
         </div> <!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-<!-- Begin page content -->
-<div class="container-fluid keepit100">
-    <div class="row keepit100">
+	</div><!-- /.modal -->
+	
 
-            <div id="sidebar" class="col-xs-11 col-sm-10 col-md-3 col-lg-2 sidebar sidebar-left sidebar-animate sidebar-md-show no-col-padding sidebar-open">
-                    <h4 class="event-name"><small></small><b><span id="largeEventNameDisplay">MN-Low-Flow</span></b></h4>
-                    <div class="panel panel-default wim-sidebar-panel">
-                        <div class="panel-heading" id="basemapsHeader">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#basemapsPanel" aria-expanded="true" aria-controls="basemapsPanel">
-                                    Basemaps
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="basemapsPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="basemapsHeader">
-                            <div class="panel-body collapse in">
-                                <button id="btnStreets" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/streets.jpg"><br class="basemapThumb">Streets</button>
-                                <button id="btnSatellite" class="btn btn-default basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/satellite.jpg"><br class="basemapThumb">Satellite</button>
-                                <!--<button id="btnHybrid" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/imagery_labels.jpg"><br class="basemapThumb">Hybrid</button>-->
-                                <button id="btnTopo" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/topo.jpg"><br class="basemapThumb">Topo</button>
-                                <button id="btnTerrain" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/terrain.jpg"><br class="basemapThumb">Terrain</button>
-                                <button id="btnGray" class="btn btn-default basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/gray.jpg"><br class="basemapThumb">Gray</button>
-                                <!--<button id="btnOSM" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/osm.jpg"><br class="basemapThumb">OSM</button>-->
-                                <button id="btnNatGeo" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/natgeo.jpg"><br class="basemapThumb">NatGeo</button>
-                                <!--<button id="btnNatlMap" class="btn btn-default basemapBtn equalize"><img class="basemapThumb" alt="" src="images/national_map.jpg"><br class="basemapThumb">Nat'l Map</button>-->
-                            </div>
-        
-                        </div>
-                    </div>
-                    <div class="panel panel-default wim-sidebar-panel">
-                        <div class="panel-heading" id="filtersHeader">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#filtersPanel" aria-expanded="false" aria-controls="filtersPanel">
-                                    Layers
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="filtersPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="filtersHeader">
-                            <input type="checkbox" id="Check0" onClick="myFunction0(this)" checked> <span class="iconWrap"><img src="images/nwis.png" class="filter-icon"></span><span>Continuous</span><br>
-                            <input type="checkbox" id="Check1" onClick="myFunction1(this)" checked> <span class="iconWrap"><img src="images/image2.png" class="filter-icon"></span><span>Regulated</span><br>
-                            <input type="checkbox" id="Check2" onClick="myFunction2(this)" checked> <span class="iconWrap"><img src="images/rdg.png" class="filter-icon"></span><span>0-1 years</span><br>
-                            <input type="checkbox" id="Check3" onClick="myFunction3(this)" checked> <span class="iconWrap"><img src="images/image3.png" class="filter-icon"></span><span>2-5 years</span><br>
-                            <input type="checkbox" id="Check4" onClick="myFunction4(this)" checked> <span class="iconWrap"><img src="images/image4.png" class="filter-icon"></span><span>6-10 years</span><br>
-                            <input type="checkbox" id="Check5" onClick="myFunction5(this)" checked> <span class="iconWrap"><img src="images/image5.png" class="filter-icon"></span><span>11-15 years</span><br>
-                            <input type="checkbox" id="Check6" onClick="myFunction6(this)" checked> <span class="iconWrap"><img src="images/image6.png" class="filter-icon"></span><span>16-25 years</span><br>
-                            <input type="checkbox" id="Check7" onClick="myFunction7(this)" checked> <span class="iconWrap"><img src="images/image1.png" class="filter-icon"></span><span>26-49 years</span><br>
-                            <input type="checkbox" id="Check8" onClick="myFunction8(this)" checked> <span class="iconWrap"><img src="images/image8.png" class="filter-icon"></span><span>50+ years</span><br>
-                            <input type="checkbox" id="Check9" onClick="myFunction9(this)" checked> <span>Active wastewater surface water discharges</span><br>
-                            <input type="checkbox" id="Check10" onClick="myFunction10(this)" checked> <span>HUC 8 Layer</span><br>
-                        </div>
-                    </div>
-                    <div id="powered">powered by  <a href="https://wim.usgs.gov/" target="_blank">WIM</a></div>
-                </div>
+	<!-- 
+		Page Content
+		Page Content
+		Page Content
+	-->
+	<!-- Begin page content -->
+	<div class="container-fluid keepit100">
+		<div class="row keepit100">
 
-                <div id="mapContainer" class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 no-col-padding keepit100">
-                        <div id="mapDiv">
-                        
-                            <div id="legendElement" class="panel panel-default legendClass">
-                                <div id="legendHeading" class=" legendHeading" role="tab">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" style="text-decoration: none"  href="#legendCollapse" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="glyphicon glyphicon-list"></span>
-                                            Explanation
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="legendCollapse" class="panel-collapse " role="tabpanel">
-                                    <div id="legendDiv" class="panel-body legend-panel-body">
-                                            <img src="images/nwis.png" style="width:29px;height:29px;"><b>Continuous Gages</b></br>
-                                            <img src="images/image1.png" style="width:11px;height:11px;"><b>Less than three measurements</b></br>
-                                            <img src="images/image1.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
-                                            <img src="images/image1.png" style="width:29px;height:29px;"><b>More than ten measurements</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div id="latLngScale" class="latLngScale">
-                            <span class="hover-content"> <b>Map scale </b></span>
-                            1:<span id="scale"></span> | <span class="hover-content"> <b>Zoom level </b></span> <span id="zoomLevel"></span><br>
-                            <span class="hover-content"><b>Latitude</b></span>
-                            <span id="latitude">y</span> |
-                            <span class="hover-content"> <b>Longitude</b></span>
-                            <span id="longitude">x</span>
-                            <span id="mapCenterLabel"  class="hover-content"> (center)</span>
-                        </div>
-            
-                    </div>
-    </div>
-</div>
+
+			<!-- Sidebar -->
+            <div id="sidebar" class="col-xs-5 col-sm-3 col-md-3 col-lg-2 sidebar sidebar-left sidebar-animate sidebar-md-show no-col-padding sidebar-open">
+
+				<div class="panel panel-default wim-sidebar-panel">
+
+					<!-- 
+						Basemaps Sidebar
+						Basemaps Sidebar
+						Basemaps Sidebar
+						-->
+					<div class="panel-heading" id="basemapsHeader">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" class="collapsed" href="#basemapsPanel" aria-expanded="true" aria-controls="basemapsPanel">
+								Basemaps
+							</a>
+						</h4>
+					</div>
+					<div id="basemapsPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="basemapsHeader">
+						<div class="panel-body collapse in">
+							<button id="btnStreets" class="basemap-button" title="Streets Basemap" alt="Streets Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/streets.jpg"></div>
+								<b>Streets</b>
+							</button>
+							<button id="btnSatellite" class="basemap-button" title="Satelliite Basemap" alt="Satellite Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/satellite.jpg"></div>
+								<b>Satellite</b>
+							</button>
+							<button id="btnTopo" class="basemap-button" title="Topo Basemap" alt="Topo Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/topo.jpg"></div>
+								<b>Topo</b>
+							</button>
+							<button id="btnTerrain" class="basemap-button" title="Terrain Basemap" alt="Terrain Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/terrain.jpg"></div>
+								<b>Terrain</b>
+							</button>
+							<button id="btnGray" class="basemap-button" title="Gray Basemap" alt="Gray Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/gray.jpg"></div>
+								<b>Gray</b>
+							</button>
+							<button id="btnNatGeo" class="basemap-button" title="NatGeo Basemap" alt="NatGeo Basemap">
+								<div class="basemap-thumb"><img class="basemapThumb" alt="" src="images/basemaps/natgeo.jpg"></div>
+								<b>NatGeo</b>
+							</button>
+						</div>
+	
+					</div>
+				</div>
+				
+				<!-- 
+					Layers Sidebar
+					Layers Sidebar
+					Layers Sidebar
+					-->
+				<div class="panel panel-default wim-sidebar-panel">
+					<div class="panel-heading" id="filtersHeader">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" class="collapsed" href="#filtersPanel" aria-expanded="false" aria-controls="filtersPanel">
+								Layers
+							</a>
+						</h4>
+					</div>
+					<div id="filtersPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="filtersHeader">
+						<div class="panel-body collapse in">
+							<label for="Check0" class="sidebar-layer">
+								<input type="checkbox" id="Check0" onClick="myFunction0(this)" checked/>
+								<div class="icon-wrap">
+									<img src="images/markers/nwis.png">
+								</div>
+								<span>Continuous</span>
+							</label>
+							<label for="Check1" class="sidebar-layer">
+								<input type="checkbox" id="Check1" onClick="myFunction1(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/purple.png">
+								</div>
+								<span>Regulated</span>
+							</label>
+							<label for="Check2" class="sidebar-layer">
+								<input type="checkbox" id="Check2" onClick="myFunction2(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/rdg.png">
+								</div>
+								<span>0-1 years</span>
+							</label>
+							<label for="Check3" class="sidebar-layer">
+								<input type="checkbox" id="Check3" onClick="myFunction3(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/orange.png">
+								</div>
+								<span>2-5 years</span>
+							</label>
+							<label for="Check4" class="sidebar-layer">
+								<input type="checkbox" id="Check4" onClick="myFunction4(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/red.png">
+								</div>
+								<span>6-10 years</span>
+							</label>
+							<label for="Check5" class="sidebar-layer">
+								<input type="checkbox" id="Check5" onClick="myFunction5(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/lime.png">
+								</div>
+								<span>11-15 years</span>
+							</label>
+							<label for="Check6" class="sidebar-layer">
+								<input type="checkbox" id="Check6" onClick="myFunction6(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/pink.png">
+								</div>
+								<span>16-25 years</span>
+							</label>
+							<label for="Check7" class="sidebar-layer">
+								<input type="checkbox" id="Check7" onClick="myFunction7(this)" checked/>
+								<div class="icon-wrap">
+									<img src="images/markers/yellow.png">
+								</div>
+								<span>26-49 years</span>
+							</label>
+							<label for="Check8" class="sidebar-layer">
+								<input type="checkbox" id="Check8" onClick="myFunction8(this)" checked/>
+								<div class="icon-wrap">
+									<img src="images/markers/orange-solid.png">
+								</div>
+								<span>50+ years</span>
+							</label>
+							<label for="Check9" class="sidebar-layer">
+								<input type="checkbox" id="Check9" onClick="myFunction9(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/watershed.png">
+								</div>
+								<span>Active wastewater surface water discharges</span>
+							</label>
+							<label for="Check10" class="sidebar-layer">
+								<input type="checkbox" id="Check10" onClick="myFunction10(this)" checked />
+								<div class="icon-wrap">
+									<img src="images/markers/huc8.png">
+								</div>
+								<span>HUC 8 Layer</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Sidebar footer -->
+				<div class="sidebar-footer">
+					Powered by <a href="https://wim.usgs.gov" target="_blank"><img src="images/wim.png" alt="WIM" title="WIM"/></a>
+				</div>
+
+            </div> <!-- /sidebar -->
+
+			<div id="mapContainer" class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 no-col-padding keepit100">
+				<div id="mapDiv">
+				
+					<div id="legendElement" class="panel panel-default">
+						<a class="legend-heading" data-toggle="collapse" href="#legendCollapse" aria-expanded="true" aria-controls="collapseOne">
+							Explanation
+						</a>
+						<div id="legendCollapse" class="panel-collapse" role="tabpanel">
+							<div class="panel-body legend-panel-body">
+								<div class="legend-item">
+									<div class="legend-icon">
+										<img src="images/markers/nwis.png">
+									</div>
+									<span>Continuous Gages</span>
+								</div>
+								<div class="legend-item">
+									<div class="legend-icon icon-sm">
+										<img src="images/markers/yellow.png">
+									</div>
+									<span>Less than three measurements</span>
+								</div>
+								<div class="legend-item">
+									<div class="legend-icon icon-md">
+										<img src="images/markers/yellow.png">
+									</div>
+									<span>3 to 10 measurements</span>
+								</div>
+								<div class="legend-item">
+									<div class="legend-icon icon-lg">
+										<img src="images/markers/yellow.png">
+									</div>
+									<span>More than ten measurements</span>
+								</div>
+								<!-- <img src="images/image1.png" style="width:11px;height:11px;"><b></b></br>
+								<img src="images/image1.png" style="width:18px;height:18px;"><b>3 to 10 measurements</b></br>
+								<img src="images/image1.png" style="width:29px;height:29px;"><b>More than ten measurements</b> -->
+							</div>
+						</div>
+					</div>
+				</div> <!-- /mapdiv -->
+		
+				<div id="latLngScale" class="latLngScale">
+					<span class="hover-content"> <b>Map scale </b></span>
+					1:<span id="scale"></span><br>
+					<span class="hover-content"><b>Latitude</b></span>
+					<span id="latitude">y</span> |
+					<span class="hover-content"> <b>Longitude</b></span>
+					<span id="longitude">x</span>
+					<span id="mapCenterLabel"  class="hover-content"> (center)</span>
+				</div>
+		
+			</div> <!-- / Map Container -->
+    	</div><!-- /row keepit100 -->
+	</div> <!-- Container fluid -->
 </body>
 </html>

@@ -1,0 +1,716 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    display: block;
+    color: @ink_dark;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+    // Load System Fonts
+    font-family: @sans, sans-serif;
+    letter-spacing: @letter_spacing;
+
+    // Make text render crisper
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // Disable auto enlarge on safari
+    text-size-adjust: 100%;
+
+    // Rendering
+    text-rendering: optimizeLegibility;
+}
+body{
+    max-height: none;
+    height: fit-content;
+}
+
+
+// Change highlight selection style
+::selection {
+  background: @secondary_darker;
+  color: white;
+}
+::-moz-selection {
+  background: @secondary_darker;
+  color: white;
+}
+
+// Form elements display using defaults
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+// Images never exceed parent width
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+////////////////////////
+//      Inputs       //
+//////////////////////
+// Label
+label{
+    font-size: @cp_fs;
+    letter-spacing: @cp_ls;
+    padding: 2px 0;
+    display: block;
+}
+// Text Input
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='url'],
+textarea{
+    font-size: @bt_fs;
+    letter-spacing: @bt_ls;
+    border: none;
+    background-color: @grey_light;
+    box-sizing: border-box;
+    padding-left: @input_sidepadding;
+    padding-right: @input_sidepadding;
+    color: @ink_darker;
+    max-width: 100%;
+    font-weight: 500;
+    border-left: 3px solid @grey_dark;
+    
+    &:hover{
+        border-left: 3px solid @primary;
+        transition: @transition_fast;
+    }
+    &:focus{
+        border-left: 3px solid @primary_darker;
+        transition: @transition_fast;
+    }
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='url']{
+    display: inline-flex;
+    height: @input_height;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea{
+    line-height: @bt_lh;
+    padding-top: @input_sidepadding;
+    padding-bottom: @input_sidepadding;
+}
+@media (max-width: @screen_mobile) {
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    input[type='number'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='url'],
+    textarea{
+        font-size: @bt_fs_m;
+        letter-spacing: @bt_ls_m;
+    }
+    textarea{
+        line-height: @bt_lh_m;
+    }
+}
+
+////////////////////////
+//      Buttons      //
+//////////////////////
+
+.make-button(@color: primary; @text: primary_text; @light: primary_light; @lighter: primary_lighter; @dark: primary_darker; @darker: primary_darker;);
+.make-button(@color: secondary; @text: secondary_text; @light: secondary_light; @lighter: secondary_lighter; @dark: secondary_darker; @darker: secondary_darker;);
+.make-button(@color: grey; @text: grey_text; @light: grey_light; @lighter: grey_lighter; @dark: grey_darker; @darker: grey_darker;);
+.make-button(@color: ink; @text: ink_text; @light: ink_light; @lighter: ink_lighter; @dark: ink_darker; @darker: ink_darker;);
+.make-button(@color: purple; @text: purple_text; @light: purple_light; @lighter: purple_lighter; @dark: purple_darker; @darker: purple_darker;);
+.make-button(@color: indigo; @text: indigo_text; @light: indigo_light; @lighter: indigo_lighter; @dark: indigo_darker; @darker: indigo_darker;);
+.make-button(@color: blue; @text: blue_text; @light: blue_light; @lighter: blue_lighter; @dark: blue_darker; @darker: blue_darker;);
+.make-button(@color: teal; @text: teal_text; @light: teal_light; @lighter: teal_lighter; @dark: teal_darker; @darker: teal_darker;);
+.make-button(@color: green; @text: green_text; @light: green_light; @lighter: green_lighter; @dark: green_darker; @darker: green_darker;);
+.make-button(@color: yellow; @text: yellow_text; @light: yellow_light; @lighter: yellow_lighter; @dark: yellow_darker; @darker: yellow_darker;);
+.make-button(@color: orange; @text: orange_text; @light: orange_light; @lighter: orange_lighter; @dark: orange_darker; @darker: orange_darker;);
+.make-button(@color: red; @text: red_text; @light: red_light; @lighter: red_lighter; @dark: red_darker; @darker: red_darker;);
+.make-button(@color: white; @text: grey_text; @light: grey_light; @lighter: grey_lighter; @dark: grey_darker; @darker: grey_darker;);
+
+.make-button(@color; @text; @light; @lighter; @dark; @darker;) {
+    a.btn-@{color},
+    .btn-@{color}{
+        background-color: @@color;
+        font-size: @button_fs;
+        font-family: @sans, sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: @border_radius_lg;
+        padding: 0 @input_sidepadding 0 @input_sidepadding;
+        color: @@text;
+        transition: 0.1s all;
+        box-shadow: none;
+        border-bottom: 2px solid @@dark;
+        width: fit-content;
+        box-sizing: border-box;
+        display: inline-block;
+        line-height: @button_height;
+        text-decoration: none;
+        letter-spacing: @button_ls;
+
+        // Hover
+        &:hover{
+            cursor: pointer;
+            // text-decoration: underline;
+            transition: 0.1s all;
+			color: @@text;
+			text-decoration: underline;
+
+            i *{
+                text-decoration: none !important;
+            }
+        }
+
+        // Focus
+        &:focus{
+            transition: 0.1s all;
+            text-decoration: underline;
+            border-color: @@dark;
+
+            outline: @focus_outline;
+			color: @@text;
+			text-decoration-style: double;
+
+            i{
+                text-decoration: none;
+            }
+        }
+
+        // Active
+        &:active{
+            background-color: @@color;
+            transition: 0.1s all;
+			color: @@text;
+			background-color: darken(@@color, 5%);
+			text-decoration: underline;
+			text-decoration-style: wavy;
+        }
+
+        
+
+        // Outline
+        &.btn-outline{
+            background-color: @white;
+            border: 2px solid @@color;
+            color: @@text;
+            // position: relative;
+            
+            // Hover
+            &:hover{
+                cursor: pointer;
+            }
+
+            // Focus
+            &:focus{
+                background-color: @grey_lighter;
+            }
+
+            // Active
+            &:active{
+                background-color: @grey_lighter;
+                border-color: @@darker;
+                transition: 0.1s;
+            }
+        }
+
+        // Disabled
+        &:disabled{
+            background-color: @@lighter;
+            opacity: 0.6;
+            border-bottom: 0px solid @@lighter;
+
+            // Hover
+            &:hover{
+                cursor: default;
+                text-decoration: none;
+                background-color: @@lighter;
+            }
+
+            // Outline
+            &.btn-outline{
+                background-color: @white;
+                border: 2px solid @@lighter;
+                color: @@darker;
+
+                // Hover
+                &:hover{
+                    cursor: default;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    // Change text sizes on mobile
+    @media (max-width: @screen_mobile) {
+        .btn-@{color}{
+            font-size: @bt_fs_m;
+        }
+    }
+}
+
+// Apply primary styles by default
+button,
+input[type='button'],
+input[type='submit']{
+    .btn-primary();
+}
+
+
+// Non color-specific changes can go down here to use less code
+// Small
+a.btn-sm,
+.btn-sm{
+    height: @button_sm_height;
+    line-height: @button_sm_lh;
+    padding-left: @button_sm_sidepadding;
+    padding-right: @button_sm_sidepadding;
+    font-size: 12.5px;
+    border-radius: @border_radius;
+}
+
+// Icon
+a.btn-icon,
+.btn-icon{
+    padding: 0 @input_sidepadding 1px @input_sidepadding;
+
+    .btn-icon-element,
+    i{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        max-height: @input_height;
+        vertical-align: middle;
+        font-size: 16px;
+        margin: 0 2px;
+        padding-bottom: 1px;
+        border-bottom: none;
+        border-color: transparent;
+    }
+
+    &:hover,
+    &:active,
+    &:focus{
+        text-decoration: none;
+
+        i{
+            text-decoration: none !important;
+        }
+
+        span{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// Standard width for page elements
+.standard-width{
+    max-width: @standard_width;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+
+////////////////////////
+//  Display Helpers  //
+//////////////////////
+.inline-block{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.nodisplay{
+    display: none;
+}
+
+
+////////////////////////
+//       FLEX        //
+//////////////////////
+
+// Flex Between
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+// Global - xs
+.make-flex(@prefix: xs;);
+// Small Screen
+@media (min-width: @screen_sm) {
+    .make-flex(@prefix: sm;);
+}
+// Medium Screen
+@media (min-width: @screen_md) {
+    .make-flex(@prefix: md;);
+}
+// Large Screen
+@media (min-width: @screen_lg) {
+    .make-flex(@prefix: lg;);
+}
+// XLarge Screen
+@media (min-width: @screen_xl) {
+    .make-flex(@prefix: xl;);
+}
+
+// Less Function
+.make-flex(@prefix;) {
+
+    .@{prefix}-flex,
+    .@{prefix}-f-start{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .@{prefix}-f-end{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .@{prefix}-f-btw{
+        display: flex;
+        justify-content: space-between;
+    }
+    .@{prefix}-f-around{
+        display: flex;
+        justify-content: space-around;
+    }
+    .@{prefix}-f-center{
+        display: flex;
+        justify-content: center;
+    }
+    .@{prefix}-f-col{
+        display: flex;
+        flex-direction: column;
+    }
+    .@{prefix}-f-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+// How to?! - [size]-pt-[value]
+// Examples?! xs-p-20, sm-pt-50, lg-m-25, md-ml-30
+
+// Responsive sizes defined in variables.less
+
+// global
+.make-space(@prefix: xs; @value:200;   );
+.make-space(@prefix: xs; @value:175;   );
+.make-space(@prefix: xs; @value:150;   );
+.make-space(@prefix: xs; @value:125;   );
+.make-space(@prefix: xs; @value:100;   );
+.make-space(@prefix: xs; @value:75;   );
+.make-space(@prefix: xs; @value:50;   );
+.make-space(@prefix: xs; @value:40;   );
+.make-space(@prefix: xs; @value:30;   );
+.make-space(@prefix: xs; @value:25;   );
+.make-space(@prefix: xs; @value:20;   );
+.make-space(@prefix: xs; @value:15;   );
+.make-space(@prefix: xs; @value:10;   );
+.make-space(@prefix: xs; @value:5;    );
+.make-space(@prefix: xs; @value:0;    );
+
+
+// mobile
+@media (min-width: @screen_sm) {
+  .make-space(@prefix: sm; @value:200; );
+  .make-space(@prefix: sm; @value:175; );
+  .make-space(@prefix: sm; @value:150; );
+  .make-space(@prefix: sm; @value:125; );
+  .make-space(@prefix: sm; @value:100; );
+  .make-space(@prefix: sm; @value:75; );
+  .make-space(@prefix: sm; @value:50; );
+  .make-space(@prefix: sm; @value:40; );
+  .make-space(@prefix: sm; @value:30; );
+  .make-space(@prefix: sm; @value:25; );
+  .make-space(@prefix: sm; @value:20; );
+  .make-space(@prefix: sm; @value:15; );
+  .make-space(@prefix: sm; @value:10; );
+  .make-space(@prefix: sm; @value:5;  );
+  .make-space(@prefix: sm; @value:0;  );
+}
+
+// tablet
+@media (min-width: @screen_md) {
+  .make-space(@prefix: md; @value:200; );
+  .make-space(@prefix: md; @value:175; );
+  .make-space(@prefix: md; @value:150; );
+  .make-space(@prefix: md; @value:125; );
+  .make-space(@prefix: md; @value:100; );
+  .make-space(@prefix: md; @value:75; );
+  .make-space(@prefix: md; @value:50; );
+  .make-space(@prefix: md; @value:40; );
+  .make-space(@prefix: md; @value:30; );
+  .make-space(@prefix: md; @value:25; );
+  .make-space(@prefix: md; @value:20; );
+  .make-space(@prefix: md; @value:15; );
+  .make-space(@prefix: md; @value:10; );
+  .make-space(@prefix: md; @value:5;  );
+  .make-space(@prefix: md; @value:0;  );
+}
+// desktop
+@media (min-width: @screen_lg) {
+  .make-space(@prefix: lg; @value:200; );
+  .make-space(@prefix: lg; @value:175; );
+  .make-space(@prefix: lg; @value:150; );
+  .make-space(@prefix: lg; @value:125; );
+  .make-space(@prefix: lg; @value:100; );
+  .make-space(@prefix: lg; @value:75; );
+  .make-space(@prefix: lg; @value:50; );
+  .make-space(@prefix: lg; @value:40; );
+  .make-space(@prefix: lg; @value:30; );
+  .make-space(@prefix: lg; @value:25; );
+  .make-space(@prefix: lg; @value:20; );
+  .make-space(@prefix: lg; @value:15; );
+  .make-space(@prefix: lg; @value:10; );
+  .make-space(@prefix: lg; @value:5;  );
+  .make-space(@prefix: lg; @value:0;  );
+}
+// large screens
+@media (min-width: @screen_xl) {
+  .make-space(@prefix: xl; @value:200; );
+  .make-space(@prefix: xl; @value:175; );
+  .make-space(@prefix: xl; @value:150; );
+  .make-space(@prefix: xl; @value:125; );
+  .make-space(@prefix: xl; @value:100; );
+  .make-space(@prefix: xl; @value:75; );
+  .make-space(@prefix: xl; @value:50; );
+  .make-space(@prefix: xl; @value:40; );
+  .make-space(@prefix: xl; @value:30; );
+  .make-space(@prefix: xl; @value:25; );
+  .make-space(@prefix: xl; @value:20; );
+  .make-space(@prefix: xl; @value:15; );
+  .make-space(@prefix: xl; @value:10; );
+  .make-space(@prefix: xl; @value:5;  );
+  .make-space(@prefix: xl; @value:0;  );
+}
+
+// init functions
+.make-space(@prefix; @value) {
+  .@{prefix}-p-@{value}   { padding:        ~"@{value}px"; }
+  .@{prefix}-pt-@{value}  { padding-top:    ~"@{value}px"; }
+  .@{prefix}-pl-@{value}  { padding-left:   ~"@{value}px"; }
+  .@{prefix}-pr-@{value}  { padding-right:  ~"@{value}px"; }
+  .@{prefix}-pb-@{value}  { padding-bottom: ~"@{value}px"; }
+  .@{prefix}-m-@{value}   { margin:         ~"@{value}px"; }
+  .@{prefix}-mt-@{value}  { margin-top:     ~"@{value}px"; }
+  .@{prefix}-ml-@{value}  { margin-left:    ~"@{value}px"; }
+  .@{prefix}-mr-@{value}  { margin-right:   ~"@{value}px"; }
+  .@{prefix}-mb-@{value}  { margin-bottom:  ~"@{value}px"; }
+  .@{prefix}-m-auto       { margin-left: auto; margin-right: auto; }
+}
+///////////
+// Fonts //
+///////////
+.serif{
+    font-family: @serif;
+}
+
+//////////////////
+// Font Sizing //
+////////////////
+.text-body, p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: @light_weight;
+    letter-spacing: @bt_ls_m;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h1, .text-xl{
+    font-size: 27px;
+    line-height: 36px;
+    font-weight: @bold_weight;
+    letter-spacing: @xl_ls_m;
+}
+h2, .text-lg{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: @bold_weight;
+    letter-spacing: @lg_ls_m;
+}
+h3, .text-md{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: @light_weight;
+    letter-spacing: @md_ls_m;
+}
+h4, .text-sm{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: @light_weight;
+    letter-spacing: @sm_ls_m;
+}
+h5, .heading{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: @bold_weight;
+    letter-spacing: @hd_ls_m;
+}
+h6,
+.subheading{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: @bold_weight;
+    text-transform: uppercase;  
+    letter-spacing: @sh_ls_m;
+}
+.caption{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: @light_weight;
+    letter-spacing: @cp_ls_m;
+}
+
+//////////////////////
+// Responsive Text //
+////////////////////
+@media (min-width: @screen_mobile) {
+    .text-body, p{
+        font-size: @bt_fs;
+        letter-spacing: @bt_ls;
+    }
+    h1, .text-xl{
+        font-size: @xl_fs;
+        line-height: @xl_lh;
+        letter-spacing: @xl_ls;
+    }
+    h2, .text-lg{
+        font-size: @lg_fs;
+        line-height: @lg_lh;
+        letter-spacing: @lg_ls;
+    }
+    h3, .text-md{
+        font-size: @md_fs;
+        line-height: @md_lh;
+        letter-spacing: @md_ls;
+    }
+    h4, .text-sm{
+        font-size: @sm_fs;
+        letter-spacing: @sm_ls;
+    }
+    h5, .heading{
+        font-size: @hd_fs;
+        letter-spacing: @hd_ls;
+    }
+    h6, .subheading{
+        font-size: @sh_fs;
+        letter-spacing: @sh_ls;
+    }
+    .caption{
+        font-size: @cp_fs;
+        line-height: @cp_lh;
+        letter-spacing: @cp_ls;
+    }
+}
+
+
+//////////////////
+// Font Styles //
+////////////////
+// Emphasis
+b,
+strong{
+    font-weight: @bold_weight;
+}
+
+// Links
+a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: inherit;
+    font-weight: inherit;
+    color: inherit;
+    box-sizing: border-box;
+    text-decoration: underline;
+
+    &:hover{
+        transition: @transition_fast;
+        color: @primary;
+    }
+    &:focus{
+        transition: @transition_fast;
+        outline: @focus_outline;
+    }
+    &:active{
+        transition: @transition_fast;
+    }
+}
+
+// Subdued text/elements
+.subdued{
+    opacity: 0.65;
+}
+
+/////////////////////////////////
+// Other Typographic Elements //
+///////////////////////////////
+code{
+    font-family: @monospace;
+    background-color: @grey;
+    border-radius: @border_radius;
+    padding: 2px;
+    box-sizing: border-box;
+}
+pre{
+    white-space: pre-wrap;
+    background-color: @grey;
+    font-family: @monospace;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: @border_radius;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: @light_weight;
+}
+
+
+
+//////////////
+// Helpers //
+////////////
+.align-c{
+    text-align: center;
+}
+.align-l{
+    text-align: left;
+}
+.align-r{
+    text-align: right;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
