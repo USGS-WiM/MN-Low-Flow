@@ -5622,6 +5622,7 @@ nav#nav .nav-appname {
 .sapi-autocomplete-title {
   padding: 4px !important;
   text-align: left !important;
+  background-color: #0c141e;
 }
 .sapi-autocomplete-title span {
   float: right;
@@ -5863,6 +5864,12 @@ nav#nav .nav-appname {
 .geosearch-form .input-group #sapi_searchTextBoxDiv input {
   background-color: white;
   border: 1px solid #D9DDE4 !important;
+  width: 100%;
+  font-size: 14px;
+  padding: 3px 6px !important;
+  box-sizing: border-box;
+  height: 30px !important;
+  border-radius: 4px !important;
 }
 .geosearch-form .input-group button {
   padding-left: 25px;
