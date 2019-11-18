@@ -5884,8 +5884,13 @@ nav#nav .nav-appname {
   overflow: auto;
 }
 #mapDiv {
-  min-height: 100%;
-  max-height: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  float: right;
 }
 .no-col-padding {
   padding: 0;
