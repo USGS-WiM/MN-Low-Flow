@@ -126,34 +126,37 @@ gulp.task('wiredep', function () {
         .pipe(gulp.dest('src'));
 });
 
+
+
+
+
 // Watch
-gulp.task('watch', ['connect', 'serve'], function () {
+gulp.task('watch', function () {
+	gulp.start('bs');
+
     // Watch for changes in `app` folder
-    gulp.watch([
-        'src/*.html',
-        'src/styles/**/*.css',
-        'src/scripts/**/*.js',
-        'src/images/**/*'
-    ], function (event) {
-        return gulp.src(event.path)
-            .pipe($.connect.reload());
-    });
+    // gulp.watch([
+    //     'src/*.html',
+    //     'src/styles/**/*.css',
+    //     'src/scripts/**/*.js',
+    //     'src/images/**/*'
+    // ], function (event) {
+    //     return gulp.src(event.path)
+    //         .pipe($.connect.reload());
+    // });
 
     // Watch .css files
-    gulp.watch('src/styles/**/*.css', ['styles']);
+    // gulp.watch('src/styles/**/*.css', ['styles']);
 
     // Watch .js files
-    gulp.watch('src/scripts/**/*.js', ['scripts']);
+    // gulp.watch('src/scripts/**/*.js', ['scripts']);
 
     // Watch image files
-    gulp.watch('src/images/**/*', ['images']);
+    // gulp.watch('src/images/**/*', ['images']);
 
     // Watch bower files
-    gulp.watch('bower.json', ['wiredep']);
+    // gulp.watch('bower.json', ['wiredep']);
 });
-
-
-
 
 
 /////////////////
@@ -182,8 +185,11 @@ gulp.task('bs', function () {
     });
 
     gulp.watch("src/styles/less/**/*.less", ['compile-less']);
-    gulp.watch("./src/**/*.html").on("change", reload);
-    gulp.watch("./src/**/*.js").on("change", reload);
+    gulp.watch("src/**/*.html").on("change", reload);
+	gulp.watch("src/**/*.js").on("change", reload);
+    gulp.watch('src/images/**/*', ['images']).on("change", reload);
+	gulp.watch('bower.json', ['wiredep']).on("change", reload);
+
 });
 
 
