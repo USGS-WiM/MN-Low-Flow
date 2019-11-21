@@ -592,19 +592,22 @@ $( document ).ready(function() {
 
 		map.on('click', function(e){
 			console.log(e);
-			Huc8.identify().on(map).at(e.latlng).run(function(error, featureCollection){
-				if (error){
-					return false;
-				} 
-				//only show popups if user clicks on a MN feature
-				if (featureCollection.features[0].properties.States.indexOf("MN") >= 0 ){
-					var infos = featureCollection.features[0].properties
-					//console.log(infos)
-					var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
-				} else{
-					return false;
+			if (map.hasLayer(Huc8)){
+				Huc8.identify().on(map).at(e.latlng).run(function (error, featureCollection) {
+					if (error) {
+						return false;
+					}
+					//only show popups if user clicks on a MN feature
+					if (featureCollection.features[0].properties.States.indexOf("MN") >= 0) {
+						var infos = featureCollection.features[0].properties
+						//console.log(infos)
+						var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
+					} else {
+						return false;
 
-				}
-			});
+					}
+				});
+			}
+			
 		});
 });
