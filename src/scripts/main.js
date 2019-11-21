@@ -591,7 +591,7 @@ $( document ).ready(function() {
 		}).addTo(map);
 
 		map.on('click', function(e){
-			console.log(e);
+			//console.log(e);
 			if (map.hasLayer(Huc8)){
 				Huc8.identify().on(map).at(e.latlng).run(function (error, featureCollection) {
 					if (error) {
