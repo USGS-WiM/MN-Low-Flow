@@ -298,7 +298,7 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/markers/nwis.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29]});
+	var icon0 = L.icon({ iconUrl: 'images/markers/Cont.png', iconAnchor: [6, 6], popupAnchor: [0, 2], iconSize: [12, 12]});
 	var icon1 = L.icon({iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 
 	layer0 = L.layerGroup();
@@ -374,14 +374,14 @@ $( document ).ready(function() {
 							layer0.addLayer(marker0)
 						}
 						// regulated gages //
-						if (a.pt_symbol == "symbol1") {
-							var marker1 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon1
-							}).bindPopup(content);
-							layer1.addLayer(marker1)
-						}
+						// if (a.pt_symbol == "symbol1") {
+						// 	var marker1 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon1
+						// 	}).bindPopup(content);
+						// 	layer1.addLayer(marker1)
+						// }
 						// discontinuous gages (0-1 years) //
 						if (a.pt_symbol == "symbol2") {
 							var category = findCount(a.site_no);
@@ -574,11 +574,10 @@ $( document ).ready(function() {
 			if (error || featureCollection.features.length === 0) {
 			  return false;
 			} else {
-			  return featureCollection.features[0].properties.description + "<br>"
-			  + "- " + featureCollection.features[0].properties.ai_name + "<br>"
-			  + "ID : " + featureCollection.features[0].properties.OBJECTID + "<br>" + "<br>" + "HUC8 : "
-			  + featureCollection.features[0].properties.huc8_name + "<br>" + "HUC8 ID : "
-			  + featureCollection.features[0].properties.huc8
+			  return "Permit Number : " + featureCollection.features[0].properties.permit_number + "<br>"
+			  + "Facility : " + featureCollection.features[0].properties.ai_name + "<br>"
+			  + "Station # : " + featureCollection.features[0].properties.si_designation + "<br>" + "<br>"
+			   + "Station description : " + featureCollection.features[0].properties.description
 			}
 		  });
 
