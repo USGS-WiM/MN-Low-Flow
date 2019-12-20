@@ -22,12 +22,12 @@ function myFunction0(checkbox) {
 	} else {
 		map.removeLayer(layer0)
 	}}
-function myFunction1(checkbox) {
-	if(checkbox.checked == true){
-		map.addLayer(layer1);
-	} else {
-		map.removeLayer(layer1)
-	}}
+// function myFunction1(checkbox) {
+// 	if(checkbox.checked == true){
+// 		map.addLayer(layer1);
+// 	} else {
+// 		map.removeLayer(layer1)
+// 	}}
 function myFunction2(checkbox) {
 	if(checkbox.checked == true){
 		map.addLayer(layer2);
@@ -46,30 +46,30 @@ function myFunction4(checkbox) {
 	} else {
 		map.removeLayer(layer4)
 	}}
-function myFunction5(checkbox) {
-	if(checkbox.checked == true){
-		map.addLayer(layer5);
-	} else {
-		map.removeLayer(layer5)
-	}}
-function myFunction6(checkbox) {
-	if(checkbox.checked == true){
-		map.addLayer(layer6);
-	} else {
-		map.removeLayer(layer6)
-	}}
-function myFunction7(checkbox) {
-	if(checkbox.checked == true){
-		map.addLayer(layer7);
-	} else {
-		map.removeLayer(layer7)
-	}}
-function myFunction8(checkbox) {
-	if(checkbox.checked == true){
-		map.addLayer(layer8);
-	} else {
-		map.removeLayer(layer8)
-	}}
+// function myFunction5(checkbox) {
+// 	if(checkbox.checked == true){
+// 		map.addLayer(layer5);
+// 	} else {
+// 		map.removeLayer(layer5)
+// 	}}
+// function myFunction6(checkbox) {
+// 	if(checkbox.checked == true){
+// 		map.addLayer(layer6);
+// 	} else {
+// 		map.removeLayer(layer6)
+// 	}}
+// function myFunction7(checkbox) {
+// 	if(checkbox.checked == true){
+// 		map.addLayer(layer7);
+// 	} else {
+// 		map.removeLayer(layer7)
+// 	}}
+// function myFunction8(checkbox) {
+// 	if(checkbox.checked == true){
+// 		map.addLayer(layer8);
+// 	} else {
+// 		map.removeLayer(layer8)
+// 	}}
 function myFunction9(checkbox) {
 	if(checkbox.checked == true){
 		map.addLayer(Sites);
@@ -298,8 +298,8 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/markers/Cont.png', iconAnchor: [6, 6], popupAnchor: [0, 2], iconSize: [12, 12]});
-	var icon1 = L.icon({iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [6, 6], popupAnchor: [1, 1], iconSize: [12, 12]});
+	//var icon1 = L.icon({iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
 
 	layer0 = L.layerGroup();
 	layer1 = L.layerGroup();
@@ -383,17 +383,17 @@ $( document ).ready(function() {
 						// 	layer1.addLayer(marker1)
 						// }
 						// discontinuous gages (0-1 years) //
-						if (a.pt_symbol == "symbol2") {
+						if (a.pt_symbol !== "symbol0") {
 							var category = findCount(a.site_no);
 							var icon2;
 							if (category == "s"){
-								icon2 = L.icon({ iconUrl: 'images/markers/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] })
+								icon2 = L.icon({ iconUrl: 'images/markers/lb.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
 							}
 							if (category == "m") {
-								icon2 = L.icon({ iconUrl: 'images/markers/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+								icon2 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
 							}
 							if (category == "l") {
-								icon2 = L.icon({ iconUrl: 'images/markers/rdg.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] })
+								icon2 = L.icon({ iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
 							}
 							var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
@@ -403,133 +403,133 @@ $( document ).ready(function() {
 							layer2.addLayer(marker2)
 						}
 						// discontinuous gages (2-5 years) //
-						if (a.pt_symbol == "symbol3") {
-							var category = findCount(a.site_no);
-							var icon3;
-							if (category == "s") {
-								icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon3
-							}).bindPopup(content);
-							layer3.addLayer(marker3)
-						}
+						// if (a.pt_symbol == "symbol3") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon3;
+						// 	if (category == "s") {
+						// 		icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon3 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon3
+						// 	}).bindPopup(content);
+						// 	layer3.addLayer(marker3)
+						// }
 						// discontinuous gages (6-10 years) //
-						if (a.pt_symbol == "symbol4") {
-							var category = findCount(a.site_no);
-							var icon4;
-							if (category == "s") {
-								icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon4
-							}).bindPopup(content);
-							layer4.addLayer(marker4)
-						}
+						// if (a.pt_symbol == "symbol4") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon4;
+						// 	if (category == "s") {
+						// 		icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon4 = L.icon({ iconUrl: 'images/markers/red.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon4
+						// 	}).bindPopup(content);
+						// 	layer4.addLayer(marker4)
+						// }
 						// discontinuous gages (10-15 years) //
-						if (a.pt_symbol == "symbol5") {
-							var category = findCount(a.site_no);
-							var icon5;
-							if (category == "s") {
-								icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon5
-							}).bindPopup(content);
-							layer5.addLayer(marker5)
-						}
+						// if (a.pt_symbol == "symbol5") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon5;
+						// 	if (category == "s") {
+						// 		icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon5 = L.icon({ iconUrl: 'images/markers/lime.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker5 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon5
+						// 	}).bindPopup(content);
+						// 	layer5.addLayer(marker5)
+						// }
 						// discontinuous gages (16-25 years) //
-						if (a.pt_symbol == "symbol6") {
-							var category = findCount(a.site_no);
-							var icon6;
-							if (category == "s") {
-								icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon6
-							}).bindPopup(content);
-							layer6.addLayer(marker6)
-						}
+						// if (a.pt_symbol == "symbol6") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon6;
+						// 	if (category == "s") {
+						// 		icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon6 = L.icon({ iconUrl: 'images/markers/pink.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker6 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon6
+						// 	}).bindPopup(content);
+						// 	layer6.addLayer(marker6)
+						// }
 						// discontinuous gages (26-49 years) //
-						if (a.pt_symbol == "symbol7") {
-							var category = findCount(a.site_no);
-							var icon7;
-							if (category == "s") {
-								icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon7
-							}).bindPopup(content);
-							layer7.addLayer(marker7)
-						}
+						// if (a.pt_symbol == "symbol7") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon7;
+						// 	if (category == "s") {
+						// 		icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon7 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker7 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon7
+						// 	}).bindPopup(content);
+						// 	layer7.addLayer(marker7)
+						// }
 						// discontinuous gages (50+ years) //
-						if (a.pt_symbol == "symbol8") {
-							var category = findCount(a.site_no);
-							var icon8;
-							if (category == "s") {
-								icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
-							}
-							if (category == "m") {
-								icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
-							}
-							if (category == "l") {
-								icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
-							}
-							var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon8
-							}).bindPopup(content);
-							layer8.addLayer(marker8)
-						}
+						// if (a.pt_symbol == "symbol8") {
+						// 	var category = findCount(a.site_no);
+						// 	var icon8;
+						// 	if (category == "s") {
+						// 		icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [12, 12] });
+						// 	}
+						// 	if (category == "m") {
+						// 		icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] });
+						// 	}
+						// 	if (category == "l") {
+						// 		icon8 = L.icon({ iconUrl: 'images/markers/orange-solid.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [29, 29] });
+						// 	}
+						// 	var marker8 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon8
+						// 	}).bindPopup(content);
+						// 	layer8.addLayer(marker8)
+						// }
 					}
 					// checkboxes //
 					if($("#Check0").prop('checked')) {
 						map.addLayer(layer0)
 					}
-					if($("#Check1").prop('checked')) {
-						map.addLayer(layer1)
-					}
+					// if($("#Check1").prop('checked')) {
+					// 	map.addLayer(layer1)
+					// }
 					if($("#Check2").prop('checked')) {
 						map.addLayer(layer2)
 					}
@@ -539,18 +539,18 @@ $( document ).ready(function() {
 					if($("#Check4").prop('checked')) {
 						map.addLayer(layer4)
 					}
-					if($("#Check5").prop('checked')) {
-						map.addLayer(layer5)
-					}
-					if($("#Check6").prop('checked')) {
-						map.addLayer(layer6)
-					}
-					if($("#Check7").prop('checked')) {
-						map.addLayer(layer7)
-					}
-					if($("#Check8").prop('checked')) {
-						map.addLayer(layer8)
-					}
+					// if($("#Check5").prop('checked')) {
+					// 	map.addLayer(layer5)
+					// }
+					// if($("#Check6").prop('checked')) {
+					// 	map.addLayer(layer6)
+					// }
+					// if($("#Check7").prop('checked')) {
+					// 	map.addLayer(layer7)
+					// }
+					// if($("#Check8").prop('checked')) {
+					// 	map.addLayer(layer8)
+					// }
 					if($("#Check9").prop('checked')) {
 						map.addLayer(Sites)
 					}

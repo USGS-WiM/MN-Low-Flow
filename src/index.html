@@ -22,7 +22,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+    <script src="bower_components/jquery.nicescroll/jquery.nicescroll.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/bootstrap-sidebar/dist/js/sidebar.js"></script>
     <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
@@ -298,7 +298,7 @@
 							<label for="Check0" class="sidebar-layer">
 								<input type="checkbox" id="Check0" onClick="myFunction0(this)" checked/>
 								<div class="icon-wrap">
-									<img src="images/markers/Cont.png">
+									<img src="images/markers/black.png">
 								</div>
 								<span>Continuous</span>
 							</label>
@@ -314,23 +314,23 @@
 								<div class="icon-wrap">
 									<img src="images/markers/rdg.png">
 								</div>
-								<span>0-1 years</span>
+								<span>Less than three measurements</span>
 							</label>
 							<label for="Check3" class="sidebar-layer">
 								<input type="checkbox" id="Check3" onClick="myFunction3(this)" checked />
 								<div class="icon-wrap">
 									<img src="images/markers/orange.png">
 								</div>
-								<span>2-5 years</span>
+								<span>Three to ten measurements</span>
 							</label>
 							<label for="Check4" class="sidebar-layer">
 								<input type="checkbox" id="Check4" onClick="myFunction4(this)" checked />
 								<div class="icon-wrap">
 									<img src="images/markers/red.png">
 								</div>
-								<span>6-10 years</span>
+								<span>More than ten measurements</span>
 							</label>
-							<label for="Check5" class="sidebar-layer">
+							<!-- <label for="Check5" class="sidebar-layer">
 								<input type="checkbox" id="Check5" onClick="myFunction5(this)" checked />
 								<div class="icon-wrap">
 									<img src="images/markers/lime.png">
@@ -357,7 +357,7 @@
 									<img src="images/markers/orange-solid.png">
 								</div>
 								<span>50+ years</span>
-							</label>
+							</label> -->
 							<label for="Check9" class="sidebar-layer">
 								<input type="checkbox" id="Check9" onClick="myFunction9(this)" checked />
 								<div class="icon-wrap">
@@ -394,7 +394,7 @@
 							<div class="panel-body legend-panel-body">
 								<div class="legend-item">
 									<div class="legend-icon icon-md">
-										<img src="images/markers/Cont.png">
+										<img src="images/markers/black.png">
 									</div>
 									<span>Continuous Gages</span>
 								</div>
