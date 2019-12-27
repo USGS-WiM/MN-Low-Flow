@@ -360,10 +360,10 @@ $( document ).ready(function() {
 						var link5 = "https://mn.water.usgs.gov/infodata/lowflow/contData/stationDescription/" + a.site_no + ".txt"
 						var linkNWIS = "https://waterdata.usgs.gov/monitoring-location/" + a.site_no + "/"
 
-						var content = "<label>Station: </label><b>" + a.station_nm + "</b><div class='leaflet-popup-buttons'><a class='btn-sm btn-primary' target='_blank' href='"+ link +"'> Data </a>"+
+						var content = "<label>Gage #: </label><b>" + a.site_no + "<label>Station: </label><b>" + a.station_nm + "</b><div class='leaflet-popup-buttons'><a class='btn-sm btn-primary' target='_blank' href='"+ link +"'> Data </a>"+
 						"<a class='btn-sm btn-primary' target='_blank' href='"+ linkNWIS +"'> NWIS </a></div>";
 
-						var content0 = "<label>Station:</label><b>" + a.station_nm + "</b><div class='leaflet-popup-buttons'><a class='btn-sm btn-primary' target='_blank' href='"+ link5 
+						var content0 = "<label>Gage #: </label><b>" + a.site_no + "<label>Station: </label><b>" + a.station_nm + "</b><div class='leaflet-popup-buttons'><a class='btn-sm btn-primary' target='_blank' href='"+ link5 
 						+"'> Station Description </a>" + "<a class='btn-sm btn-primary' target='_blank' href='"+ link2 +"'> Frequency Output </a>" 
 						 + "<a class='btn-sm btn-primary' target='_blank' href='"+ link3 +"'> Log Normal </a>" + "<a class='btn-sm btn-primary' target='_blank' href='"
 						+ link4 +"'> Log Pearson </a>" + "<a class='btn-sm btn-primary' target='_blank' href='"+ linkNWIS +"'> NWIS </a></div>";
