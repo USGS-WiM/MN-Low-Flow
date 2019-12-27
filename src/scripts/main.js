@@ -597,14 +597,97 @@ $( document ).ready(function() {
 		  });
 
 		  //////// HUC 8 Layer ////////
+		  //Option 1 as a feature layer -- not the best solution, but it works
+			Huc8 = L.esri.featureLayer({
+			url: "https://fwsprimary.wim.usgs.gov/server/rest/services/HUCs/MapServer/1/",
+			where: "STATES LIKE '%MN%'",
+			simplifyFactor: .2,
+			style: function(feature){
+				return { color: '#800000', fillOpacity: 0.1, weight: 1.5 };
+			}
+		  }).addTo(map);
 
-		Huc8 = L.esri.dynamicMapLayer({
+		  Huc8.bindPopup(function (layer) {
+			var infos = layer.feature.properties;
+			return ('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '</br></br><b>Name: </b>' + infos.NAME + '</br></br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>');
+		  }); 
+
+		 
+		//option 2 looking into passing a json object to server to change symbols server-side before rendering.
+
+		/* Huc8 = L.esri.dynamicMapLayer({
 			url: "https://fwsprimary.wim.usgs.gov/server/rest/services/HUCs/MapServer/",
 			layers: [1],
-			layerDefs: { 1: "STATES LIKE '%MN%'" }
-		}).addTo(map);
+			layerDefs: { 1: "STATES LIKE '%MN%'" },
+			dynamicLayers: { 
+				"renderer": "simple",
+				"symbol" :
+					{
+						"type": "esrSFS",
+						"style":"esriSFSSolid",
+						"color": "red",
+						"outline" : 
+						{
+						"type" : "esriSLS", 
+						"style" : "esriSLSSolid", 
+						"color" : [110,110,110,255], 
+						"width" : 1.0
+						}
+					},
+				"transparency" : 60,
+				"showLabels": false,
+			}
+ 			//https://developers.arcgis.com/rest/services-reference/export-map.htm
+			dynamicLayers: {
+				"id": <layerOrTableId>,
+				"source": <layer source>,
+				"definitionExpression": "<definitionExpression>",
+				"drawingInfo": 
+				{
+				  "renderer": <renderer>,
+				  "transparency": <transparency>,
+				  "scaleSymbols": <true | false >,
+				  "showLabels": <true | false >,
+				  "labelingInfo": <labeling info>
+				},
+				"layerTimeOptions":
+				{
+				  "useTime" : <true | false>,
+				  "timeDataCumulative" : <true | false>,
+				  "timeOffset" : <timeOffset>,
+				  "timeOffsetUnits" : "<esriTimeUnitsCenturies | esriTimeUnitsDays | esriTimeUnitsDecades | 
+										 esriTimeUnitsHours | esriTimeUnitsMilliseconds | esriTimeUnitsMinutes | 
+										 esriTimeUnitsMonths | esriTimeUnitsSeconds | esriTimeUnitsWeeks | esriTimeUnitsYears |
+										 esriTimeUnitsUnknown>"
+				}
+			  },
+			  {
+				"id": <layerOrTableId>,
+				"source": <layer source>,
+				"definitionExpression": "<definitionExpression>",
+				"drawingInfo": 
+				{
+				  "renderer": <renderer>,
+				  "transparency": <transparency>,
+				  "scaleSymbols": <true | false >,
+				  "showLabels": <true | false >,
+				  "labelingInfo": <labeling info>
+				},
+				"layerTimeOptions":
+				{
+				  "useTime" : <true | false>,
+				  "timeDataCumulative" : <true | false>,
+				  "timeOffset" : <timeOffset>,
+				  "timeOffsetUnits" : "<esriTimeUnitsCenturies | esriTimeUnitsDays | esriTimeUnitsDecades | 
+										 esriTimeUnitsHours | esriTimeUnitsMilliseconds | esriTimeUnitsMinutes | 
+										 esriTimeUnitsMonths | esriTimeUnitsSeconds | esriTimeUnitsWeeks | esriTimeUnitsYears |
+										 esriTimeUnitsUnknown>"
+				}
+			  }
 
-		map.on('click', function(e){
+		}).addTo(map); */
+
+	/* 	map.on('click', function(e){
 			//console.log(e);
 			if (map.hasLayer(Huc8)){
 				Huc8.identify().on(map).at(e.latlng).run(function (error, featureCollection) {
@@ -623,5 +706,5 @@ $( document ).ready(function() {
 				});
 			}
 			
-		});
+		});  */ 
 });
