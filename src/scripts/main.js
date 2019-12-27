@@ -299,7 +299,11 @@ $( document ).ready(function() {
 // defining each icon //
 	
 	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [6, 6], popupAnchor: [1, 1], iconSize: [12, 12]});
-	//var icon1 = L.icon({iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [16,16]});
+	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.jpg', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon2 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon3 = L.icon({ iconUrl: 'images/markers/red.jpg', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+
+
 
 	layer0 = L.layerGroup();
 	layer1 = L.layerGroup();
@@ -385,23 +389,34 @@ $( document ).ready(function() {
 						// discontinuous gages (0-1 years) //
 						if (a.pt_symbol !== "symbol0") {
 							var category = findCount(a.site_no);
-							var icon2;
 							if (category == "s"){
-								icon2 = L.icon({ iconUrl: 'images/markers/lb.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-							}
+								var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+									radius: 3,
+									fillOpacity: 0.95,
+									icon: icon1
+								}).bindPopup(content);
+								layer2.addLayer(marker2);
+						}};
+						if (a.pt_symbol !== "symbol0") {
+							var category = findCount(a.site_no);
 							if (category == "m") {
-								icon2 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-							}
-							if (category == "l") {
-								icon2 = L.icon({ iconUrl: 'images/markers/purple.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-							}
-							var marker2 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+							var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 								radius: 3,
 								fillOpacity: 0.95,
 								icon: icon2
 							}).bindPopup(content);
-							layer2.addLayer(marker2)
-						}
+							layer3.addLayer(marker3);
+						}};
+						if (a.pt_symbol !== "symbol0") {
+							var category = findCount(a.site_no);
+							if (category == "l") {
+								var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+									radius: 3,
+									fillOpacity: 0.95,
+									icon: icon3
+								}).bindPopup(content);
+								layer4.addLayer(marker4);
+						}};
 						// discontinuous gages (2-5 years) //
 						// if (a.pt_symbol == "symbol3") {
 						// 	var category = findCount(a.site_no);
