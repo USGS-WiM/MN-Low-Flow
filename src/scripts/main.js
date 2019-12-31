@@ -298,10 +298,10 @@ $( document ).ready(function() {
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [6, 6], popupAnchor: [1, 1], iconSize: [12, 12]});
-	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-	var icon2 = L.icon({ iconUrl: 'images/markers/green.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-	var icon3 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [7, 7], popupAnchor: [0, 0], iconSize: [16, 16]});
+	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
+	var icon2 = L.icon({ iconUrl: 'images/markers/green.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
+	var icon3 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
 
 
 
