@@ -299,9 +299,9 @@ $( document ).ready(function() {
 // defining each icon //
 	
 	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [6, 6], popupAnchor: [1, 1], iconSize: [12, 12]});
-	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.jpg', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-	var icon2 = L.icon({ iconUrl: 'images/markers/orange.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
-	var icon3 = L.icon({ iconUrl: 'images/markers/red.jpg', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon2 = L.icon({ iconUrl: 'images/markers/green.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
+	var icon3 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [8, 8], popupAnchor: [0, 2], iconSize: [19, 19] })
 
 
 
