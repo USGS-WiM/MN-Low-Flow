@@ -582,7 +582,7 @@ $( document ).ready(function() {
 		// Discharge Points //
 		Sites = L.esri.dynamicMapLayer({
 			url: 'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer',
-			layers: [6]
+			layers: [3]
 		}).addTo(map);
 	
 		Sites.bindPopup(function (error, featureCollection) {
@@ -598,11 +598,10 @@ $( document ).ready(function() {
 
 		  //////// HUC 8 Layer ////////
 
-		Huc8 = L.esri.dynamicMapLayer({
-			url: "https://fwsprimary.wim.usgs.gov/server/rest/services/HUCs/MapServer/",
-			layers: [1],
-			layerDefs: { 1: "STATES LIKE '%MN%'" }
-		}).addTo(map);
+		  Huc8 = L.esri.dynamicMapLayer({
+			url: "https://gis.wim.usgs.gov/arcgis/rest/services/MNLowFlow/MNHuc8DarkRed/MapServer/",
+			layers: [0]
+		}).addTo(map); 
 
 		map.on('click', function(e){
 			//console.log(e);
@@ -612,7 +611,7 @@ $( document ).ready(function() {
 						return false;
 					}
 					//only show popups if user clicks on a MN feature
-					if (featureCollection.features[0].properties.States.indexOf("MN") >= 0) {
+					if (featureCollection.features[0].properties.STATES.indexOf("MN") >= 0) {
 						var infos = featureCollection.features[0].properties
 						//console.log(infos)
 						var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
