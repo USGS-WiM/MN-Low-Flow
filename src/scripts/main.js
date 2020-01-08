@@ -656,7 +656,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 		Sites = L.esri.dynamicMapLayer({
 			url: 'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer',
 			layers: [3]
-		}).addTo(map);
+		}).addTo(map)
 	
 		Sites.bindPopup(function (error, featureCollection) {
 			if (error || featureCollection.features.length === 0) {
@@ -668,6 +668,16 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 			   + "Station description : " + featureCollection.features[0].properties.description
 			}
 		  });
+
+		  // If MPCA layer is unavailable //
+		  if (Sites.hasLayer == true ) {
+			$("#snackbar").hide()
+		} else {
+			$("#snackbar").show()
+			$("#snackbar").click(function(){
+				$("#snackbar").hide()
+			});
+			 };
 
 		  //////// HUC 8 Layer ////////
 
