@@ -655,7 +655,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 		// Discharge Points //
 		Sites = L.esri.dynamicMapLayer({
 			url: 'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer',
-			layers: [3]
+			layers: [6]
 		}).addTo(map)
 	
 		Sites.bindPopup(function (error, featureCollection) {
@@ -670,7 +670,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 		  });
 
 		  // If MPCA layer is unavailable //
-		  if (Sites.hasLayer == true ) {
+		  if (map.hasLayer(Sites) == true ) {
 			$("#snackbar").hide()
 		} else {
 			$("#snackbar").show()
