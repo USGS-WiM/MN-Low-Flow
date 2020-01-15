@@ -653,21 +653,23 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 		//////// END defining each gage layer, grouping them, and showing them w/checkbox ////////
 
 		// Discharge Points //
-		Sites = L.esri.dynamicMapLayer({
-			url: 'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer',
-			layers: [6]
-		}).addTo(map)
-	
-		Sites.bindPopup(function (error, featureCollection) {
-			if (error || featureCollection.features.length === 0) {
-			  return false;
-			} else {
-			  return "Permit Number : " + featureCollection.features[0].properties.permit_number + "<br>"
-			  + "Facility : " + featureCollection.features[0].properties.ai_name + "<br>"
-			  + "Station # : " + featureCollection.features[0].properties.si_designation + "<br>" + "<br>"
-			   + "Station description : " + featureCollection.features[0].properties.description
+
+		var iconFs = L.icon({
+			iconUrl: 'images/markers/index.png',
+			popupAnchor: [5,5]
+		});
+		Sites = L.esri.featureLayer({url:'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer/6',
+			pointToLayer: function (feature, latlng) {
+				//return L.marker(latlng, { icon:  iconFs} );
+				var mypopup = L.popup().setContent("Permit Number : " + feature.properties.permit_number + "<br>"
+				+ "Facility : " + feature.properties.ai_name + "<br>"
+				+ "Station # : " + feature.properties.si_designation + "<br>" + "<br>"
+				 + "Station description : " + feature.properties.description);
+				var mymarker = L.marker(latlng, { icon:  iconFs} );
+				mymarker.bindPopup(mypopup);
+				return mymarker;               
 			}
-		  });
+		}).addTo(map)
 
 		  // If MPCA layer is unavailable //
 		  if (map.hasLayer(Sites) == true ) {
