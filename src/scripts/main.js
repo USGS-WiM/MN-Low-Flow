@@ -371,7 +371,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 
 // defining each icon //
 	
-	var icon0 = L.icon({ iconUrl: 'images/markers/black.png', iconAnchor: [7, 7], popupAnchor: [0, 0], iconSize: [16, 16]});
+	var icon0 = L.icon({ iconUrl: 'images/markers/cont.png', iconAnchor: [7, 7], popupAnchor: [0, 0], iconSize: [16, 16]});
 	var icon1 = L.icon({ iconUrl: 'images/markers/yellow.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
 	var icon2 = L.icon({ iconUrl: 'images/markers/green.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
 	var icon3 = L.icon({ iconUrl: 'images/markers/blue.png', iconAnchor: [10, 10], popupAnchor: [0, 2], iconSize: [20, 20] })
@@ -656,6 +656,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 
 		var iconFs = L.icon({
 			iconUrl: 'images/markers/index.png',
+			iconSize: [13,13],
 			popupAnchor: [5,5]
 		});
 		Sites = L.esri.featureLayer({url:'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer/6',
@@ -699,7 +700,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 					if (featureCollection.features[0].properties.STATES.indexOf("MN") >= 0) {
 						var infos = featureCollection.features[0].properties
 						//console.log(infos)
-						var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.Name + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
+						var Huc8Popup = L.popup().setLatLng(e.latlng).setContent('<p></p><p><b>HUC8: </b>' + infos.HUC8 + '<br><b>Name: </b>' + infos.NAME + '<br><b>Area: </b>' + infos.AREASQKM + ' square kilometers</p>').openOn(map);
 					} else {
 						return false;
 
