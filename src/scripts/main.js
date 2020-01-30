@@ -396,7 +396,10 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 
 
 			function findCount (id){
-				var found = measurementCounts.filter(function(measurementCounts){return measurementCounts.site_no == id});
+
+				var found = measurementCounts[id];
+
+				var found = 1;
 				//console.log('id: ' + id + ' found: ' + found[0]);
 				if (found.length > 0){
 					if (found[0].sampleCount < 3) {
