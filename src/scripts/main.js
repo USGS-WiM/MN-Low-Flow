@@ -399,19 +399,18 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 
 				var found = measurementCounts[id];
 
-				var found = 1;
 				//console.log('id: ' + id + ' found: ' + found[0]);
-				if (found.length > 0){
-					if (found[0].sampleCount < 3) {
+				if (found > 0){
+					if (found < 3) {
 						return "s"
 					}
-					if (found[0].sampleCount >= 3 && found[0].sampleCount <= 10) {
+					if (found >= 3 && found <= 10) {
 						return "m"
 					}
-					if (found[0].sampleCount > 10) {
+					if (found > 10) {
 						return "l"
 					} else {
-						console.log("ERROR@: " + found[0]);
+						console.log("ERROR@: " + found);
 					}
 				}else{
 					console.log("not found: " + id);
@@ -472,19 +471,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 									icon: icon1
 								}).bindPopup(content);
 								layer2.addLayer(marker2);
-						}};
-						if (a.pt_symbol !== "symbol0") {
-							var category = findCount(a.site_no);
-							if (category == "m") {
-							var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
-								radius: 3,
-								fillOpacity: 0.95,
-								icon: icon2
-							}).bindPopup(content);
-							layer3.addLayer(marker3);
-						}};
-						if (a.pt_symbol !== "symbol0") {
-							var category = findCount(a.site_no);
+						}
 							if (category == "l") {
 								var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
 									radius: 3,
@@ -492,7 +479,35 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 									icon: icon3
 								}).bindPopup(content);
 								layer4.addLayer(marker4);
+						}
+							if (category == "m") {
+								var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+									radius: 3,
+									fillOpacity: 0.95,
+									icon: icon2
+								}).bindPopup(content);
+								layer3.addLayer(marker3);
 						}};
+						// if (a.pt_symbol !== "symbol0") {
+							// var category = findCount(a.site_no);
+						// 	if (category == "m") {
+						// 	var marker3 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 		radius: 3,
+						// 		fillOpacity: 0.95,
+						// 		icon: icon2
+						// 	}).bindPopup(content);
+						// 	layer3.addLayer(marker3);
+						// }
+						// if (a.pt_symbol !== "symbol0") {
+							// var category = findCount(a.site_no);
+						// 	if (category == "l") {
+						// 		var marker4 = L.marker(new L.LatLng(a['LATDD'], a['LONGDD']), {
+						// 			radius: 3,
+						// 			fillOpacity: 0.95,
+						// 			icon: icon3
+						// 		}).bindPopup(content);
+						// 		layer4.addLayer(marker4);
+						// }
 						// discontinuous gages (2-5 years) //
 						// if (a.pt_symbol == "symbol3") {
 						// 	var category = findCount(a.site_no);
