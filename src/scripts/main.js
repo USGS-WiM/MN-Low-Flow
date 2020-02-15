@@ -67,8 +67,8 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 	  zoomInTitle: "Zoom in",
 	  zoomOutText: "-",
 	  zoomOutTitle: "Zoom out",
-	  zoomMinText: "Zoom min",
-	  zoomMinTitle: "Zoom min"
+	  zoomMinText: "Reset Zoom",
+	  zoomMinTitle: "Reset Zoom"
 	},
   
 	onAdd: function (map) {
