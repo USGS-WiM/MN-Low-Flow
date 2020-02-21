@@ -210,25 +210,18 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 				var zoomlevel = 14;
 				if (lastLocationFound.Category === 'U.S. State or Territory') zoomlevel = 9;
 
-				map.setView([lastLocationFound.y, lastLocationFound.x], zoomlevel);
+				map.setView([lastLocationFound.y + 0.01, lastLocationFound.x], zoomlevel);
 
 				L.popup()
 					.setLatLng([lastLocationFound.y,lastLocationFound.x])
 					.setContent(
-						'<p>' +
-							'<b>' + lastLocationFound.label + '</b> '                + '<br/>' +
-							'<br/>' +
 							'<b>NAME:            </b> ' + lastLocationFound.name     + '<br/>' +
 							'<b>CATEGORY:        </b> ' + lastLocationFound.category + '<br/>' +
 							'<b>STATE:           </b> ' + lastLocationFound.state    + '<br/>' +
 							'<b>COUNTY:          </b> ' + lastLocationFound.county   + '<br/>' +
-							'<br/>' +
 							'<b>LATITUDE:        </b> ' + lastLocationFound.y        + '<br/>' +
 							'<b>LONGITUDE:       </b> ' + lastLocationFound.x        + '<br/>' +
-							'<b>ELEVATION (FEET):</b> ' + lastLocationFound.elevFt   + '<br/>' +
-							'<br/>' +
-							'<b>PERCENT MATCH:   </b> ' + lastLocationFound.pctMatch + '<br/>' +
-						'</p>'
+							'<b>ELEVATION (FEET):</b> ' + lastLocationFound.elevFt   + '<br/>'
 					)
 					.openOn(map);
 			});
