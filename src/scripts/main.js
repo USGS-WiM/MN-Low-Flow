@@ -67,7 +67,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 	  zoomInTitle: "Zoom in",
 	  zoomOutText: "-",
 	  zoomOutTitle: "Zoom out",
-	  zoomMinText: "<i class='far fa-globe-americas'></i>",
+	  zoomMinText: "<i class='far fa-expand-wide'></i>",
 	  zoomMinTitle: "Reset Zoom"
 	},
   
