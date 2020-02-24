@@ -67,7 +67,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 	  zoomInTitle: "Zoom in",
 	  zoomOutText: "-",
 	  zoomOutTitle: "Zoom out",
-	  zoomMinText: "Reset Zoom",
+	  zoomMinText: "<i class='far fa-globe-americas'></i>",
 	  zoomMinTitle: "Reset Zoom"
 	},
   
@@ -458,7 +458,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 		// Discharge Points //
 
 		var iconFs = L.icon({
-			iconUrl: 'images/markers/index.png',
+			iconUrl: 'images/markers/watershed.png',
 			iconSize: [13,13]
 		});
 		Sites = L.esri.featureLayer({url:'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer/6',
