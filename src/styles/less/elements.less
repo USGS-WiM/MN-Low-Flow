@@ -1,0 +1,73 @@
+// This file holds styles for various elements - inputs, some buttons, etc
+
+/////////////////////////
+//     Checkboxes     //
+///////////////////////
+// Reset default
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+}
+input[type="checkbox"]:focus {
+	outline: 0;
+}
+// Turn into better looking checks
+input[type="checkbox"] {
+	height: 22px;
+	min-height: 22px;
+	max-height: 22px;
+	width: 22px;
+	min-width: 22px;
+	max-width: 22px;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: 1px solid @grey_light;
+	transition: all 0.2s ease;
+	background: white;
+	font-size: 12px;
+	font-weight: 800;
+
+	&:hover{
+		transition: all 0.2s ease;
+		border-color: @grey;
+	}
+
+	&:focus{
+		transition: all 0.2s ease;
+	}
+
+	&:after {
+		//28x28 dimensions
+		content: "\f00c";
+		position: relative;
+		font-family: @font_awesome;
+		font-weight: 900;
+		transition: 0.2s ease;
+		transform: scale(0.75);
+		color: @ink_dark;
+		opacity: 0.3;
+		font-size: 14px;
+		left: 3px;
+		top: 3px;
+	}
+
+	&:checked {
+		border-color: @grey_dark;
+		&:hover{
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+
+	&:checked:after {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

@@ -377,17 +377,6 @@ a.btn-primary:disabled.btn-outline:hover,
   cursor: default;
   text-decoration: none;
 }
-.leaflet-control-zoom-min {
-  text-indent: -999em;
-  background: #fff url(data:image/gif;base64,R0lGODlhGAAYAOZdACIiIiMjIy8vLyoqKsPDwzMzM0xMTDQ0NGlpaUtLS+Tk5J2dnXd3d7m5ueDg4GdnZykpKSYmJkpKSre3t09PT5eXl4KCgrCwsHNzc1lZWWhoaCcnJ5ubm3R0dFJSUp+fn1RUVJqamoODg8TExD09PYqKijo6OpGRkV1dXVFRUUNDQ3FxcZmZmYCAgEVFRXV1dSgoKIaGhlxcXEdHR5SUlMvLy5iYmNXV1VNTU7GxsbOzs9ra2jExMdbW1isrKywsLFtbW6qqqnh4eGpqat3d3XBwcI2NjWRkZLi4uL+/vyUlJZycnNvb297e3r6+vvf392VlZcbGxq2trWFhYWZmZszMzE5OTsDAwG1tbZWVlZaWlqGhod/f3////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAF0ALAAAAAAYABgAQAf/gF2Cg10KLFASAgISVBWEhFkAklaPlT0Rkpk2XRCZnj4oEwQknp4Dgw0BAFqPLZ0ZFJ4BDYICpSWEURNBpZ4Cgx+qvQAmgjs4AAEflV1XBckgShkJEQeeBUmPLwAezF0jKTqDGJkdXQaZLt5dTj/DCRq9MDldHgAbw5kPhdb5AAkXBpXAd0ABMyED8g1gsE6QAwwJhw3oQMQbB1UyRlSpQeDJAiClAoQg5OCZkUrPAGzpImJIpgJNBHWKIMUbF0FMGsTIdOpBphUNb5jo9cBWJgveLOQTgM6TihOCjkgq4s9AiGEUHFyoMMUfAA5dGHjFooEHDQSkMjEUREBYPiSDHEQkI1CJQL9SM5aAkHSAbsMuCxAYUGQAwQJvgQAAOw==) no-repeat scroll center center;
-  background-size: 12px 12px;
-}
-.leaflet-control-zoom-min:focus {
-  outline: 0;
-}
-.leaflet-control-zoom-min.leaflet-disabled {
-  background-image: url(data:image/gif;base64,R0lGODlhGAAYAOZGAHp6eoWFhX9/f3t7e4KCgtvb2319faSkpJSUlMTExOzs7JiYmO/v79DQ0KWlpdXV1ZeXl8LCwq2trZWVldTU1KysrJOTk8HBwbS0tLW1tZ2dnaOjo5ubm9nZ2aurq+bm5oCAgMPDw+vr6+np6ZKSkomJicXFxYuLi9zc3Lm5ub+/v+Dg4J6enszMzMDAwN3d3djY2Pr6+oODg46OjqCgoHx8fJGRkaqqqr29vaampqenp7a2to+Pj7Ozs7u7u9HR0aKioqmpqX5+fs7OzsfHx66urv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAEYALAAAAAAYABgAQAf/gEaCg0YMERskBAQkGxeEhCoAkhOPlR8GkpmOApmdICwUBSednQKDDwMALo89nBwTnQMPggSkKYQvFC2knQSDJqm8ACWCIwsAAyaVRh0ByAs1HBYGzpkBHY8VABDLRigQP4MemRVGCJk83UYwIMIWB7xCDUYQAJjCkgeF1fgW84IpMAVgsKwIJ2ECJKgTpMDDQV4CKojoFiKVBhQrVhSIkUADqQERCClw5qNSNSJGMuSwNtEIJwNDuiko9mBHJlPwJN1Y+KEErwO1MmHohgEfgXOdZuAQBERSEHwAEEQQNkFBgws0oAIIYUSCVh0HZKhwMCqTQkEFguGjMCgDsgKVFwrw62QjwTEAAeAuNJLAAQJFCBwk6BYIADs=);
-}
 @media (max-width: 768px) {
   .btn-primary {
     font-size: 15px;
@@ -488,19 +477,6 @@ a.btn-secondary:disabled.btn-outline:hover,
 .btn-secondary:disabled.btn-outline:hover {
   cursor: default;
   text-decoration: none;
-}
-#snackbar {
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 999; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
 }
 @media (max-width: 768px) {
   .btn-secondary {
@@ -4676,6 +4652,64 @@ pre {
 .lowercase {
   text-transform: lowercase;
 }
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+input[type="checkbox"] {
+  height: 22px;
+  min-height: 22px;
+  max-height: 22px;
+  width: 22px;
+  min-width: 22px;
+  max-width: 22px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid #eef0f3;
+  transition: all 0.2s ease;
+  background: white;
+  font-size: 12px;
+  font-weight: 800;
+}
+input[type="checkbox"]:hover {
+  transition: all 0.2s ease;
+  border-color: #D9DDE4;
+}
+input[type="checkbox"]:focus {
+  transition: all 0.2s ease;
+}
+input[type="checkbox"]:after {
+  content: "\f00c";
+  position: relative;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  transition: 0.2s ease;
+  transform: scale(0.75);
+  color: #0c141e;
+  opacity: 0.3;
+  font-size: 14px;
+  left: 3px;
+  top: 3px;
+}
+input[type="checkbox"]:checked {
+  border-color: #c7cdd7;
+}
+input[type="checkbox"]:checked:hover:after {
+  opacity: 1;
+}
+input[type="checkbox"]:checked:after {
+  transform: scale(1);
+  opacity: 1;
+}
 .leaflet-marker-icon:before {
   right: auto!important;
   bottom: auto!important;
@@ -5389,7 +5423,7 @@ body {
 nav#nav {
   width: 100%;
   height: 50px;
-  background-color: #0c141e;
+  background-color: #030508;
   position: fixed;
   top: 0;
   left: 0;
@@ -5406,6 +5440,10 @@ nav#nav .nav-branding .navbar-toggle {
   justify-content: center;
   padding: 0 6px 5px 10px;
   line-height: 0;
+}
+nav#nav .nav-branding .navbar-toggle:hover,
+nav#nav .nav-branding .navbar-toggle:focus {
+  text-decoration: none;
 }
 nav#nav .nav-logo img {
   height: 35px;
@@ -5455,12 +5493,12 @@ nav#nav .nav-appname {
 }
 #sidebar .panel .panel-heading .panel-title a:after {
   transition: 0.15s;
-  font-family: 'Glyphicons Halflings';
-  content: "\2212";
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f077";
   float: right;
 }
 #sidebar .panel .panel-heading .panel-title a.collapsed:after {
-  content: "\2b";
+  content: "\f078";
 }
 #sidebar .panel .panel-heading .panel-title a:hover {
   color: #1b6cf9;
@@ -5521,7 +5559,7 @@ nav#nav .nav-appname {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0px 0;
+  padding: 8px 0 0 0;
 }
 #sidebar .panel .panel-body .sidebar-layer input {
   margin: 0 7px 0 0;
