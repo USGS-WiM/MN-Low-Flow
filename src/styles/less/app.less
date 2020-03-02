@@ -1,6 +1,7 @@
 @import 'reset.less';
 @import 'variables.less';
 @import 'sg.less';
+@import 'elements.less';
 @import 'markers.less';
 
 
@@ -15,7 +16,7 @@ body{
 nav#nav{
 	width: 100%;
 	height: 50px;
-	background-color: @ink_dark;
+	background-color: @ink_darker;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -32,6 +33,11 @@ nav#nav{
 			justify-content: center;
 			padding: 0 6px 5px 10px;
 			line-height: 0;
+
+			&:hover,
+			&:focus{
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -65,8 +71,6 @@ nav#nav{
 	z-index: 1005;
 	top: 50px;
 	padding-bottom: 50px;
-	width: 500px !important;
-	height: 500px !important;
 
 
 	.panel{
@@ -92,13 +96,13 @@ nav#nav{
 
 					&:after{
 						transition: @transition;
-						font-family:'Glyphicons Halflings';
-						content:"\2212";
+						font-family:'Font Awesome 5 Pro';
+						content:"\f077";
 						float: right;
 					}
 
 					&.collapsed:after{
-						content:"\2b";
+						content:"\f078";
 					}
 
 					&:hover{
@@ -181,7 +185,7 @@ nav#nav{
 				display: flex;
 				justify-content: space-between;
 				box-sizing: border-box;
-				padding: 0px 0;
+				padding: 8px 0 0 0;
 
 				input{
 					margin: 0 7px 0 0;
@@ -238,9 +242,7 @@ nav#nav{
 		}
 	}
 }
-.sidebar-basemaps{
 
-}
 
 // Leaflet Tweaks
 // Leaflet Tweaks
@@ -316,6 +318,10 @@ nav#nav{
 
 }
 
+// Reset zooom button
+.leaflet-control-zoom-min{
+	
+}
 
 // Geosearch Tweaks
 // Geosearch Tweaks
@@ -673,6 +679,7 @@ nav#nav{
 	width: 100vw;
 	height: 100vh;
 	float: right;
+	z-index: 998;
 }
 .no-col-padding {
 	padding: 0;
