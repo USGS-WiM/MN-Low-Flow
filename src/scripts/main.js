@@ -459,7 +459,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 
 		var iconFs = L.icon({
 			iconUrl: 'images/markers/watershed.png',
-			iconSize: [13,13]
+			iconSize: [20,20]
 		});
 		Sites = L.esri.featureLayer({url:'https://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/ww_facility/MapServer/6',
 			pointToLayer: function (feature, latlng) {
