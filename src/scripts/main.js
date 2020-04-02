@@ -283,7 +283,7 @@ L.Control.ZoomMin = L.Control.Zoom.extend({
 			var mapZoom = map.getZoom();
 			var mapScale = scaleLookup(mapZoom);
 			$('#scale')[0].innerHTML = mapScale;
-			$('#zoomLevel')[0].innerHTML = mapZoom;
+		//	$('#zoomLevel')[0].innerHTML = mapZoom;
 		});
 	//updates lat/lng indicator on mouse move. does not apply on devices w/out mouse. removes 'map center' label
 		map.on( 'mousemove', function (cursorPosition) {
