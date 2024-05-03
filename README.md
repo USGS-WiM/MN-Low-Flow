@@ -1,8 +1,8 @@
 ![WIM](wimlogo.png)
 
-# ARCHIVED - MN Low Flow
+# WIM Styleguide
 
-This repo is no longer active.
+MN Low Flow.
 
 ## Getting Started
 
