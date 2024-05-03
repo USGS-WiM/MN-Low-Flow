@@ -1,9 +1,8 @@
 ![WIM](wimlogo.png)
 
+# ARCHIVED - MN Low Flow
 
-# WIM Styleguide
-
-MN Low Flow. 
+This repo is no longer active.
 
 ## Getting Started
 
@@ -23,10 +22,13 @@ bower install
 ## Building and testing
 
 Serve project from /app/ with
+
 ```bash
 gulp watch
 ```
+
 Build it with
+
 ```bash
 gulp
 ```
@@ -37,8 +39,8 @@ Upload build (/build/ folder) server.
 
 ## Built With
 
-* HTML
-* [Gulp](https://gulpjs.com/) - Workflow Toolkit
+- HTML
+- [Gulp](https://gulpjs.com/) - Workflow Toolkit
 
 ## Contributing
 
@@ -46,17 +48,17 @@ Please read [CONTRIBUTING.md]() for details on the process for submitting pull r
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 Advance the version when adding features, fixing bugs or making minor enhancement. Follow semver principles. To add tag in git, type git tag v{major}.{minor}.{patch}. Example: git tag v2.0.5
 
 To push tags to remote origin: `git push origin --tags`
 
-*Note that your alias for the remote origin may differ.
+\*Note that your alias for the remote origin may differ.
 
 ## Authors
 
-* **Nathan Krawza**  - *Lead Developer* - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
+- **Nathan Krawza** - _Lead Developer_ - [USGS Web Informatics & Mapping](https://wim.usgs.gov/)
 
 See also the list of [contributors](https://github.com/USGS-WIM/Styleguide/graphs/contributors) who participated in this project.
 
@@ -65,11 +67,13 @@ See also the list of [contributors](https://github.com/USGS-WIM/Styleguide/graph
 This project is licensed under the Creative Commons CC0 1.0 Universal License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Suggested Citation
+
 In the spirit of open source, please cite any re-use of the source code stored in this repository. Below is the suggested citation:
 
 `This project contains code produced by the Web Informatics and Mapping (WIM) team at the United States Geological Survey (USGS). As a work of the United States Government, this project is in the public domain within the United States. https://wim.usgs.gov`
 
 ## About WIM
-* This project authored by the [USGS WIM team](https://wim.usgs.gov)
-* WIM is a team of developers and technologists who build and manage tools, software, web services, and databases to support USGS science and other federal government cooperators.
-* WIM is a part of the [Upper Midwest Water Science Center](https://www.usgs.gov/centers/wisconsin-water-science-center).
+
+- This project authored by the [USGS WIM team](https://wim.usgs.gov)
+- WIM is a team of developers and technologists who build and manage tools, software, web services, and databases to support USGS science and other federal government cooperators.
+- WIM is a part of the [Upper Midwest Water Science Center](https://www.usgs.gov/centers/wisconsin-water-science-center).
