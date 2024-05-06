@@ -1,8 +1,6 @@
 ![WIM](wimlogo.png)
 
-# WIM Styleguide
-
-MN Low Flow.
+# ARCHIVED - MN Low Flow
 
 ## Getting Started
 
